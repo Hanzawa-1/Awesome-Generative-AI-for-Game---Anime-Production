@@ -16,7 +16,7 @@ on:
         default: ""
       max_iters:
         description: "Agent iterations per task"
-        default: "12"
+        default: "25"
       dry_run:
         description: "Run the sweep but skip commit/push/PR"
         type: boolean
@@ -44,7 +44,7 @@ jobs:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      AGENT_MAX_ITERS: ${{ github.event.inputs.max_iters || '12' }}
+      AGENT_MAX_ITERS: ${{ github.event.inputs.max_iters || '25' }}
       # Per-task wall-clock so 8 tasks fit comfortably inside timeout-minutes even when
       # the free-tier LLM throttles (each task is capped independently).
       AGENT_WALL_CLOCK_SECONDS: "420"
