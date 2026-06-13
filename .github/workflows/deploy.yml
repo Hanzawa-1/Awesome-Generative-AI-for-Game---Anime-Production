@@ -3,16 +3,6 @@ name: Deploy site
 on:
   push:
     branches: [main]
-    # Only rebuild when content/site inputs change.
-    paths:
-      - "data/**"
-      - "docs/**"
-      - "taxonomy.yml"
-      - "gen_pages.py"
-      - "mkdocs.yml"
-      - "pyproject.toml"
-      - "uv.lock"
-      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
