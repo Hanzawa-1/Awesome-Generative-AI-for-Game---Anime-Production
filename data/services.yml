@@ -22,6 +22,7 @@ entries:
   links:
     website: https://www.deepmotion.com/
   tags:
+  - api
   - commercial
   - markerless-mocap
   summary: A commercial markerless motion-capture service that converts ordinary video into 3D animation (FBX/BVH/GLB), enabling mocap without a suit or studio.
@@ -36,6 +37,7 @@ entries:
   links:
     website: https://www.move.ai/
   tags:
+  - api
   - commercial
   - markerless-mocap
   summary: A markerless multi-camera motion-capture service producing high-quality 3D motion from standard cameras, used by indie and mid-size studios.
@@ -49,6 +51,7 @@ entries:
   links:
     website: https://suno.com/
   tags:
+  - api
   - commercial
   - music-generation
   summary: A commercial music generation service producing full songs with vocals from text prompts, used for rapid soundtrack and BGM prototyping.
@@ -77,6 +80,7 @@ entries:
   links:
     website: https://elevenlabs.io/
   tags:
+  - api
   - commercial
   - dubbing
   - voice-cloning
@@ -121,6 +125,7 @@ entries:
   links:
     website: https://www.meshy.ai/
   tags:
+  - api
   - auto-rig
   - commercial
   - texture
@@ -150,6 +155,7 @@ entries:
   links:
     website: https://www.tripo3d.ai/
   tags:
+  - api
   - commercial
   - fast
   summary: A commercial text/image-to-3D generator known for fast mesh creation, frequently used for rapid game asset prototyping.
@@ -165,6 +171,7 @@ entries:
   year: 2022
   tags:
   - anime
+  - api
   - character
   - commercial
   summary: A commercial anime-focused image generator with character-consistency tooling, popular for character design and reference sheets in indie anime production.
@@ -207,6 +214,7 @@ entries:
   links:
     website: https://www.deepl.com/
   tags:
+  - api
   - commercial
   - translation
   summary: A commercial neural machine translation service with an API, used in game/anime localization for high-quality first-pass translation.
@@ -221,6 +229,7 @@ entries:
   links:
     website: https://inworld.ai/
   tags:
+  - api
   - commercial
   - memory
   - npc
@@ -250,6 +259,7 @@ entries:
   links:
     website: https://runwayml.com/
   tags:
+  - api
   - commercial
   - video-generation
   summary: A commercial text/image-to-video generation and editing suite used for previs, motion design, and stylized video in production.

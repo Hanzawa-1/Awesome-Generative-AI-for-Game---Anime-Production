@@ -15,6 +15,9 @@ theme:
   name: material
   icon:
     repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: Roboto Mono
   features:
     - navigation.sections
     - navigation.indexes
@@ -27,15 +30,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: pink
+      primary: white
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: pink
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode

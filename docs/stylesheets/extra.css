@@ -1,33 +1,166 @@
-/* Consistent 16:9 thumbnails on catalog cards. */
+/* ============================================================================
+   microsoft.ai-inspired palette: clean white surfaces, charcoal text, a refined
+   blue accent, soft pastel highlights, generous whitespace, bold sans headings.
+   ============================================================================ */
+
+:root {
+  --ms-blue: #0f6cbd;          /* primary accent / links */
+  --ms-blue-dark: #0a4f8a;     /* hover */
+  --ms-ink: #1b1b1f;           /* headings / strong text */
+  --ms-border: #e6e6ea;        /* hairline borders */
+  /* soft pastel gradient motif (used sparingly) */
+  --ms-grad: linear-gradient(90deg, #ffb3c7 0%, #ffd79b 33%, #a8e6cf 66%, #9fc7ff 100%);
+}
+
+/* ---- Light scheme ---- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #2b2b30;
+  --md-default-fg-color--light: #6b6b76;
+  --md-default-fg-color--lighter: #9a9aa6;
+  --md-typeset-color: #2b2b30;
+  --md-typeset-a-color: var(--ms-blue);
+  --md-accent-fg-color: var(--ms-blue-dark);
+  --md-code-bg-color: #f4f5f7;
+  --md-footer-bg-color: #1b1b1f;
+  --md-footer-bg-color--dark: #141417;
+}
+
+/* ---- Dark scheme ---- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #131316;
+  --md-typeset-a-color: #6db3f2;
+  --md-accent-fg-color: #9fc7ff;
+  --ms-ink: #f2f2f5;
+  --ms-border: #2a2a31;
+  --md-code-bg-color: #1d1d22;
+}
+
+/* ---- Header: clean, hairline-separated, white (light) / near-black (dark) ---- */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--ms-border);
+}
+.md-header[data-md-state="shadow"],
+.md-header--shadow {
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.06), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.04);
+}
+.md-tabs {
+  border-bottom: 1px solid var(--ms-border);
+}
+
+/* ---- Typography: bold, tight headings ---- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--ms-ink);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+/* ---- Buttons: filled microsoft-blue primary; clean outlined secondary ---- */
+.md-typeset .md-button {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  font-weight: 600;
+  padding: 0.5em 1.25em;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+.md-typeset .md-button--primary {
+  background-color: var(--ms-blue);
+  border-color: var(--ms-blue);
+  color: #fff;
+}
+.md-typeset .md-button--primary:hover {
+  background-color: var(--ms-blue-dark);
+  border-color: var(--ms-blue-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 0.4rem 0.8rem rgba(15, 108, 189, 0.25);
+}
+.md-typeset .md-button:not(.md-button--primary):hover {
+  border-color: var(--ms-blue);
+  color: var(--ms-blue);
+}
+
+/* soft pastel accent rule under the home hero h1 */
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: var(--ms-grad);
+}
+
+/* ============================================================================
+   Catalog card grid — FIXED card size (cards never stretch to fill a row).
+   ============================================================================ */
+.md-typeset .grid.cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 17rem); /* fixed width, packs from left */
+  justify-content: start;
+  gap: 1rem;
+  margin: 1em 0;
+}
+
+.md-typeset .grid.cards > ul > li {
+  margin: 0;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--ms-border);
+  border-radius: 0.7rem;
+  padding: 0.9rem;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-3px);
+  border-color: #d2d2da;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.10);
+}
+
+/* 16:9 thumbnail pinned to the top of the card */
 .md-typeset .grid.cards img.card-thumb {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 0.2rem;
+  border-radius: 0.45rem;
   display: block;
-  margin-bottom: 0.4rem;
-  background: var(--md-default-fg-color--lightest);
+  margin-bottom: 0.5rem;
+  background: #f1f1f4;
 }
-
-/* The image is the first child of a card and links to the entry. */
 .md-typeset .grid.cards > ul > li > p:first-child > a {
   display: block;
   line-height: 0;
 }
 
-/* Muted secondary metadata (authors · year, entry counts). */
+/* card title */
+.md-typeset .grid.cards > ul > li strong a {
+  color: var(--ms-ink);
+  font-weight: 700;
+}
+.md-typeset .grid.cards > ul > li strong a:hover {
+  color: var(--ms-blue);
+}
+
+/* muted secondary metadata (authors · year, counts) */
 .md-typeset .card-meta {
   color: var(--md-default-fg-color--light);
   font-size: 0.72rem;
 }
 
-/* Inline code used as tag chips inside cards. */
+/* tag chips */
 .md-typeset .grid.cards code {
   font-size: 0.66rem;
-  padding: 0.05rem 0.35rem;
-}
-
-/* Slightly tighter card grid for a denser catalog. */
-.md-typeset .grid.cards > ul {
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  padding: 0.05rem 0.4rem;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--ms-border);
+  border-radius: 0.5rem;
 }
