@@ -144,6 +144,72 @@ entries:
   thumbnail: assets/thumbnails/meshy-c6012a.png
   date_added: '2026-06-13'
   source: seed
+- id: genie-google-deepmind-6f3f03
+  title: Genie (Google DeepMind)
+  area: gen-3d
+  task: scene-generation
+  kind: proprietary
+  links:
+    website: https://deepmind.google/models/genie/
+  tags:
+  - commercial
+  - interactive
+  - playable
+  - world-model
+  summary: DeepMind's foundation world model that generates interactive, playable 3D environments from a single image or text prompt, controllable in real time.
+  summary_ja: DeepMindの基盤ワールドモデル。単一の画像やテキストプロンプトから、リアルタイムに操作できるインタラクティブでプレイ可能な3D環境を生成する。
+  thumbnail: assets/thumbnails/genie-google-deepmind-6f3f03.png
+  date_added: '2026-06-13'
+  source: seed
+- id: marble-world-labs-0e8ed8
+  title: Marble (World Labs)
+  area: gen-3d
+  task: scene-generation
+  kind: proprietary
+  links:
+    website: https://marble.worldlabs.ai/
+  tags:
+  - api
+  - commercial
+  - scene
+  - world-model
+  summary: World Labs' commercial platform that generates large, explorable 3D worlds from a prompt or image, aimed at environment creation for games and virtual production.
+  summary_ja: World Labsによる商用プラットフォーム。プロンプトや画像から大規模で探索可能な3Dワールドを生成し、ゲームやバーチャルプロダクションの環境制作を狙う。
+  thumbnail: assets/thumbnails/marble-world-labs-0e8ed8.png
+  date_added: '2026-06-13'
+  source: seed
+- id: odyssey-49cd76
+  title: Odyssey
+  area: gen-3d
+  task: scene-generation
+  kind: proprietary
+  links:
+    website: https://odyssey.ml/
+  tags:
+  - commercial
+  - interactive
+  - world-model
+  summary: An emerging commercial generative world model producing interactive, explorable environments for real-time world creation.
+  summary_ja: リアルタイムなワールド制作に向けて、インタラクティブで探索可能な環境を生成する新興の商用ワールドモデル。
+  thumbnail: assets/thumbnails/odyssey-49cd76.png
+  date_added: '2026-06-13'
+  source: seed
+- id: spaitial-42ffaa
+  title: Spaitial
+  area: gen-3d
+  task: scene-generation
+  kind: proprietary
+  links:
+    website: https://spaitial.ai/
+  tags:
+  - commercial
+  - scene
+  - world-model
+  summary: An emerging commercial spatial-intelligence platform for generating navigable 3D scenes and worlds from prompts or images.
+  summary_ja: プロンプトや画像から、移動・探索可能な3Dシーンやワールドを生成する新興の商用空間知能プラットフォーム。
+  thumbnail: assets/thumbnails/spaitial-42ffaa.png
+  date_added: '2026-06-13'
+  source: seed
 - id: rodin-hyper3d-37bed0
   title: Rodin (Hyper3D)
   area: gen-3d
@@ -193,6 +259,121 @@ entries:
   thumbnail: assets/thumbnails/novelai-image-generation-e5a52e.png
   date_added: '2026-06-13'
   source: seed
+- id: adobe-firefly-api-aa004e
+  title: Adobe Firefly API
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://developer.adobe.com/firefly-services/
+  tags:
+  - adobe
+  - api
+  - commercial
+  - editing
+  summary: Adobe's commercial generative-image API offering text-to-image plus programmatic Photoshop and Lightroom editing operations, marketed as commercially-safe for production use.
+  summary_ja: Adobeの商用の生成画像API。テキスト→画像に加え、PhotoshopやLightroomの編集操作をプログラムから実行でき、商用利用に配慮した学習を謳う。
+  thumbnail: assets/thumbnails/adobe-firefly-api-aa004e.png
+  date_added: '2026-06-13'
+  source: seed
+- id: amazon-titan-image-generator-c70f8b
+  title: Amazon Titan Image Generator
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://aws.amazon.com/bedrock/
+  tags:
+  - api
+  - aws
+  - commercial
+  summary: A text-to-image model served via AWS Bedrock with image conditioning, color-palette guidance, and built-in editing, convenient for teams already on AWS.
+  summary_ja: AWS Bedrock経由で提供されるテキスト→画像モデル。画像条件付け、カラーパレット指定、編集機能を備え、すでにAWSを使うチームに便利。
+  thumbnail: assets/thumbnails/amazon-titan-image-generator-c70f8b.png
+  date_added: '2026-06-13'
+  source: seed
+- id: black-forest-labs-flux-pro-db2f6c
+  title: Black Forest Labs (FLUX Pro)
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://bfl.ai/
+  tags:
+  - api
+  - commercial
+  - flux
+  summary: Black Forest Labs' hosted API for the proprietary FLUX 1.1 Pro and FLUX.2 (32B) models, the managed tier above the open FLUX.1/2 weights.
+  summary_ja: Black Forest Labsによる、商用のFLUX 1.1 ProおよびFLUX.2（32B）モデルのホスティングAPI。オープンなFLUX.1/2ウェイトの上位にあたるマネージド層。
+  thumbnail: assets/thumbnails/black-forest-labs-flux-pro-db2f6c.png
+  date_added: '2026-06-13'
+  source: seed
+- id: google-gemini-image-api-3513b9
+  title: Google Gemini Image API
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://ai.google.dev/gemini-api/docs/image-generation
+  tags:
+  - api
+  - commercial
+  - editing
+  - google
+  summary: Native image generation and conversational editing through Google's Gemini models, accessible via the Gemini API with text-to-image and image editing.
+  summary_ja: GoogleのGeminiモデルによるネイティブな画像生成と対話的編集。Gemini API経由でテキスト→画像生成と画像編集を利用できる。
+  thumbnail: assets/thumbnails/google-gemini-image-api-3513b9.png
+  date_added: '2026-06-13'
+  source: seed
+- id: google-imagen-vertex-ai-fdfa5a
+  title: Google Imagen (Vertex AI)
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://cloud.google.com/vertex-ai
+  tags:
+  - api
+  - commercial
+  - google
+  - inpainting
+  summary: Google's Imagen 4 family on Vertex AI for text-to-image plus editing, inpainting, and outpainting, with enterprise controls and SynthID watermarking.
+  summary_ja: Vertex AI上のGoogle Imagen 4ファミリー。テキスト→画像に加え編集・インペインティング・アウトペインティングに対応し、企業向け制御とSynthID電子透かしを備える。
+  thumbnail: assets/thumbnails/google-imagen-vertex-ai-fdfa5a.png
+  date_added: '2026-06-13'
+  source: seed
+- id: ideogram-14bd97
+  title: Ideogram
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://ideogram.ai/
+  tags:
+  - api
+  - commercial
+  - text-rendering
+  summary: A commercial text-to-image service noted for reliable in-image text and typography, useful for posters, logos, and title cards.
+  summary_ja: 画像内テキストやタイポグラフィの安定した描画で知られる商用のテキスト→画像サービス。ポスター、ロゴ、タイトルカードに有用。
+  thumbnail: assets/thumbnails/ideogram-14bd97.png
+  date_added: '2026-06-13'
+  source: seed
+- id: leonardo-ai-c2fbe8
+  title: Leonardo AI
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://leonardo.ai/api
+  tags:
+  - api
+  - commercial
+  - game-art
+  summary: A commercial generation platform (text-to-image, image-to-image, image-to-video) with game-asset-oriented models and webhooks, popular in indie game art pipelines.
+  summary_ja: テキスト→画像、画像→画像、画像→動画に対応する商用の生成プラットフォーム。ゲームアセット向けモデルとWebhookを備え、インディーのゲームアート制作で人気。
+  thumbnail: assets/thumbnails/leonardo-ai-c2fbe8.png
+  date_added: '2026-06-13'
+  source: seed
 - id: midjourney-4cae8c
   title: Midjourney
   area: image-2d
@@ -206,6 +387,100 @@ entries:
   summary: A commercial text-to-image service known for high aesthetic quality, widely used for rapid concept-art ideation across game and anime studios.
   summary_ja: 高い美的品質で知られる商用のテキスト→画像サービス。ゲーム・アニメ制作で素早いコンセプトアートの発想に広く利用される。
   thumbnail: assets/thumbnails/midjourney-4cae8c.png
+  date_added: '2026-06-13'
+  source: seed
+- id: minimax-image-api-2d9f56
+  title: MiniMax Image API
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://platform.minimax.io/docs/guides/image-generation
+  tags:
+  - api
+  - commercial
+  summary: A text-to-image and image-to-image REST API from MiniMax supporting batch generation.
+  summary_ja: MiniMaxによるテキスト→画像および画像→画像のREST API。バッチ生成に対応する。
+  thumbnail: assets/thumbnails/minimax-image-api-2d9f56.png
+  date_added: '2026-06-13'
+  source: seed
+- id: openai-gpt-image-5147bd
+  title: OpenAI GPT Image
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://platform.openai.com/docs/guides/images
+  tags:
+  - api
+  - commercial
+  - editing
+  - openai
+  summary: OpenAI's natively-multimodal image models (gpt-image-1 / 1.5 / mini) for text-to-image and instruction editing, with strong prompt adherence and in-image text.
+  summary_ja: OpenAIのネイティブ・マルチモーダル画像モデル（gpt-image-1 / 1.5 / mini）。テキスト→画像と指示編集に対応し、プロンプト忠実度と画像内テキストが強力。
+  thumbnail: assets/thumbnails/openai-gpt-image-5147bd.png
+  date_added: '2026-06-13'
+  source: seed
+- id: pollinations-ai-c9c167
+  title: Pollinations.ai
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://pollinations.ai/
+  tags:
+  - api
+  - free
+  summary: A free, open generative-AI platform offering a no-signup text-to-image API, handy for prototyping and hobby projects.
+  summary_ja: 登録不要のテキスト→画像APIを提供する無料・オープンな生成AIプラットフォーム。プロトタイピングや趣味の制作に便利。
+  thumbnail: assets/thumbnails/pollinations-ai-c9c167.png
+  date_added: '2026-06-13'
+  source: seed
+- id: recraft-ai-fcbc06
+  title: Recraft AI
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://www.recraft.ai/api
+  tags:
+  - api
+  - commercial
+  - vector
+  summary: A commercial generator producing both raster and true vector (SVG) output via its V4 model, suited to icons, logos, and 2D UI/art assets.
+  summary_ja: V4モデルでラスターと真のベクター（SVG）の両方を出力する商用ジェネレーター。アイコン、ロゴ、2DのUI・アートアセットに適する。
+  thumbnail: assets/thumbnails/recraft-ai-fcbc06.png
+  date_added: '2026-06-13'
+  source: seed
+- id: stability-ai-image-api-53d1d2
+  title: Stability AI (Image API)
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://stability.ai/
+  tags:
+  - api
+  - commercial
+  summary: Stability AI's hosted REST API for Stable Diffusion 3.5 and Stable Image models, the managed service alongside the open Stable Diffusion weights.
+  summary_ja: Stable Diffusion 3.5やStable Image系モデルを提供するStability AIのホスティングREST API。オープンなStable Diffusionウェイトと並ぶマネージドサービス。
+  thumbnail: assets/thumbnails/stability-ai-image-api-53d1d2.png
+  date_added: '2026-06-13'
+  source: seed
+- id: xai-grok-image-grok-imagine-9aa6c1
+  title: xAI Grok Image (grok-imagine)
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://docs.x.ai/developers/model-capabilities/images/generation
+  tags:
+  - api
+  - commercial
+  - openai-compatible
+  summary: xAI's grok-imagine-image text-to-image model exposed via a REST API with an OpenAI-compatible interface.
+  summary_ja: xAIのgrok-imagine-imageテキスト→画像モデル。OpenAI互換インターフェースのREST APIで提供される。
+  thumbnail: assets/thumbnails/xai-grok-image-grok-imagine-9aa6c1.png
   date_added: '2026-06-13'
   source: seed
 - id: jenova-ai-manga-generator-cee9e8
