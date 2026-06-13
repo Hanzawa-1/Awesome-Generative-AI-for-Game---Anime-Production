@@ -16,8 +16,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
   font:
-    text: Inter
-    code: Roboto Mono
+    text: Source Serif 4
+    code: Space Mono
   features:
     - navigation.sections
     - navigation.indexes

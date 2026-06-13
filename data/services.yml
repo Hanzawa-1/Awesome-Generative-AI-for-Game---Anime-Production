@@ -41,6 +41,7 @@ entries:
   - commercial
   - markerless-mocap
   summary: A markerless multi-camera motion-capture service producing high-quality 3D motion from standard cameras, used by indie and mid-size studios.
+  thumbnail: assets/thumbnails/move-ai-39c1e3.png
   date_added: '2026-06-13'
   source: seed
 - id: suno-719c52
@@ -100,6 +101,7 @@ entries:
   - auto-rig
   - commercial
   summary: Adobe's free service that auto-rigs uploaded humanoid meshes and applies a large motion library, a staple for quickly animating game characters.
+  thumbnail: assets/thumbnails/mixamo-9a4b49.png
   date_added: '2026-06-13'
   source: seed
 - id: metahuman-creator-4597b5
@@ -159,6 +161,7 @@ entries:
   - commercial
   - fast
   summary: A commercial text/image-to-3D generator known for fast mesh creation, frequently used for rapid game asset prototyping.
+  thumbnail: assets/thumbnails/tripo-a95a86.png
   date_added: '2026-06-13'
   source: seed
 - id: novelai-image-generation-e5a52e
@@ -189,6 +192,7 @@ entries:
   - commercial
   - concept-art
   summary: A commercial text-to-image service known for high aesthetic quality, widely used for rapid concept-art ideation across game and anime studios.
+  thumbnail: assets/thumbnails/midjourney-4cae8c.png
   date_added: '2026-06-13'
   source: seed
 - id: jenova-ai-manga-generator-cee9e8

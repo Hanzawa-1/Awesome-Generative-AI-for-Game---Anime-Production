@@ -1,166 +1,222 @@
 /* ============================================================================
-   microsoft.ai-inspired palette: clean white surfaces, charcoal text, a refined
-   blue accent, soft pastel highlights, generous whitespace, bold sans headings.
+   microsoft.ai-inspired theme: warm cream surfaces, dark-brown ink, classical
+   serif headings/body paired with a monospace for labels/nav/buttons, pill
+   buttons, soft watercolor-pastel accents, generous whitespace.
    ============================================================================ */
 
 :root {
-  --ms-blue: #0f6cbd;          /* primary accent / links */
-  --ms-blue-dark: #0a4f8a;     /* hover */
-  --ms-ink: #1b1b1f;           /* headings / strong text */
-  --ms-border: #e6e6ea;        /* hairline borders */
-  /* soft pastel gradient motif (used sparingly) */
-  --ms-grad: linear-gradient(90deg, #ffb3c7 0%, #ffd79b 33%, #a8e6cf 66%, #9fc7ff 100%);
+  --ms-cream: #f4efe4;        /* page background */
+  --ms-cream-card: #fbf9f3;   /* card / raised surfaces */
+  --ms-tan: #eae0ce;          /* secondary button fill, code bg */
+  --ms-ink: #2e2820;          /* headings */
+  --ms-text: #3f3830;         /* body */
+  --ms-muted: #6b6357;        /* secondary text */
+  --ms-border: #e3d9c6;       /* hairline borders */
+  --ms-accent: #b5654a;       /* terracotta link/accent */
+  --ms-accent-dark: #934c34;
+  --ms-radius: 0.7rem;        /* one card radius for the whole site */
 }
 
-/* ---- Light scheme ---- */
+/* ---- Light (default) ---- */
 [data-md-color-scheme="default"] {
-  --md-default-bg-color: #ffffff;
-  --md-default-fg-color: #2b2b30;
-  --md-default-fg-color--light: #6b6b76;
-  --md-default-fg-color--lighter: #9a9aa6;
-  --md-typeset-color: #2b2b30;
-  --md-typeset-a-color: var(--ms-blue);
-  --md-accent-fg-color: var(--ms-blue-dark);
-  --md-code-bg-color: #f4f5f7;
-  --md-footer-bg-color: #1b1b1f;
-  --md-footer-bg-color--dark: #141417;
+  --md-default-bg-color: var(--ms-cream);
+  --md-default-fg-color: var(--ms-text);
+  --md-default-fg-color--light: var(--ms-muted);
+  --md-default-fg-color--lighter: #9a9183;
+  --md-typeset-color: var(--ms-text);
+  --md-typeset-a-color: var(--ms-accent);
+  --md-accent-fg-color: var(--ms-accent-dark);
+  --md-code-bg-color: var(--ms-tan);
+  --md-code-fg-color: #5a4f3f;
+  --md-footer-bg-color: #2e2820;
+  --md-footer-bg-color--dark: #251f18;
 }
 
-/* ---- Dark scheme ---- */
+/* ---- Dark (warm) ---- */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #131316;
-  --md-typeset-a-color: #6db3f2;
-  --md-accent-fg-color: #9fc7ff;
-  --ms-ink: #f2f2f5;
-  --ms-border: #2a2a31;
-  --md-code-bg-color: #1d1d22;
+  --ms-cream: #1c1812;
+  --ms-cream-card: #241f17;
+  --ms-tan: #2a241b;
+  --ms-ink: #f1e9da;
+  --ms-text: #e6ddcd;
+  --ms-muted: #a89e8c;
+  --ms-border: #352d20;
+  --ms-accent: #e0936f;
+  --ms-accent-dark: #eaa988;
+  --md-default-bg-color: var(--ms-cream);
+  --md-default-fg-color: var(--ms-text);
+  --md-typeset-color: var(--ms-text);
+  --md-typeset-a-color: var(--ms-accent);
+  --md-accent-fg-color: var(--ms-accent-dark);
+  --md-code-bg-color: var(--ms-tan);
 }
 
-/* ---- Header: clean, hairline-separated, white (light) / near-black (dark) ---- */
-.md-header {
-  box-shadow: none;
-  border-bottom: 1px solid var(--ms-border);
-}
-.md-header[data-md-state="shadow"],
-.md-header--shadow {
-  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.06), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.04);
-}
+/* ---- Header / nav: blends with the cream page, hairline separator, mono ---- */
+.md-header,
 .md-tabs {
+  background-color: var(--ms-cream);
+  color: var(--ms-ink);
+  box-shadow: none;
+}
+.md-header {
   border-bottom: 1px solid var(--ms-border);
 }
+.md-header__title,
+.md-tabs__link,
+.md-search__form {
+  font-family: var(--md-code-font);
+}
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.md-search__form {
+  background-color: var(--ms-tan);
+  border-radius: 2rem;
+  box-shadow: none;
+}
+.md-search__input::placeholder {
+  color: var(--ms-muted);
+}
 
-/* ---- Typography: bold, tight headings ---- */
+/* ---- Typography: serif headings, mono eyebrow labels ---- */
 .md-typeset h1,
 .md-typeset h2,
-.md-typeset h3 {
+.md-typeset h3,
+.md-typeset h4 {
   color: var(--ms-ink);
-  font-weight: 700;
-  letter-spacing: -0.015em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 .md-typeset h1 {
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+/* the "<small>Area</small>" eyebrow above task titles -> mono, uppercase, muted */
+.md-typeset small {
+  font-family: var(--md-code-font);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.66rem;
+  color: var(--ms-muted);
 }
 
-/* ---- Buttons: filled microsoft-blue primary; clean outlined secondary ---- */
+/* ---- Pill buttons ---- */
 .md-typeset .md-button {
-  border-radius: 0.5rem;
+  font-family: var(--md-code-font);
+  font-weight: 700;
+  border-radius: 2rem;
   border-width: 1px;
-  font-weight: 600;
-  padding: 0.5em 1.25em;
+  padding: 0.55em 1.4em;
   transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
 }
 .md-typeset .md-button--primary {
-  background-color: var(--ms-blue);
-  border-color: var(--ms-blue);
-  color: #fff;
+  background-color: var(--ms-ink);
+  border-color: var(--ms-ink);
+  color: var(--ms-cream);
 }
 .md-typeset .md-button--primary:hover {
-  background-color: var(--ms-blue-dark);
-  border-color: var(--ms-blue-dark);
   transform: translateY(-1px);
-  box-shadow: 0 0.4rem 0.8rem rgba(15, 108, 189, 0.25);
+  box-shadow: 0 0.4rem 0.9rem rgba(46, 40, 32, 0.25);
+}
+.md-typeset .md-button:not(.md-button--primary) {
+  background-color: var(--ms-tan);
+  border-color: var(--ms-tan);
+  color: var(--ms-ink);
 }
 .md-typeset .md-button:not(.md-button--primary):hover {
-  border-color: var(--ms-blue);
-  color: var(--ms-blue);
-}
-
-/* soft pastel accent rule under the home hero h1 */
-.md-typeset h1::after {
-  content: "";
-  display: block;
-  width: 3.5rem;
-  height: 4px;
-  margin-top: 0.5rem;
-  border-radius: 2px;
-  background: var(--ms-grad);
+  transform: translateY(-1px);
+  border-color: var(--ms-border);
 }
 
 /* ============================================================================
-   Catalog card grid — FIXED card size (cards never stretch to fill a row).
+   Catalog card grid — TWO equal columns; cover image flush to the card's
+   rounded top so every card (image or text-only) shows the SAME corner radius.
    ============================================================================ */
 .md-typeset .grid.cards > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 17rem); /* fixed width, packs from left */
-  justify-content: start;
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
   margin: 1em 0;
+}
+@media screen and (max-width: 44.9em) {
+  .md-typeset .grid.cards > ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 .md-typeset .grid.cards > ul > li {
   margin: 0;
-  width: 17rem;
   display: flex;
   flex-direction: column;
+  overflow: hidden;                /* clip the cover image to the card radius */
   border: 1px solid var(--ms-border);
-  border-radius: 0.7rem;
-  padding: 0.9rem;
-  background: var(--md-default-bg-color);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  border-radius: var(--ms-radius); /* uniform corner radius for ALL cards */
+  padding: 1rem;                   /* default: text-only overview cards */
+  background: var(--ms-cream-card);
+  box-shadow: 0 1px 2px rgba(46, 40, 32, 0.04);
   transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease;
 }
 .md-typeset .grid.cards > ul > li:hover {
   transform: translateY(-3px);
-  border-color: #d2d2da;
-  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.10);
+  border-color: #d8cbb2;
+  box-shadow: 0 0.5rem 1.3rem rgba(46, 40, 32, 0.12);
 }
 
-/* 16:9 thumbnail pinned to the top of the card */
+/* Cards WITH a thumbnail: image is flush to the edges, text content is padded. */
+.md-typeset .grid.cards > ul > li:has(img.card-thumb) {
+  padding: 0;
+}
+.md-typeset .grid.cards > ul > li:has(img.card-thumb) > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.md-typeset .grid.cards > ul > li:has(img.card-thumb) > p:first-child {
+  padding: 0;                      /* image edge-to-edge */
+}
+.md-typeset .grid.cards > ul > li:has(img.card-thumb) > p:nth-child(2) {
+  padding-top: 0.7rem;
+}
+.md-typeset .grid.cards > ul > li:has(img.card-thumb) > :last-child {
+  padding-bottom: 1rem;
+}
+
+/* 16:9 cover thumbnail (its corners come from the card's overflow:hidden) */
 .md-typeset .grid.cards img.card-thumb {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  border-radius: 0.45rem;
   display: block;
-  margin-bottom: 0.5rem;
-  background: #f1f1f4;
+  margin: 0;
+  background: var(--ms-tan);
 }
 .md-typeset .grid.cards > ul > li > p:first-child > a {
   display: block;
   line-height: 0;
 }
 
-/* card title */
+/* card title (serif) */
 .md-typeset .grid.cards > ul > li strong a {
   color: var(--ms-ink);
   font-weight: 700;
 }
 .md-typeset .grid.cards > ul > li strong a:hover {
-  color: var(--ms-blue);
+  color: var(--ms-accent);
 }
 
-/* muted secondary metadata (authors · year, counts) */
+/* muted mono metadata (authors · year, counts) */
 .md-typeset .card-meta {
-  color: var(--md-default-fg-color--light);
-  font-size: 0.72rem;
+  font-family: var(--md-code-font);
+  color: var(--ms-muted);
+  font-size: 0.68rem;
 }
 
-/* tag chips */
+/* mono tag chips */
 .md-typeset .grid.cards code {
-  font-size: 0.66rem;
-  padding: 0.05rem 0.4rem;
-  background: var(--md-code-bg-color);
+  font-size: 0.64rem;
+  padding: 0.06rem 0.45rem;
+  background: var(--ms-tan);
   border: 1px solid var(--ms-border);
-  border-radius: 0.5rem;
+  border-radius: 2rem;
+  color: #6a5f4c;
 }

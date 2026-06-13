@@ -58,11 +58,24 @@ def test_from_og_image_direct_image_content_type(tmp_path):
 
 
 @responses.activate
-def test_ensure_thumbnail_falls_back_to_none(tmp_path):
-    # No og:image on the page -> no thumbnail produced.
+def test_ensure_thumbnail_falls_back_to_brand_tile(tmp_path):
+    # No og:image on the page -> generate a pastel brand tile so the card still has a preview.
     responses.add(responses.GET, "https://example.com/tool",
                   body="<html><head></head></html>", content_type="text/html", status=200)
-    assert th.ensure_thumbnail(_entry(), thumb_dir=tmp_path) is None
+    e = _entry()
+    rel = th.ensure_thumbnail(e, thumb_dir=tmp_path)
+    assert rel == f"assets/thumbnails/{e.id}.png"
+    assert (tmp_path / f"{e.id}.png").exists()
+
+
+def test_generate_brand_tile_writes_image(tmp_path):
+    e = _entry()
+    out = tmp_path / f"{e.id}.png"
+    assert th.generate_brand_tile(e, out)
+    from PIL import Image
+
+    with Image.open(out) as im:
+        assert im.size == (640, 360)
 
 
 @responses.activate
