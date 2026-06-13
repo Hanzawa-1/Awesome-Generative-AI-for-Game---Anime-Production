@@ -89,30 +89,29 @@ jobs:
           uv run python scripts/gen_catalog.py
           uv run mkdocs build --strict
 
-      - name: Commit + push
-        id: commit
+      - name: Commit, push + ensure weekly PR
         if: github.event.inputs.dry_run != 'true'
-        run: |
-          BRANCH="${{ steps.plan.outputs.branch }}"
-          git add data docs/assets/thumbnails
-          if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No catalog changes today; nothing to commit."
-          else
-            git commit -m "chore(catalog): sweep $(date -u +'%Y-%m-%d') (day ${{ steps.plan.outputs.day }})"
-            git push origin "$BRANCH"
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Ensure weekly PR
-        if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           BRANCH="${{ steps.plan.outputs.branch }}"
-          if gh pr view "$BRANCH" >/dev/null 2>&1; then
-            echo "PR already open for $BRANCH; this commit was added to it."
+          git add data docs/assets/thumbnails
+          if git diff --cached --quiet; then
+            echo "No new catalog changes this run."
           else
+            git commit -m "chore(catalog): sweep $(date -u +'%Y-%m-%d') (day ${{ steps.plan.outputs.day }})"
+            git push origin "$BRANCH"
+          fi
+          # Open a PR whenever the week branch is ahead of main — not just when THIS run
+          # added something — so a branch from a prior run that failed to open its PR still
+          # gets one. Labels must exist first (gh does not auto-create them).
+          if [ -z "$(git rev-list origin/main..HEAD)" ]; then
+            echo "Branch not ahead of main; no PR needed."
+          elif gh pr view "$BRANCH" >/dev/null 2>&1; then
+            echo "PR already open for $BRANCH."
+          else
+            gh label create automated   --color 1f6feb --description "Opened by the catalog sweep" --force || true
+            gh label create needs-review --color d4c5f9 --description "Awaiting human review"        --force || true
             gh pr create --base main --head "$BRANCH" \
               --title "Weekly catalog update — $(date -u +'%G-w%V')" \
               --body-file pr_body.md \
