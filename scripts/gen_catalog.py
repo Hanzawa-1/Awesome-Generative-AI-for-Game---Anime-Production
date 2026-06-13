@@ -47,6 +47,7 @@ UI = {
         "entries": lambda n: f"{n} entr{'y' if n == 1 else 'ies'}",
         "area_meta": lambda e, t: f"{e} entries · {t} tasks",
         "new": "NEW",
+        "ai": "AI-found",
         "links": {"project": "Project", "github": "GitHub", "arxiv": "arXiv",
                   "hf": "Hugging Face", "paper": "Paper", "website": "Website"},
     },
@@ -62,6 +63,7 @@ UI = {
         "entries": lambda n: f"{n} 件",
         "area_meta": lambda e, t: f"{e} 件 · {t} タスク",
         "new": "新着",
+        "ai": "AI追加",
         "links": {"project": "プロジェクト", "github": "GitHub", "arxiv": "arXiv",
                   "hf": "Hugging Face", "paper": "論文", "website": "公式サイト"},
     },
@@ -107,18 +109,17 @@ def _card(e, prefix: str, loc: str, new_ids: set[str]) -> str:
     thumb = _thumb(e)
     primary = e.links.primary() or "#"
     lines = [f"-   [![]({prefix}{thumb}){{ .card-thumb }}]({primary})", ""]
+    # Badges live in the title paragraph but CSS pins them to fixed card corners, so their
+    # position is identical on every card regardless of title length.
     title = f"**[{_esc(e.title)}]({primary})**"
     if e.id in new_ids:
         title += f' <span class="card-new">{UI[loc]["new"]}</span>'
+    if e.source == "agent":  # human-added (seed/manual) entries carry no badge
+        title += f' <span class="card-src">{UI[loc]["ai"]}</span>'
     lines.append(f"    {title}")
-    meta = []
-    if e.authors:
-        shown = ", ".join(e.authors[:3]) + (" et al." if len(e.authors) > 3 else "")
-        meta.append(shown)
+    # Year in the link/accent colour, bold. Author names are intentionally not shown.
     if e.year:
-        meta.append(str(e.year))
-    if meta:
-        lines += ["", f"    <span class=\"card-meta\">{' · '.join(meta)}</span>"]
+        lines += ["", f'    <span class="card-year">{e.year}</span>']
     # Tag the summary so CSS can absorb free space below it (margin-bottom:auto),
     # pushing the tags + links to the card bottom WITHOUT adding a wrapper element
     # (a nested block element would break Material's grid-cards <ul>).

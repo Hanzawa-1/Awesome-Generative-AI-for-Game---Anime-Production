@@ -76,15 +76,19 @@ EXISTING ENTRIES — dedup keys already in the catalog. Do NOT resubmit any of t
 Find NEW entries that are not in the existing set. Submit AT MOST {max_per_task} entries per task —
 choose the most notable / state-of-the-art ones; never pad to hit the limit.
 
-SEARCH STRATEGY (important — recall matters): generative-model naming is diverse, so a single query
-misses most of the field. For EACH task, issue SEVERAL varied queries before concluding:
-- vary the phrasing: the task name, its keywords, common technique terms (diffusion, GAN,
-  autoregressive, transformer, NeRF, gaussian-splatting), and likely model-name patterns;
-- use search_arxiv with sort='relevance' and quoted phrases (e.g. 'abs:"text to 3d"') to find the
-  established/SOTA work, and sort='recent' to catch the newest;
-- cross-check Hugging Face (papers + models), GitHub (topic/stars), and the web.
-Prioritise notable papers with code, trending model releases, and proprietary tools studios actually use.
+SEARCH STRATEGY — work like a human researcher (WEB-FIRST: the web is semantic, arXiv search is
+keyword-brittle, so don't query arXiv blind):
+1. DISCOVER with search_web first — issue 2-3 varied phrasings per task (e.g. the task name + "open
+   source" / "github" / "state of the art" / "generative model" / "anime" or "game"). Open the most
+   promising results with fetch_url (awesome-lists, project pages, leaderboards, roundups) and harvest
+   the model NAMES and their real arXiv / GitHub / Hugging Face links.
+2. CONFIRM & ENRICH using the names you found: search_arxiv (sort='relevance', quoted phrase like
+   'abs:"talking head"') for the paper + id, search_github for the repo + stars, hf for model pages,
+   semantic_scholar to resolve arXiv ids. For image / anime / illustration / checkpoint tasks, also
+   check civitai for community models and LoRAs.
+3. If web search is sparse or rate-limited, fall back to querying arXiv / HF / GitHub directly.
 
-Verify a candidate's primary link with fetch_url if unsure it is real. When done, call
-submit_entries exactly once.
+Then call submit_entries ONCE with every new, valid entry. For each: the correct area/task id, a neutral
+English summary + a Japanese summary_ja, 2-4 short lowercase tags, and an arxiv_id OR github repo.
+A few good entries beats none — never return an empty list if you found real work.
 """

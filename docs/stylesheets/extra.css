@@ -138,9 +138,10 @@
 
 .md-typeset .grid.cards > ul > li {
   margin: 0;
+  position: relative;              /* anchor corner badges */
   display: flex;
   flex-direction: column;
-  overflow: hidden;                /* clip the cover image to the card radius */
+  overflow: hidden;                /* clip the cover image + corner badges to the card radius */
   border: 1px solid var(--ms-border);
   border-radius: var(--ms-radius); /* uniform corner radius for ALL cards */
   padding: 1rem;                   /* default: text-only overview cards */
@@ -195,18 +196,41 @@
   color: var(--ms-accent);
 }
 
-/* "NEW" badge for entries from the latest update batch */
-.md-typeset .card-new {
+/* Year — same colour as the arXiv/GitHub links, bold. */
+.md-typeset .card-year {
   font-family: var(--md-code-font);
-  font-size: 0.58rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  vertical-align: middle;
-  margin-left: 0.35rem;
-  padding: 0.05rem 0.4rem;
-  border-radius: 2rem;
+  color: var(--md-typeset-a-color);
+}
+
+/* Corner badges: pinned to fixed card corners, flush (no margin), no pill — the outer corner
+   is clipped to the card's radius by the li's overflow:hidden. Same spot on every card. */
+.md-typeset .grid.cards > ul > li .card-new,
+.md-typeset .grid.cards > ul > li .card-src {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  z-index: 2;
+  padding: 0.14rem 0.5rem;
+  font-family: var(--md-code-font);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+/* recency -> top-right (over the cover image) */
+.md-typeset .grid.cards > ul > li .card-new {
+  top: 0;
   background: var(--ms-accent);
   color: #fff;
+  border-bottom-left-radius: 0.5rem;
+}
+/* provenance -> bottom-right */
+.md-typeset .grid.cards > ul > li .card-src {
+  bottom: 0;
+  background: var(--ms-tan);
+  color: var(--ms-accent-dark);
+  border-top-left-radius: 0.5rem;
 }
 
 /* Push tags + links to the bottom so they line up across a row. The summary

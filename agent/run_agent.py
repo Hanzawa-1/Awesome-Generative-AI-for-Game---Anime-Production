@@ -88,18 +88,24 @@ def verify_and_stage(
     staged: list[Entry] = []
     seen = set(existing_keys)
     per_task: dict[tuple[str, str], int] = defaultdict(int)
+    drops = {"duplicate": 0, "per_task_cap": 0, "dead_link": 0}
     for e in entries:
         if len(staged) >= max_new:
             break
         if e.key in seen:
+            drops["duplicate"] += 1
             continue
         if per_task[(e.area, e.task)] >= max_per_task:  # even coverage / quality cap
+            drops["per_task_cap"] += 1
             continue
         if not _links_ok(e):
+            drops["dead_link"] += 1
             continue
         seen.add(e.key)
         per_task[(e.area, e.task)] += 1
         staged.append(e)
+    if any(drops.values()):
+        print(f"[agent] verify: dropped { {k: v for k, v in drops.items() if v} }")
     return staged
 
 
@@ -134,6 +140,7 @@ def run(
     staged: list[Entry] = []
     notes = ""
     submitted = False
+    reminded = False
     tool_calls_made = 0
     submit_retries = 0
     MAX_SUBMIT_RETRIES = 2
@@ -147,6 +154,15 @@ def run(
             or (time.monotonic() - start) >= settings.wall_clock_seconds
         )
         force = (max_iters - i <= 1) or over_budget
+        # Before the forced turn, explicitly tell the model to stop searching and submit
+        # everything it found — otherwise it can exhaust its budget searching and submit nothing.
+        if force and not submitted and not reminded:
+            messages.append({"role": "user", "content":
+                "Stop searching now and call submit_entries with ALL the new, valid entries you found "
+                "for the target task(s). For each: the correct area/task id, a neutral English summary "
+                "and a Japanese summary_ja, and an arxiv_id OR github repo. Do not return an empty list "
+                "if you found real work."})
+            reminded = True
         tool_choice = {"type": "function", "function": {"name": SUBMIT_NAME}} if force else "auto"
 
         try:
@@ -156,8 +172,8 @@ def run(
             break
 
         usage = getattr(resp, "usage", None)
-        if usage and getattr(usage, "total_tokens", None):
-            tokens += usage.total_tokens
+        if usage:  # count OUTPUT tokens only — total_tokens re-counts the re-sent context each turn
+            tokens += getattr(usage, "completion_tokens", None) or 0
         msg = resp.choices[0].message
         messages.append(msg.model_dump(exclude_none=True))
 
@@ -184,6 +200,8 @@ def run(
                                  "if needed."}))
                     continue
                 staged = verify_and_stage(valid, existing_keys, settings.max_new_entries, settings.max_per_task)
+                print(f"[agent] submit_entries: parsed={parsed} valid_schema={len(valid)} "
+                      f"invalid_schema={invalid} -> staged={len(staged)}")
                 try:
                     notes = (json.loads(raw_args) or {}).get("notes", "") or ""
                 except Exception:  # noqa: BLE001
