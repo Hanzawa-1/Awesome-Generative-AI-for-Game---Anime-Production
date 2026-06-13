@@ -1,0 +1,33 @@
+# Local secrets — never commit
+.env
+.secrets
+.vars
+
+# Agent run artifacts
+staged.json
+pr_body.md
+
+# MkDocs build output
+site/
+
+# Generated catalog pages + nav (produced by scripts/gen_catalog.py before build)
+docs/catalog/
+docs/SUMMARY.md
+docs/SUMMARY.ja.md
+docs/javascripts/nav-counts.js
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

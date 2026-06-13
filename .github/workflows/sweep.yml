@@ -1,0 +1,120 @@
+name: Daily catalog sweep
+
+# Researches one auto-sized slice of the task list each day and commits it to the current
+# ISO-week branch (bot/catalog/<year>-w<week>). The ISO week rolls over Monday 00:00 UTC
+# (= 09:00 JST), so Monday's run opens a fresh weekly PR and Tue-Sun add a daily commit each
+# -> ~7 commits per weekly PR. The per-day task count is derived from the live taxonomy, so
+# it adapts automatically when tasks are added/removed.
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 00:00 UTC daily = 09:00 JST
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "Force day index 0-6 (blank = today by date; Mon=0..Sun=6)"
+        default: ""
+      max_iters:
+        description: "Agent iterations per task"
+        default: "12"
+      dry_run:
+        description: "Run the sweep but skip commit/push/PR"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: catalog-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      DISABLE_MKDOCS_2_WARNING: "true"
+      # Provider selection (non-sensitive repo Variables)
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+      LLM_MODEL: ${{ vars.LLM_MODEL }}
+      # Secrets (only the one matching LLM_PROVIDER is required)
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AGENT_MAX_ITERS: ${{ github.event.inputs.max_iters || '12' }}
+      # Per-task wall-clock so 8 tasks fit comfortably inside timeout-minutes even when
+      # the free-tier LLM throttles (each task is capped independently).
+      AGENT_WALL_CLOCK_SECONDS: "420"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Resolve week branch + day index
+        id: plan
+        run: |
+          BRANCH="bot/catalog/$(date -u +'%G-w%V')"
+          DAY="${{ github.event.inputs.day }}"
+          if [ -z "$DAY" ]; then DAY=$(( $(date -u +'%u') - 1 )); fi
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          echo "day=$DAY" >> "$GITHUB_OUTPUT"
+          echo "Week branch: $BRANCH | day index: $DAY"
+
+      - name: Check out this week's branch
+        run: |
+          BRANCH="${{ steps.plan.outputs.branch }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$BRANCH"
+            git checkout -B "$BRANCH" "origin/$BRANCH"   # continue this week's branch
+          else
+            git checkout -B "$BRANCH" origin/main         # first run of the week
+          fi
+
+      - name: Run daily sweep
+        run: uv run python scripts/daily_sweep.py --day ${{ steps.plan.outputs.day }} --pr-body pr_body.md
+
+      - name: Validate + build (sanity)
+        run: |
+          uv run python scripts/validate.py
+          uv run python scripts/gen_catalog.py
+          uv run mkdocs build --strict
+
+      - name: Commit + push
+        id: commit
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          BRANCH="${{ steps.plan.outputs.branch }}"
+          git add data docs/assets/thumbnails
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No catalog changes today; nothing to commit."
+          else
+            git commit -m "chore(catalog): sweep $(date -u +'%Y-%m-%d') (day ${{ steps.plan.outputs.day }})"
+            git push origin "$BRANCH"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Ensure weekly PR
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${{ steps.plan.outputs.branch }}"
+          if gh pr view "$BRANCH" >/dev/null 2>&1; then
+            echo "PR already open for $BRANCH; this commit was added to it."
+          else
+            gh pr create --base main --head "$BRANCH" \
+              --title "Weekly catalog update — $(date -u +'%G-w%V')" \
+              --body-file pr_body.md \
+              --label automated --label needs-review
+          fi
