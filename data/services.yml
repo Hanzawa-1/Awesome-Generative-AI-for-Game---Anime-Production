@@ -1,0 +1,258 @@
+entries:
+- id: cascadeur-b525d1
+  title: Cascadeur
+  area: animation
+  task: physics-animation
+  kind: proprietary
+  links:
+    website: https://cascadeur.com/
+  tags:
+  - commercial
+  - keyframe
+  - physics
+  summary: A physics-aware keyframe animation tool with AI auto-posing and interpolation, designed for believable character action animation.
+  thumbnail: assets/thumbnails/cascadeur-b525d1.png
+  date_added: '2026-06-13'
+  source: seed
+- id: deepmotion-animate-3d-bf6f29
+  title: DeepMotion (Animate 3D)
+  area: animation
+  task: video-mocap
+  kind: proprietary
+  links:
+    website: https://www.deepmotion.com/
+  tags:
+  - commercial
+  - markerless-mocap
+  summary: A commercial markerless motion-capture service that converts ordinary video into 3D animation (FBX/BVH/GLB), enabling mocap without a suit or studio.
+  thumbnail: assets/thumbnails/deepmotion-animate-3d-bf6f29.png
+  date_added: '2026-06-13'
+  source: seed
+- id: move-ai-39c1e3
+  title: Move.ai
+  area: animation
+  task: video-mocap
+  kind: proprietary
+  links:
+    website: https://www.move.ai/
+  tags:
+  - commercial
+  - markerless-mocap
+  summary: A markerless multi-camera motion-capture service producing high-quality 3D motion from standard cameras, used by indie and mid-size studios.
+  date_added: '2026-06-13'
+  source: seed
+- id: suno-719c52
+  title: Suno
+  area: audio
+  task: music-bgm
+  kind: proprietary
+  links:
+    website: https://suno.com/
+  tags:
+  - commercial
+  - music-generation
+  summary: A commercial music generation service producing full songs with vocals from text prompts, used for rapid soundtrack and BGM prototyping.
+  thumbnail: assets/thumbnails/suno-719c52.png
+  date_added: '2026-06-13'
+  source: seed
+- id: synthesizer-v-ee606e
+  title: Synthesizer V
+  area: audio
+  task: singing-voice
+  kind: proprietary
+  links:
+    website: https://dreamtonics.com/synthesizerv/
+  tags:
+  - commercial
+  - singing-synthesis
+  summary: A commercial singing voice synthesizer with expressive control, a leading tool for anime-style vocal and song production.
+  thumbnail: assets/thumbnails/synthesizer-v-ee606e.png
+  date_added: '2026-06-13'
+  source: seed
+- id: elevenlabs-486fcf
+  title: ElevenLabs
+  area: audio
+  task: tts
+  kind: proprietary
+  links:
+    website: https://elevenlabs.io/
+  tags:
+  - commercial
+  - dubbing
+  - voice-cloning
+  summary: A commercial speech platform offering expressive TTS, voice cloning, dubbing, and sound effects, broadly adopted for game and animation voice-over.
+  thumbnail: assets/thumbnails/elevenlabs-486fcf.png
+  date_added: '2026-06-13'
+  source: seed
+- id: mixamo-9a4b49
+  title: Mixamo
+  area: characters
+  task: auto-rigging
+  kind: proprietary
+  links:
+    website: https://www.mixamo.com/
+  tags:
+  - animation-library
+  - auto-rig
+  - commercial
+  summary: Adobe's free service that auto-rigs uploaded humanoid meshes and applies a large motion library, a staple for quickly animating game characters.
+  date_added: '2026-06-13'
+  source: seed
+- id: metahuman-creator-4597b5
+  title: MetaHuman Creator
+  area: characters
+  task: avatar-generation
+  kind: proprietary
+  links:
+    website: https://www.unrealengine.com/en-US/metahuman
+  tags:
+  - commercial
+  - rigged
+  - unreal
+  summary: Epic's tool for creating fully rigged, photorealistic digital humans for Unreal Engine, an industry standard for game character and cinematic avatars.
+  thumbnail: assets/thumbnails/metahuman-creator-4597b5.png
+  date_added: '2026-06-13'
+  source: seed
+- id: meshy-c6012a
+  title: Meshy
+  area: gen-3d
+  task: image-to-3d
+  kind: proprietary
+  links:
+    website: https://www.meshy.ai/
+  tags:
+  - auto-rig
+  - commercial
+  - texture
+  summary: A commercial text/image-to-3D service producing game-ready textured meshes with PBR and auto-rigging; credit-based API and web app widely used in indie pipelines.
+  thumbnail: assets/thumbnails/meshy-c6012a.png
+  date_added: '2026-06-13'
+  source: seed
+- id: rodin-hyper3d-37bed0
+  title: Rodin (Hyper3D)
+  area: gen-3d
+  task: text-to-3d
+  kind: proprietary
+  links:
+    website: https://hyper3d.ai/
+  tags:
+  - api
+  - commercial
+  summary: A commercial 3D generation service with an API producing detailed textured models from text or images for production asset workflows.
+  thumbnail: assets/thumbnails/rodin-hyper3d-37bed0.png
+  date_added: '2026-06-13'
+  source: seed
+- id: tripo-a95a86
+  title: Tripo
+  area: gen-3d
+  task: text-to-3d
+  kind: proprietary
+  links:
+    website: https://www.tripo3d.ai/
+  tags:
+  - commercial
+  - fast
+  summary: A commercial text/image-to-3D generator known for fast mesh creation, frequently used for rapid game asset prototyping.
+  date_added: '2026-06-13'
+  source: seed
+- id: novelai-image-generation-e5a52e
+  title: NovelAI Image Generation
+  area: image-2d
+  task: anime-character-design
+  kind: proprietary
+  links:
+    website: https://novelai.net/
+  year: 2022
+  tags:
+  - anime
+  - character
+  - commercial
+  summary: A commercial anime-focused image generator with character-consistency tooling, popular for character design and reference sheets in indie anime production.
+  thumbnail: assets/thumbnails/novelai-image-generation-e5a52e.png
+  date_added: '2026-06-13'
+  source: seed
+- id: midjourney-4cae8c
+  title: Midjourney
+  area: image-2d
+  task: text-to-image
+  kind: proprietary
+  links:
+    website: https://www.midjourney.com/
+  tags:
+  - commercial
+  - concept-art
+  summary: A commercial text-to-image service known for high aesthetic quality, widely used for rapid concept-art ideation across game and anime studios.
+  date_added: '2026-06-13'
+  source: seed
+- id: jenova-ai-manga-generator-cee9e8
+  title: Jenova AI Manga Generator
+  area: manga
+  task: manga-generation
+  kind: proprietary
+  links:
+    website: https://www.jenova.ai/
+  tags:
+  - commercial
+  - manga
+  - panels
+  summary: A commercial tool that generates manga pages and panels with character consistency from prompts, aimed at sequential-art creation without drawing.
+  thumbnail: assets/thumbnails/jenova-ai-manga-generator-cee9e8.png
+  date_added: '2026-06-13'
+  source: seed
+- id: deepl-676cdb
+  title: DeepL
+  area: text-design
+  task: localization
+  kind: proprietary
+  links:
+    website: https://www.deepl.com/
+  tags:
+  - commercial
+  - translation
+  summary: A commercial neural machine translation service with an API, used in game/anime localization for high-quality first-pass translation.
+  thumbnail: assets/thumbnails/deepl-676cdb.png
+  date_added: '2026-06-13'
+  source: seed
+- id: inworld-ai-c4e760
+  title: Inworld AI
+  area: text-design
+  task: npc-dialogue
+  kind: proprietary
+  links:
+    website: https://inworld.ai/
+  tags:
+  - commercial
+  - memory
+  - npc
+  summary: A commercial platform for building AI NPCs with persistent memory and unscripted dialogue, integrating with major game engines.
+  thumbnail: assets/thumbnails/inworld-ai-c4e760.png
+  date_added: '2026-06-13'
+  source: seed
+- id: pika-b588f4
+  title: Pika
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://pika.art/
+  tags:
+  - commercial
+  - video-generation
+  summary: A commercial video generation tool for text- and image-driven short clips, including anime-aware styles.
+  thumbnail: assets/thumbnails/pika-b588f4.png
+  date_added: '2026-06-13'
+  source: seed
+- id: runway-gen-dcf9b5
+  title: Runway Gen
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://runwayml.com/
+  tags:
+  - commercial
+  - video-generation
+  summary: A commercial text/image-to-video generation and editing suite used for previs, motion design, and stylized video in production.
+  thumbnail: assets/thumbnails/runway-gen-dcf9b5.png
+  date_added: '2026-06-13'
+  source: seed

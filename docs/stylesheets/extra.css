@@ -1,0 +1,33 @@
+/* Consistent 16:9 thumbnails on catalog cards. */
+.md-typeset .grid.cards img.card-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.2rem;
+  display: block;
+  margin-bottom: 0.4rem;
+  background: var(--md-default-fg-color--lightest);
+}
+
+/* The image is the first child of a card and links to the entry. */
+.md-typeset .grid.cards > ul > li > p:first-child > a {
+  display: block;
+  line-height: 0;
+}
+
+/* Muted secondary metadata (authors · year, entry counts). */
+.md-typeset .card-meta {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+}
+
+/* Inline code used as tag chips inside cards. */
+.md-typeset .grid.cards code {
+  font-size: 0.66rem;
+  padding: 0.05rem 0.35rem;
+}
+
+/* Slightly tighter card grid for a denser catalog. */
+.md-typeset .grid.cards > ul {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}

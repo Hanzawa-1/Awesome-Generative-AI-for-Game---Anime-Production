@@ -1,0 +1,449 @@
+entries:
+- id: tooncrafter-generative-cartoon-interpolation-6c86db
+  title: 'ToonCrafter: Generative Cartoon Interpolation'
+  area: animation
+  task: inbetweening
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2405.17933
+    github: https://github.com/Doubiiu/ToonCrafter
+  year: 2024
+  tags:
+  - anime
+  - diffusion
+  - interpolation
+  summary: Diffusion-based generative interpolation that synthesizes in-between frames for cartoon/anime keyframes, handling large non-linear motion and occlusion.
+  thumbnail: assets/thumbnails/tooncrafter-generative-cartoon-interpolation-6c86db.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2405.17933'
+  repo: doubiiu/tooncrafter
+- id: rife-real-time-intermediate-flow-estimation-e3d81c
+  title: 'RIFE: Real-Time Intermediate Flow Estimation'
+  area: animation
+  task: inbetweening
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2011.06294
+    github: https://github.com/hzwer/ECCV2022-RIFE
+  year: 2022
+  tags:
+  - interpolation
+  - real-time
+  summary: A fast flow-based frame interpolation model, widely used (with anime-tuned variants) to generate in-between frames and smooth low-frame-rate animation.
+  thumbnail: assets/thumbnails/rife-real-time-intermediate-flow-estimation-e3d81c.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2011.06294'
+  repo: hzwer/eccv2022-rife
+- id: animeinterp-deep-animation-video-interpolation-3771f5
+  title: 'AnimeInterp: Deep Animation Video Interpolation'
+  area: animation
+  task: inbetweening
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2104.06642
+    github: https://github.com/lisiyao21/AnimeInterp
+  year: 2021
+  tags:
+  - anime
+  - interpolation
+  summary: Segment-guided frame interpolation designed for the flat colors and large motions of cartoon/anime, addressing failure modes of photoreal interpolators.
+  thumbnail: assets/thumbnails/animeinterp-deep-animation-video-interpolation-3771f5.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2104.06642'
+  repo: lisiyao21/animeinterp
+- id: human-motion-diffusion-model-mdm-585afd
+  title: Human Motion Diffusion Model (MDM)
+  area: animation
+  task: text-to-motion
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2209.14916
+    github: https://github.com/GuyTevet/motion-diffusion-model
+  year: 2022
+  tags:
+  - diffusion
+  - motion-generation
+  summary: A lightweight diffusion model that generates human motion from text or actions, a common baseline for text-to-motion in animation research.
+  thumbnail: assets/thumbnails/human-motion-diffusion-model-mdm-585afd.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2209.14916'
+  repo: guytevet/motion-diffusion-model
+- id: musicgen-audiocraft-e687ae
+  title: MusicGen (AudioCraft)
+  area: audio
+  task: music-bgm
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2306.05284
+    github: https://github.com/facebookresearch/audiocraft
+  year: 2023
+  tags:
+  - music-generation
+  - open-weights
+  summary: A single-stage controllable music generation model conditioned on text and melody, used for prototyping background music and adaptive scoring.
+  thumbnail: assets/thumbnails/musicgen-audiocraft-e687ae.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2306.05284'
+  repo: facebookresearch/audiocraft
+- id: vits-085e0a
+  title: VITS
+  area: audio
+  task: tts
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2106.06103
+    github: https://github.com/jaywalnut310/vits
+  year: 2021
+  tags:
+  - end-to-end
+  - tts
+  summary: An end-to-end text-to-speech model combining variational inference and adversarial training, the basis for many open Japanese and character TTS voices.
+  thumbnail: assets/thumbnails/vits-085e0a.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2106.06103'
+  repo: jaywalnut310/vits
+- id: rvc-retrieval-based-voice-conversion-c43d47
+  title: RVC (Retrieval-based Voice Conversion)
+  area: audio
+  task: voice-cloning
+  kind: oss
+  links:
+    github: https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
+  year: 2023
+  tags:
+  - open-source
+  - voice-conversion
+  summary: A popular open-source voice-conversion toolkit that retargets a source voice to a trained timbre, widely used for character voice and dubbing experiments.
+  thumbnail: assets/thumbnails/rvc-retrieval-based-voice-conversion-c43d47.png
+  date_added: '2026-06-13'
+  source: seed
+  repo: rvc-project/retrieval-based-voice-conversion-webui
+- id: rignet-neural-rigging-for-articulated-characters-2e0d57
+  title: 'RigNet: Neural Rigging for Articulated Characters'
+  area: characters
+  task: auto-rigging
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2005.00559
+    github: https://github.com/zhan-xu/RigNet
+  year: 2020
+  tags:
+  - rigging
+  - skeleton
+  summary: Predicts an animation skeleton and skinning weights directly from a 3D character mesh, automating a traditionally manual rigging step.
+  thumbnail: assets/thumbnails/rignet-neural-rigging-for-articulated-characters-2e0d57.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2005.00559'
+  repo: zhan-xu/rignet
+- id: avatarclip-b2cf92
+  title: AvatarCLIP
+  area: characters
+  task: avatar-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2205.08535
+    github: https://github.com/hongfz16/AvatarCLIP
+  year: 2022
+  tags:
+  - avatar
+  - text-driven
+  summary: Zero-shot text-driven generation and animation of 3D avatars by guiding a neural human model with CLIP, an early framework for describable digital humans.
+  thumbnail: assets/thumbnails/avatarclip-b2cf92.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2205.08535'
+  repo: hongfz16/avatarclip
+- id: 3d-gaussian-splatting-for-real-time-radiance-field-rendering-d592ad
+  title: 3D Gaussian Splatting for Real-Time Radiance Field Rendering
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2308.04079
+    github: https://github.com/graphdeco-inria/gaussian-splatting
+  year: 2023
+  tags:
+  - gaussian-splatting
+  - real-time
+  summary: Represents scenes as optimized 3D Gaussians for real-time, high-quality radiance-field rendering, now a dominant representation for captured 3D assets.
+  thumbnail: assets/thumbnails/3d-gaussian-splatting-for-real-time-radiance-field-rendering-d592ad.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2308.04079'
+  repo: graphdeco-inria/gaussian-splatting
+- id: get3d-a782fd
+  title: GET3D
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2209.11163
+    github: https://github.com/nv-tlabs/GET3D
+  year: 2022
+  tags:
+  - gan
+  - textured-mesh
+  summary: A generative model that produces textured 3D meshes with complex topology directly, aimed at game-ready asset generation.
+  thumbnail: assets/thumbnails/get3d-a782fd.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2209.11163'
+  repo: nv-tlabs/get3d
+- id: instant-neural-graphics-primitives-instant-ngp-088a60
+  title: Instant Neural Graphics Primitives (Instant-NGP)
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2201.05989
+    github: https://github.com/NVlabs/instant-ngp
+  year: 2022
+  tags:
+  - hash-encoding
+  - nerf
+  summary: A multiresolution hash encoding that trains NeRFs and neural fields in seconds, a foundational speedup behind many image-to-3D reconstruction pipelines.
+  thumbnail: assets/thumbnails/instant-neural-graphics-primitives-instant-ngp-088a60.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2201.05989'
+  repo: nvlabs/instant-ngp
+- id: dreamfusion-text-to-3d-using-2d-diffusion-f298c7
+  title: 'DreamFusion: Text-to-3D using 2D Diffusion'
+  area: gen-3d
+  task: text-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2209.14988
+    project: https://dreamfusion3d.github.io/
+  year: 2022
+  tags:
+  - diffusion
+  - score-distillation
+  summary: Introduces score distillation sampling to optimize a NeRF from a pretrained 2D diffusion model, generating 3D objects from text with no 3D training data.
+  thumbnail: assets/thumbnails/dreamfusion-text-to-3d-using-2d-diffusion-f298c7.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2209.14988'
+- id: controlnet-f9ea86
+  title: ControlNet
+  area: image-2d
+  task: controlnet
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2302.05543
+    github: https://github.com/lllyasviel/ControlNet
+  year: 2023
+  tags:
+  - conditioning
+  - depth
+  - pose
+  summary: Adds spatial conditioning (edges, depth, pose, scribbles) to diffusion models, enabling layout- and sketch-controlled generation central to production art workflows.
+  thumbnail: assets/thumbnails/controlnet-f9ea86.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2302.05543'
+  repo: lllyasviel/controlnet
+- id: anime2sketch-1e0d95
+  title: Anime2Sketch
+  area: image-2d
+  task: lineart-extraction
+  kind: oss
+  links:
+    github: https://github.com/Mukosame/Anime2Sketch
+  year: 2021
+  tags:
+  - anime
+  - lineart
+  summary: A sketch extractor that produces clean line art from anime and illustration images, useful for reference, retracing, and colorization pipelines.
+  thumbnail: assets/thumbnails/anime2sketch-1e0d95.png
+  date_added: '2026-06-13'
+  source: seed
+  repo: mukosame/anime2sketch
+- id: real-esrgan-8ccac0
+  title: Real-ESRGAN
+  area: image-2d
+  task: super-resolution
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2107.10833
+    github: https://github.com/xinntao/Real-ESRGAN
+  year: 2021
+  tags:
+  - anime
+  - restoration
+  - upscaling
+  summary: A practical blind super-resolution model with a dedicated anime model variant, widely used to upscale textures and anime frames while preserving line sharpness.
+  thumbnail: assets/thumbnails/real-esrgan-8ccac0.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2107.10833'
+  repo: xinntao/real-esrgan
+- id: waifu2x-449709
+  title: waifu2x
+  area: image-2d
+  task: super-resolution
+  kind: oss
+  links:
+    github: https://github.com/nagadomi/waifu2x
+  year: 2015
+  tags:
+  - anime
+  - upscaling
+  summary: A CNN-based super-resolution and denoiser specialized for anime-style art, the long-standing baseline for upscaling illustrations and anime stills.
+  thumbnail: assets/thumbnails/waifu2x-449709.png
+  date_added: '2026-06-13'
+  source: seed
+  repo: nagadomi/waifu2x
+- id: stable-diffusion-xl-c780ae
+  title: Stable Diffusion XL
+  area: image-2d
+  task: text-to-image
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2307.01952
+    github: https://github.com/Stability-AI/generative-models
+  year: 2023
+  tags:
+  - diffusion
+  - open-weights
+  summary: A latent text-to-image diffusion model with a larger UNet and refiner stage; the open-weights backbone for most game/anime concept-art LoRA ecosystems.
+  thumbnail: assets/thumbnails/stable-diffusion-xl-c780ae.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2307.01952'
+  repo: stability-ai/generative-models
+- id: the-manga-whisperer-magi-0ea517
+  title: The Manga Whisperer (Magi)
+  area: manga
+  task: panel-layout
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2401.10224
+    github: https://github.com/ragavsachdeva/magi
+  year: 2024
+  tags:
+  - detection
+  - manga
+  - transcription
+  summary: Detects panels, characters, and text in manga pages and generates an ordered transcript, supporting layout analysis and accessibility/translation tooling.
+  thumbnail: assets/thumbnails/the-manga-whisperer-magi-0ea517.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2401.10224'
+  repo: ragavsachdeva/magi
+- id: whisper-56bbe9
+  title: Whisper
+  area: text-design
+  task: localization
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2212.04356
+    github: https://github.com/openai/whisper
+  year: 2022
+  tags:
+  - asr
+  - transcription
+  summary: A robust multilingual speech-recognition model used in localization pipelines for transcription and as a front-end to translation and dubbing.
+  thumbnail: assets/thumbnails/whisper-56bbe9.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2212.04356'
+  repo: openai/whisper
+- id: mistral-7b-c81ddf
+  title: Mistral 7B
+  area: text-design
+  task: narrative-quest
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2310.06825
+    github: https://github.com/mistralai/mistral-src
+  year: 2023
+  tags:
+  - llm
+  - open-weights
+  summary: An efficient open-weights language model frequently used for narrative, quest, and design-document drafting in game writing tools.
+  thumbnail: assets/thumbnails/mistral-7b-c81ddf.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2310.06825'
+  repo: mistralai/mistral-src
+- id: llama-618bfb
+  title: LLaMA
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2302.13971
+    github: https://github.com/meta-llama/llama
+  year: 2023
+  tags:
+  - llm
+  - open-weights
+  summary: A family of open foundation language models commonly fine-tuned for NPC dialogue, narrative drafting, and in-game text systems.
+  thumbnail: assets/thumbnails/llama-618bfb.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2302.13971'
+  repo: meta-llama/llama
+- id: stable-video-diffusion-cd898c
+  title: Stable Video Diffusion
+  area: video
+  task: image-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2311.15127
+    github: https://github.com/Stability-AI/generative-models
+  year: 2023
+  tags:
+  - diffusion
+  - open-weights
+  summary: An open-weights latent video diffusion model for image-to-video and short clip generation, a base for anime/game motion experiments and fine-tunes.
+  thumbnail: assets/thumbnails/stable-video-diffusion-cd898c.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2311.15127'
+  repo: stability-ai/generative-models
+- id: segment-anything-model-2-sam-2-0869a9
+  title: Segment Anything Model 2 (SAM 2)
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2408.00714
+    github: https://github.com/facebookresearch/sam2
+  year: 2024
+  tags:
+  - matting
+  - segmentation
+  - tracking
+  summary: A promptable segmentation model that tracks objects across video frames, the backbone of modern AI-assisted rotoscoping and matting tools.
+  thumbnail: assets/thumbnails/segment-anything-model-2-sam-2-0869a9.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2408.00714'
+  repo: facebookresearch/sam2
+- id: animatediff-52bb64
+  title: AnimateDiff
+  area: video
+  task: text-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2307.04725
+    github: https://github.com/guoyww/AnimateDiff
+  year: 2023
+  tags:
+  - diffusion
+  - motion-module
+  summary: Adds a plug-in motion module to personalized text-to-image diffusion models, animating existing image checkpoints and LoRAs into short clips.
+  thumbnail: assets/thumbnails/animatediff-52bb64.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2307.04725'
+  repo: guoyww/animatediff

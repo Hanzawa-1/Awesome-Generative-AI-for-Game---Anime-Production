@@ -1,0 +1,54 @@
+[project]
+name = "awesome-genai-game-anime"
+version = "0.1.0"
+description = "Agent-curated catalog of generative-AI tasks for game & anime production."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    # --- LLM / agent ---
+    "openai>=1.40",
+    "pydantic>=2.7",
+    "tenacity>=8.2",
+    # --- discovery tools ---
+    "arxiv>=2.1",
+    "ddgs>=6.0",
+    "huggingface_hub>=0.24",
+    "requests>=2.32",
+    "beautifulsoup4>=4.12",
+    # --- thumbnails ---
+    "PyMuPDF>=1.24",
+    "Pillow>=10.3",
+    # --- site ---
+    "mkdocs-material>=9.5",
+    "mkdocs-gen-files>=0.5",
+    "mkdocs-literate-nav>=0.6",
+    "PyYAML>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+    "responses>=0.25",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+# This is an application (with the `agent`/`pipeline` source dirs run via `python -m ...`),
+# not a distributable package — uv just manages the environment, no build/install of the project.
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+# Long, descriptive string literals (summaries, prompts, schemas) are inherent to this
+# content catalog; line-length is not a useful signal here.
+ignore = ["E501"]

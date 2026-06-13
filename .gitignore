@@ -1,0 +1,27 @@
+# Local secrets — never commit
+.env
+.secrets
+.vars
+
+# Agent run artifacts
+staged.json
+pr_body.md
+
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

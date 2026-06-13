@@ -1,0 +1,65 @@
+site_name: Awesome Generative AI for Game & Anime Production
+site_description: >-
+  A curated, agent-updated catalog of generative-AI tasks for game and anime
+  production — open-source models & papers plus the proprietary tools studios use.
+# Update these after you create the GitHub repo / enable Pages:
+site_url: https://example.github.io/awesome-genai-game-anime/
+repo_url: https://github.com/example/awesome-genai-game-anime
+repo_name: awesome-genai-game-anime
+edit_uri: edit/main/
+
+# Stable, depth-independent relative links between generated pages and assets.
+use_directory_urls: false
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - gen-files:
+      scripts:
+        - gen_pages.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

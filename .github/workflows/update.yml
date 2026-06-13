@@ -1,0 +1,87 @@
+name: Weekly update
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays 06:17 UTC
+  workflow_dispatch:
+    inputs:
+      max_iters:
+        description: "Agent max iterations"
+        default: "12"
+      dry_run:
+        description: "Run agent + build but skip opening a PR"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      DISABLE_MKDOCS_2_WARNING: "true"
+      # Provider selection (non-sensitive repo Variables)
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
+      LLM_MODEL: ${{ vars.LLM_MODEL }}
+      # Secrets (only the one matching LLM_PROVIDER is required)
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      # Auto-provided by Actions; used by the search_github tool
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AGENT_MAX_ITERS: ${{ github.event.inputs.max_iters || '12' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run research agent
+        run: uv run python -m agent.run_agent --out staged.json
+
+      - name: Merge + validate
+        run: |
+          uv run python -m pipeline.merge --staged staged.json --pr-body pr_body.md
+          uv run python scripts/validate.py
+
+      - name: Extract thumbnails
+        run: uv run python -m pipeline.thumbnails
+
+      - name: Build (sanity check)
+        run: uv run mkdocs build --strict
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if [ -n "$(git status --porcelain taxonomy.yml data docs/assets/thumbnails)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No catalog changes this run; skipping PR."
+          fi
+
+      - name: Open / update Pull Request
+        if: steps.diff.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/weekly-update
+          delete-branch: false
+          commit-message: "data: weekly agent update"
+          title: "Weekly GenAI catalog update"
+          body-path: pr_body.md
+          labels: |
+            automated
+            needs-review
+          add-paths: |
+            data/**
+            docs/assets/thumbnails/**
