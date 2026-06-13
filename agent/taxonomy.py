@@ -28,7 +28,8 @@ class Task:
         self.name = d["name"]
         self.name_ja = d.get("name_ja") or d["name"]
         self.desc = d.get("desc") or d.get("description")
-        self.keywords = list(d.get("keywords") or [])
+        # str() coerces YAML-numeric keywords (e.g. 360, 3) so joins/searches don't break.
+        self.keywords = [str(k) for k in (d.get("keywords") or [])]
 
     def display_name(self, locale: str = "en") -> str:
         return self.name_ja if locale == "ja" else self.name
