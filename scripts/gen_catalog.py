@@ -15,6 +15,7 @@ where sfx is "" (en) or ".ja" (ja).
 
 from __future__ import annotations
 
+import os
 import shutil
 import sys
 from collections import defaultdict
@@ -45,6 +46,7 @@ UI = {
                 "task as it finds work.",
         "entries": lambda n: f"{n} entr{'y' if n == 1 else 'ies'}",
         "area_meta": lambda e, t: f"{e} entries · {t} tasks",
+        "new": "NEW",
         "links": {"project": "Project", "github": "GitHub", "arxiv": "arXiv",
                   "hf": "Hugging Face", "paper": "Paper", "website": "Website"},
     },
@@ -59,6 +61,7 @@ UI = {
         "stub": "まだ項目がありません。貢献を歓迎します。週次のリサーチエージェントが見つけ次第追加します。",
         "entries": lambda n: f"{n} 件",
         "area_meta": lambda e, t: f"{e} 件 · {t} タスク",
+        "new": "新着",
         "links": {"project": "プロジェクト", "github": "GitHub", "arxiv": "arXiv",
                   "hf": "Hugging Face", "paper": "論文", "website": "公式サイト"},
     },
@@ -90,11 +93,14 @@ def _link_row(links, loc: str) -> list[str]:
     return bits
 
 
-def _card(e, prefix: str, loc: str) -> str:
+def _card(e, prefix: str, loc: str, new_ids: set[str]) -> str:
     thumb = e.thumbnail or PLACEHOLDER
     primary = e.links.primary() or "#"
     lines = [f"-   [![]({prefix}{thumb}){{ .card-thumb }}]({primary})", ""]
-    lines.append(f"    **[{_esc(e.title)}]({primary})**")
+    title = f"**[{_esc(e.title)}]({primary})**"
+    if e.id in new_ids:
+        title += f' <span class="card-new">{UI[loc]["new"]}</span>'
+    lines.append(f"    {title}")
     meta = []
     if e.authors:
         shown = ", ".join(e.authors[:3]) + (" et al." if len(e.authors) > 3 else "")
@@ -103,7 +109,10 @@ def _card(e, prefix: str, loc: str) -> str:
         meta.append(str(e.year))
     if meta:
         lines += ["", f"    <span class=\"card-meta\">{' · '.join(meta)}</span>"]
-    lines += ["", f"    {_summary(e, loc)}"]
+    # Tag the summary so CSS can absorb free space below it (margin-bottom:auto),
+    # pushing the tags + links to the card bottom WITHOUT adding a wrapper element
+    # (a nested block element would break Material's grid-cards <ul>).
+    lines += ["", f"    {_summary(e, loc)}", "    {: .card-summary }"]
     if e.tags:
         lines += ["", "    " + " ".join(f"`{t}`" for t in e.tags)]
     row = _link_row(e.links, loc)
@@ -113,10 +122,10 @@ def _card(e, prefix: str, loc: str) -> str:
     return "\n".join(lines)
 
 
-def _grid(entries, prefix: str, loc: str) -> str:
+def _grid(entries, prefix: str, loc: str, new_ids: set[str]) -> str:
     if not entries:
         return ""
-    inner = "\n".join(_card(e, prefix, loc) for e in entries)
+    inner = "\n".join(_card(e, prefix, loc, new_ids) for e in entries)
     return f'<div class="grid cards" markdown>\n\n{inner}\n</div>\n'
 
 
@@ -130,7 +139,7 @@ def _write(relpath: str, text: str) -> None:
     p.write_text(text, encoding="utf-8")
 
 
-def build_locale(loc: str, sfx: str, tax, by_area, by_task) -> None:
+def build_locale(loc: str, sfx: str, tax, by_area, by_task, new_ids: set[str]) -> None:
     ui = UI[loc]
     summary = [f"- [{ui['home']}](index.md)", f"- [{ui['catalog']}](catalog/index.md)"]
 
@@ -170,13 +179,32 @@ def build_locale(loc: str, sfx: str, tax, by_area, by_task) -> None:
                 out.append(f"> {ui['stub']}\n")
             else:
                 if oss:
-                    out += [f"## {ui['oss']}\n", _grid(oss, prefix, loc)]
+                    out += [f"## {ui['oss']}\n", _grid(oss, prefix, loc, new_ids)]
                 if prop:
-                    out += [f"## {ui['prop']}\n", _grid(prop, prefix, loc)]
+                    out += [f"## {ui['prop']}\n", _grid(prop, prefix, loc, new_ids)]
             _write(page, "\n".join(out))
 
     summary.append(f"- [{ui['about']}](about.md)")
     _write(f"SUMMARY{sfx}.md", "\n".join(summary) + "\n")
+
+
+def _compute_new_ids(entries) -> set[str]:
+    """Flag entries from the most recent update batch (within 10 days of the newest
+    date_added). Returns empty when all entries share one date (the day-one seed),
+    so the initial catalog isn't blanketed with NEW badges.
+
+    Preview: set CATALOG_PREVIEW_NEW=<n> to force-flag the n most-recently-dated entries
+    (purely for previewing the badge locally; does not change any data)."""
+    preview = os.environ.get("CATALOG_PREVIEW_NEW")
+    if preview and preview.isdigit() and int(preview) > 0:
+        ordered = sorted(entries, key=lambda e: (e.date_added, e.id), reverse=True)
+        return {e.id for e in ordered[: int(preview)]}
+
+    dates = {e.date_added for e in entries}
+    if len(dates) <= 1:
+        return set()
+    latest = max(dates)
+    return {e.id for e in entries if (latest - e.date_added).days <= 10}
 
 
 def main() -> int:
@@ -184,14 +212,16 @@ def main() -> int:
         shutil.rmtree(CATALOG)
     tax = load_taxonomy()
     entries = db.load_all()
+    new_ids = _compute_new_ids(entries)
     by_task: dict[tuple[str, str], list] = defaultdict(list)
     by_area: dict[str, list] = defaultdict(list)
     for e in entries:
         by_task[(e.area, e.task)].append(e)
         by_area[e.area].append(e)
     for loc, sfx in LOCALES:
-        build_locale(loc, sfx, tax, by_area, by_task)
-    print(f"generated catalog for {len(LOCALES)} locales ({len(entries)} entries)")
+        build_locale(loc, sfx, tax, by_area, by_task, new_ids)
+    print(f"generated catalog for {len(LOCALES)} locales "
+          f"({len(entries)} entries, {len(new_ids)} flagged new)")
     return 0
 
 

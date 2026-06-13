@@ -195,6 +195,26 @@
   color: var(--ms-accent);
 }
 
+/* "NEW" badge for entries from the latest update batch */
+.md-typeset .card-new {
+  font-family: var(--md-code-font);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 2rem;
+  background: var(--ms-accent);
+  color: #fff;
+}
+
+/* Push tags + links to the bottom so they line up across a row. The summary
+   absorbs the free space (no wrapper element, which would break the grid <ul>). */
+.md-typeset .grid.cards > ul > li > .card-summary {
+  margin-bottom: auto;
+}
+
 /* muted mono metadata (authors · year, counts) */
 .md-typeset .card-meta {
   font-family: var(--md-code-font);

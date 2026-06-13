@@ -131,6 +131,90 @@ entries:
   date_added: '2026-06-13'
   source: seed
   repo: rvc-project/retrieval-based-voice-conversion-webui
+- id: magicarticulate-8e4c1b
+  title: MagicArticulate
+  area: characters
+  task: auto-rigging
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2502.12135
+    github: https://github.com/Seed3D/MagicArticulate
+    project: https://chaoyuesong.github.io/MagicArticulate/
+  year: 2025
+  tags:
+  - articulation
+  - auto-rigging
+  - skeleton
+  summary: Automatically converts static 3D models into articulated assets by generating skeletons and skinning at scale from a large rigging dataset.
+  summary_ja: 大規模なリギングデータセットからスケルトンとスキニングを大規模に生成し、静的な3Dモデルを関節のあるアセットに自動変換する。
+  thumbnail: assets/thumbnails/magicarticulate-8e4c1b.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2502.12135'
+  repo: seed3d/magicarticulate
+- id: riganything-46484a
+  title: RigAnything
+  area: characters
+  task: auto-rigging
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2502.09615
+    github: https://github.com/Isabella98Liu/RigAnything
+    project: https://www.liuisabella.com/RigAnything/
+  year: 2025
+  tags:
+  - auto-rigging
+  - autoregressive
+  - skeleton
+  summary: An autoregressive transformer that rigs diverse 3D objects in a template-free manner by generating joints and skeletal hierarchy.
+  summary_ja: 関節と骨格階層を生成することで、テンプレートを用いずに多様な3D物体をリギングする自己回帰トランスフォーマー。
+  thumbnail: assets/thumbnails/riganything-46484a.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2502.09615'
+  repo: isabella98liu/riganything
+- id: unirig-0c5c59
+  title: UniRig
+  area: characters
+  task: auto-rigging
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2504.12451
+    github: https://github.com/VAST-AI-Research/UniRig
+    project: https://zjp-shadow.github.io/works/UniRig/
+  year: 2025
+  tags:
+  - auto-rigging
+  - autoregressive
+  - skeleton
+  summary: A unified autoregressive framework that predicts skeletons and skinning weights for diverse 3D models to make them animation-ready.
+  summary_ja: 多様な3Dモデルに対してスケルトンとスキニングウェイトを予測し、アニメーション可能にする統一的な自己回帰フレームワーク。
+  thumbnail: assets/thumbnails/unirig-0c5c59.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2504.12451'
+  repo: vast-ai-research/unirig
+- id: make-it-animatable-c80797
+  title: Make-It-Animatable
+  area: characters
+  task: auto-rigging
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2411.18197
+    github: https://github.com/jasongzy/Make-It-Animatable
+    project: https://jasongzy.github.io/Make-It-Animatable/
+  year: 2024
+  tags:
+  - auto-rigging
+  - avatar
+  - skinning
+  summary: Quickly prepares arbitrary 3D humanoid characters for animation by generating bones, skinning weights, and pose-ready structure.
+  summary_ja: ボーン、スキニングウェイト、ポーズ対応の構造を生成し、任意の3D人型キャラクターを素早くアニメーション可能にする。
+  thumbnail: assets/thumbnails/make-it-animatable-c80797.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2411.18197'
+  repo: jasongzy/make-it-animatable
 - id: rignet-neural-rigging-for-articulated-characters-2e0d57
   title: 'RigNet: Neural Rigging for Articulated Characters'
   area: characters
@@ -150,6 +234,46 @@ entries:
   source: seed
   arxiv_id: '2005.00559'
   repo: zhan-xu/rignet
+- id: animskelvolnet-abec93
+  title: AnimSkelVolNet
+  area: characters
+  task: auto-rigging
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1908.08506
+    github: https://github.com/zhan-xu/AnimSkelVolNet
+    project: https://people.cs.umass.edu/~zhanxu/projects/AnimSkelVolNet/
+  year: 2019
+  tags:
+  - auto-rigging
+  - skeleton
+  - volumetric
+  summary: Predicts animation skeletons for 3D character models using a volumetric network that estimates joints and bone structure.
+  summary_ja: 関節とボーン構造を推定するボリュメトリックネットワークを用いて、3Dキャラクターモデルのアニメーション用スケルトンを予測する。
+  thumbnail: assets/thumbnails/animskelvolnet-abec93.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1908.08506'
+  repo: zhan-xu/animskelvolnet
+- id: pinocchio-automatic-rigging-dcd549
+  title: Pinocchio (Automatic Rigging)
+  area: characters
+  task: auto-rigging
+  kind: oss
+  links:
+    github: https://github.com/elrond79/Pinocchio
+    project: https://people.csail.mit.edu/ibaran/autorig/
+  year: 2007
+  tags:
+  - auto-rigging
+  - skeleton
+  - skinning
+  summary: A classic method that automatically fits a given skeleton into a 3D character mesh and computes skinning weights for immediate animation.
+  summary_ja: 与えられたスケルトンを3Dキャラクターメッシュに自動的に適合させ、即座にアニメーションできるようスキニングウェイトを計算する古典的手法。
+  thumbnail: assets/thumbnails/pinocchio-automatic-rigging-dcd549.png
+  date_added: '2026-06-13'
+  source: seed
+  repo: elrond79/pinocchio
 - id: avatarclip-b2cf92
   title: AvatarCLIP
   area: characters
@@ -169,6 +293,698 @@ entries:
   source: seed
   arxiv_id: '2205.08535'
   repo: hongfz16/avatarclip
+- id: eg3d-5e4a72
+  title: EG3D
+  area: characters
+  task: face-head-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2112.07945
+    github: https://github.com/NVlabs/eg3d
+    project: https://nvlabs.github.io/eg3d/
+  year: 2021
+  tags:
+  - face-head
+  - gan
+  - neural-rendering
+  summary: A geometry-aware 3D GAN using a hybrid explicit-implicit tri-plane representation to synthesize multi-view-consistent face images and 3D geometry from single-view photo collections.
+  summary_ja: ハイブリッドな明示的・暗黙的トライプレーン表現を用いる幾何認識型3D GAN。単一視点の写真集合から多視点で一貫した顔画像と3D形状を合成する。
+  thumbnail: assets/thumbnails/eg3d-5e4a72.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2112.07945'
+  repo: nvlabs/eg3d
+- id: drag-your-gaussian-e05d4e
+  title: Drag Your Gaussian
+  area: gen-3d
+  task: 3d-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2501.18672
+    github: https://github.com/Quyans/Drag-Your-Gaussian
+    project: https://quyans.github.io/Drag-Your-Gaussian/
+  year: 2025
+  tags:
+  - drag
+  - editing
+  - gaussian-splatting
+  summary: Provides drag-style interactive editing of 3D Gaussian splatting scenes, propagating user-specified point drags into consistent 3D geometry changes.
+  summary_ja: 3Dガウシアンスプラッティングシーンのドラッグ式インタラクティブ編集を提供し、ユーザー指定の点のドラッグを一貫した3D形状変化に伝播させる。
+  thumbnail: assets/thumbnails/drag-your-gaussian-e05d4e.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2501.18672'
+  repo: quyans/drag-your-gaussian
+- id: gaussctrl-e47b41
+  title: GaussCtrl
+  area: gen-3d
+  task: 3d-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2403.08733
+    github: https://github.com/ActiveVisionLab/gaussctrl
+    project: https://gaussctrl.active.vision/
+  year: 2024
+  tags:
+  - editing
+  - gaussian-splatting
+  - multi-view-consistent
+  summary: Performs text-driven editing of 3D Gaussian splatting scenes with depth-conditioned and attention-based multi-view consistent image edits.
+  summary_ja: 深度条件付きおよびアテンションベースの多視点一貫した画像編集により、3Dガウシアンスプラッティングシーンのテキスト駆動編集を行う。
+  thumbnail: assets/thumbnails/gaussctrl-e47b41.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2403.08733'
+  repo: activevisionlab/gaussctrl
+- id: gaussian-grouping-516c6c
+  title: Gaussian Grouping
+  area: gen-3d
+  task: 3d-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2312.00732
+    github: https://github.com/lkeab/gaussian-grouping
+  year: 2023
+  tags:
+  - editing
+  - gaussian-splatting
+  - segmentation
+  summary: Augments 3D Gaussians with identity features to jointly reconstruct and segment open-world scenes, supporting editing operations like removal and inpainting.
+  summary_ja: 3Dガウシアンに同一性特徴を付加してオープンワールドシーンを同時に復元・分割し、除去やインペイントなどの編集操作をサポートする。
+  thumbnail: assets/thumbnails/gaussian-grouping-516c6c.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2312.00732'
+  repo: lkeab/gaussian-grouping
+- id: gaussianeditor-deb1dc
+  title: GaussianEditor
+  area: gen-3d
+  task: 3d-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2311.16037
+    project: https://gaussianeditor.github.io/
+  year: 2023
+  tags:
+  - editing
+  - gaussian-splatting
+  - text-guided
+  summary: Enables fast, controllable text-guided editing of 3D Gaussian splatting scenes through semantic tracing and constrained Gaussian updates.
+  summary_ja: セマンティックトレーシングと制約付きガウシアン更新により、3Dガウシアンスプラッティングシーンの高速で制御可能なテキストガイド編集を可能にする。
+  thumbnail: assets/thumbnails/gaussianeditor-deb1dc.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2311.16037'
+- id: instruct-nerf2nerf-4a8f79
+  title: Instruct-NeRF2NeRF
+  area: gen-3d
+  task: 3d-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2303.12789
+    github: https://github.com/ayaanzhaque/instruct-nerf2nerf
+    project: https://instruct-nerf2nerf.github.io/
+  year: 2023
+  tags:
+  - editing
+  - instruction
+  - nerf
+  summary: Edits reconstructed NeRF scenes from natural language instructions by iteratively updating input images with an image-conditioned diffusion editor.
+  summary_ja: 画像条件付きの拡散エディタで入力画像を反復的に更新することで、自然言語の指示から復元済みNeRFシーンを編集する。
+  thumbnail: assets/thumbnails/instruct-nerf2nerf-4a8f79.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2303.12789'
+  repo: ayaanzhaque/instruct-nerf2nerf
+- id: partnerf-49f042
+  title: PartNeRF
+  area: gen-3d
+  task: 3d-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2303.09554
+    github: https://github.com/ktertikas/part_nerf
+    project: https://ktertikas.github.io/part_nerf
+  year: 2023
+  tags:
+  - editing
+  - nerf
+  - part-based
+  summary: A part-aware NeRF generative model that represents objects as a set of locally defined neural radiance fields enabling part-level control and editing.
+  summary_ja: 物体を局所的に定義された複数のニューラルradiance fieldの集合として表現し、パーツ単位の制御と編集を可能にするパーツ認識型NeRF生成モデル。
+  thumbnail: assets/thumbnails/partnerf-49f042.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2303.09554'
+  repo: ktertikas/part_nerf
+- id: spaghetti-9acfd8
+  title: SPAGHETTI
+  area: gen-3d
+  task: 3d-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2201.13168
+    github: https://github.com/amirhertz/spaghetti
+    project: https://amirhertz.github.io/spaghetti/
+  year: 2022
+  tags:
+  - editing
+  - implicit
+  - part-based
+  summary: An implicit shape representation decomposed into editable Gaussian parts, enabling part-level manipulation and editing of generated neural shapes.
+  summary_ja: 編集可能なガウシアンパーツに分解された暗黙的形状表現で、生成されたニューラル形状のパーツ単位の操作と編集を可能にする。
+  thumbnail: assets/thumbnails/spaghetti-9acfd8.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2201.13168'
+  repo: amirhertz/spaghetti
+- id: brepgen-4ec759
+  title: BrepGen
+  area: gen-3d
+  task: cad
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2401.15563
+    github: https://github.com/samxuxiang/BrepGen
+  year: 2024
+  tags:
+  - brep
+  - cad
+  - diffusion
+  summary: Directly generates boundary representation (B-rep) CAD solids using a diffusion model over a structured tree of geometric and topological entities.
+  summary_ja: 幾何要素と位相要素の構造化ツリー上の拡散モデルを用いて、境界表現(B-rep)のCADソリッドを直接生成する。
+  thumbnail: assets/thumbnails/brepgen-4ec759.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2401.15563'
+  repo: samxuxiang/brepgen
+- id: text2cad-880d8e
+  title: Text2CAD
+  area: gen-3d
+  task: cad
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2411.06206
+    github: https://github.com/SadilKhan/Text2CAD
+    project: https://sadilkhan.github.io/text2cad-project/
+  year: 2024
+  tags:
+  - cad
+  - text-to-3d
+  - transformer
+  summary: Generates parametric CAD construction sequences from natural language text descriptions of varying levels of detail.
+  summary_ja: さまざまな詳細度の自然言語テキスト記述から、パラメトリックなCAD構築シーケンスを生成する。
+  thumbnail: assets/thumbnails/text2cad-880d8e.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2411.06206'
+  repo: sadilkhan/text2cad
+- id: skexgen-231781
+  title: SkexGen
+  area: gen-3d
+  task: cad
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2207.04632
+    github: https://github.com/samxuxiang/SkexGen
+    project: https://samxuxiang.github.io/skexgen
+  year: 2022
+  tags:
+  - autoregressive
+  - cad
+  - sketch-extrude
+  summary: An autoregressive generative model for CAD sketch-and-extrude construction sequences using disentangled codebooks for diverse shape synthesis.
+  summary_ja: CADのスケッチ・押し出し構築シーケンスのための自己回帰生成モデルで、分離されたコードブックを用いて多様な形状を合成する。
+  thumbnail: assets/thumbnails/skexgen-231781.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2207.04632'
+  repo: samxuxiang/skexgen
+- id: deepcad-16e960
+  title: DeepCAD
+  area: gen-3d
+  task: cad
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2105.09492
+    github: https://github.com/ChrisWu1997/DeepCAD
+    project: http://www.cs.columbia.edu/cg/deepcad/
+  year: 2021
+  tags:
+  - autoregressive
+  - cad
+  - sequence
+  summary: A generative model of CAD command sequences that produces editable parametric CAD models rather than raw geometry.
+  summary_ja: CADコマンド列の生成モデルで、生の形状ではなく編集可能なパラメトリックCADモデルを生成する。
+  thumbnail: assets/thumbnails/deepcad-16e960.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2105.09492'
+  repo: chriswu1997/deepcad
+- id: 2d-gaussian-splatting-7a5e1f
+  title: 2D Gaussian Splatting
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2403.17888
+    github: https://github.com/hbb1/2d-gaussian-splatting
+  year: 2024
+  tags:
+  - gaussian-splatting
+  - surface-reconstruction
+  summary: Represents scenes with 2D oriented Gaussian disks instead of 3D ellipsoids for geometrically accurate radiance fields and improved surface reconstruction.
+  summary_ja: 3D楕円体の代わりに2Dの方向付きガウシアン円盤でシーンを表現し、幾何的に正確なradiance fieldと改善された表面復元を実現する。
+  thumbnail: assets/thumbnails/2d-gaussian-splatting-7a5e1f.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2403.17888'
+  repo: hbb1/2d-gaussian-splatting
+- id: craftsman-ea1156
+  title: CraftsMan
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2405.14979
+    github: https://github.com/wyysf-98/CraftsMan3D
+  year: 2024
+  tags:
+  - diffusion
+  - image-to-3d
+  - mesh
+  summary: Generates high-fidelity 3D meshes with a native 3D diffusion model followed by a normal-based surface refinement stage for smoother geometry.
+  summary_ja: ネイティブな3D拡散モデルに法線ベースの表面精緻化段階を続けることで、より滑らかな形状を持つ高忠実度の3Dメッシュを生成する。
+  thumbnail: assets/thumbnails/craftsman-ea1156.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2405.14979'
+  repo: wyysf-98/craftsman3d
+- id: trellis-365aed
+  title: TRELLIS
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2412.01506
+    github: https://github.com/microsoft/TRELLIS
+  year: 2024
+  tags:
+  - diffusion
+  - image-to-3d
+  - structured-latent
+  summary: A structured 3D latent representation and rectified-flow transformer that generates high-quality 3D assets in multiple output formats from text or images.
+  summary_ja: 構造化された3D潜在表現と整流フロー型トランスフォーマーにより、テキストや画像から複数の出力形式の高品質な3Dアセットを生成する。
+  thumbnail: assets/thumbnails/trellis-365aed.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2412.01506'
+  repo: microsoft/trellis
+- id: dreamgaussian-da822b
+  title: DreamGaussian
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2309.16653
+    github: https://github.com/dreamgaussian/dreamgaussian
+  year: 2023
+  tags:
+  - gaussian-splatting
+  - image-to-3d
+  - text-to-3d
+  summary: Uses generative Gaussian splatting with mesh extraction and texture refinement for efficient image-to-3D and text-to-3D content creation in minutes.
+  summary_ja: 生成的ガウシアンスプラッティングにメッシュ抽出とテクスチャ精緻化を組み合わせ、数分で効率的な画像から3Dおよびテキストから3Dのコンテンツ生成を行う。
+  thumbnail: assets/thumbnails/dreamgaussian-da822b.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2309.16653'
+  repo: dreamgaussian/dreamgaussian
+- id: mip-splatting-bbe06c
+  title: Mip-Splatting
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2311.16493
+    project: https://niujinshuchong.github.io/mip-splatting/
+  year: 2023
+  tags:
+  - anti-aliasing
+  - gaussian-splatting
+  summary: Adds 3D smoothing and 2D Mip filters to 3D Gaussian splatting to eliminate aliasing artifacts across varying sampling rates and zoom levels.
+  summary_ja: 3Dガウシアンスプラッティングに3D平滑化と2D Mipフィルタを追加し、さまざまなサンプリングレートやズーム倍率でのエイリアシング・アーティファクトを除去する。
+  thumbnail: assets/thumbnails/mip-splatting-bbe06c.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2311.16493'
+- id: one-2-3-45-5e6353
+  title: One-2-3-45
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2306.16928
+    github: https://github.com/One-2-3-45/One-2-3-45
+    project: https://one-2-3-45.github.io/
+  year: 2023
+  tags:
+  - diffusion
+  - image-to-3d
+  - mesh
+  summary: Reconstructs a 3D mesh from a single image in around 45 seconds without per-shape optimization by combining multi-view synthesis with a generalizable reconstruction module.
+  summary_ja: 多視点合成と汎化可能な復元モジュールを組み合わせ、形状ごとの最適化なしに単一画像から約45秒で3Dメッシュを復元する。
+  thumbnail: assets/thumbnails/one-2-3-45-5e6353.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2306.16928'
+  repo: one-2-3-45/one-2-3-45
+- id: one-2-3-45-d6ae06
+  title: One-2-3-45++
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2311.07885
+    project: https://sudo-ai-3d.github.io/One2345plus_page/
+  year: 2023
+  tags:
+  - diffusion
+  - image-to-3d
+  - multi-view
+  summary: Generates 3D objects from a single image using consistent multi-view generation combined with a 3D diffusion stage for improved quality and speed.
+  summary_ja: 一貫した多視点生成と3D拡散段階を組み合わせ、単一画像から品質と速度を改善した3D物体を生成する。
+  thumbnail: assets/thumbnails/one-2-3-45-d6ae06.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2311.07885'
+- id: sugar-c0b2f0
+  title: SuGaR
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    github: https://github.com/Anttwo/SuGaR
+  year: 2023
+  tags:
+  - gaussian-splatting
+  - mesh
+  - surface-reconstruction
+  summary: Aligns 3D Gaussians to scene surfaces to enable efficient and accurate mesh extraction and high-quality mesh-based rendering from Gaussian splatting.
+  summary_ja: 3Dガウシアンをシーン表面に整列させ、ガウシアンスプラッティングから効率的かつ正確なメッシュ抽出と高品質なメッシュベースのレンダリングを可能にする。
+  thumbnail: assets/thumbnails/sugar-c0b2f0.png
+  date_added: '2026-06-13'
+  source: seed
+  repo: anttwo/sugar
+- id: zero-1-to-3-8966c5
+  title: Zero-1-to-3
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2303.11328
+    github: https://github.com/cvlab-columbia/zero123
+    project: https://zero123.cs.columbia.edu/
+  year: 2023
+  tags:
+  - diffusion
+  - image-to-3d
+  - novel-view
+  summary: A diffusion model that synthesizes novel views of an object from a single image by conditioning on relative camera viewpoint, enabling zero-shot single-image 3D reconstruction.
+  summary_ja: 相対的なカメラ視点を条件とし、単一画像から物体の新規視点を合成する拡散モデル。ゼロショットの単一画像3D復元を可能にする。
+  thumbnail: assets/thumbnails/zero-1-to-3-8966c5.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2303.11328'
+  repo: cvlab-columbia/zero123
+- id: neus-836c55
+  title: NeuS
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2106.10689
+    github: https://github.com/Totoro97/NeuS
+  year: 2021
+  tags:
+  - neural-rendering
+  - sdf
+  - surface-reconstruction
+  summary: Reconstructs surfaces from multi-view images by representing geometry as a signed distance function rendered through unbiased volume rendering.
+  summary_ja: 形状を符号付き距離関数として表現し、バイアスのないボリュームレンダリングを通して描画することで、多視点画像から表面を復元する。
+  thumbnail: assets/thumbnails/neus-836c55.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2106.10689'
+  repo: totoro97/neus
+- id: atlasnet-87e553
+  title: AtlasNet
+  area: gen-3d
+  task: image-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1802.05384
+    github: https://github.com/ThibaultGROUEIX/AtlasNet
+    project: https://imagine.enpc.fr/~groueixt/atlasnet/
+  year: 2018
+  tags:
+  - mesh
+  - reconstruction
+  - surface
+  summary: Represents a 3D surface as a collection of learned parametric patches that are deformed to reconstruct shapes from point clouds or single images.
+  summary_ja: 3D表面を学習されたパラメトリックパッチの集合として表現し、それらを変形させて点群や単一画像から形状を復元する。
+  thumbnail: assets/thumbnails/atlasnet-87e553.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1802.05384'
+  repo: thibaultgroueix/atlasnet
+- id: deepmesh-bfea68
+  title: DeepMesh
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2503.15265
+    github: https://github.com/zhaorw02/DeepMesh
+    project: https://zhaorw02.github.io/DeepMesh/
+  year: 2025
+  tags:
+  - autoregressive
+  - mesh
+  - reinforcement-learning
+  summary: Creates artist-style meshes with an autoregressive model trained with reinforcement learning to improve mesh quality and structure.
+  summary_ja: メッシュの品質と構造を改善するため強化学習で訓練された自己回帰モデルにより、アーティスト風のメッシュを作成する。
+  thumbnail: assets/thumbnails/deepmesh-bfea68.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2503.15265'
+  repo: zhaorw02/deepmesh
+- id: holopart-bef4ac
+  title: HoloPart
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2504.07943
+    github: https://github.com/VAST-AI-Research/HoloPart
+  year: 2025
+  tags:
+  - amodal
+  - diffusion
+  - part-based
+  summary: Performs amodal 3D part completion, generating complete part geometry including occluded regions for decomposed 3D objects.
+  summary_ja: アモーダルな3Dパーツ補完を行い、分解された3D物体について遮蔽領域を含む完全なパーツ形状を生成する。
+  thumbnail: assets/thumbnails/holopart-bef4ac.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2504.07943'
+  repo: vast-ai-research/holopart
+- id: partfield-0d3a93
+  title: PartField
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2504.11451
+    github: https://github.com/nv-tlabs/PartField
+    project: https://research.nvidia.com/labs/toronto-ai/partfield-release/
+  year: 2025
+  tags:
+  - feature-field
+  - part-based
+  - segmentation
+  summary: Learns a feedforward part feature field on 3D shapes that yields consistent hierarchical part segmentations for downstream part-based tasks.
+  summary_ja: 3D形状上にフィードフォワードのパーツ特徴フィールドを学習し、一貫した階層的パーツ分割を生成して下流のパーツベースのタスクに役立てる。
+  thumbnail: assets/thumbnails/partfield-0d3a93.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2504.11451'
+  repo: nv-tlabs/partfield
+- id: bpt-blocked-and-patchified-tokenization-df996e
+  title: BPT (Blocked and Patchified Tokenization)
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2411.07025
+    github: https://github.com/tencent-hunyuan/bpt
+    project: https://whaohan.github.io/bpt/
+  year: 2024
+  tags:
+  - autoregressive
+  - mesh
+  - tokenization
+  summary: Scales mesh generation via a blocked and patchified compressive tokenization that reduces sequence length, enabling generation of meshes with more faces.
+  summary_ja: ブロック化・パッチ化された圧縮トークン化によりシーケンス長を削減し、より多くの面を持つメッシュの生成を可能にしてメッシュ生成をスケールさせる。
+  thumbnail: assets/thumbnails/bpt-blocked-and-patchified-tokenization-df996e.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2411.07025'
+  repo: tencent-hunyuan/bpt
+- id: edgerunner-2a3668
+  title: EdgeRunner
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2409.18114
+    github: https://github.com/NVlabs/EdgeRunner
+  year: 2024
+  tags:
+  - autoencoder
+  - autoregressive
+  - mesh
+  summary: An autoregressive auto-encoder for artistic mesh generation that compresses mesh tokens to handle higher face counts and finer detail.
+  summary_ja: 芸術的なメッシュ生成のための自己回帰オートエンコーダ。メッシュトークンを圧縮し、より多い面数と細かいディテールを扱う。
+  thumbnail: assets/thumbnails/edgerunner-2a3668.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2409.18114'
+  repo: nvlabs/edgerunner
+- id: llama-mesh-ca3a9f
+  title: LLaMA-Mesh
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2411.09595
+    github: https://github.com/nv-tlabs/LLaMA-Mesh
+    project: https://research.nvidia.com/labs/toronto-ai/LLaMA-Mesh/
+  year: 2024
+  tags:
+  - llm
+  - mesh
+  - text-to-3d
+  summary: Unifies 3D mesh generation with large language models by representing mesh vertices and faces as text, enabling text-conditioned mesh generation within an LLM.
+  summary_ja: メッシュの頂点と面をテキストとして表現することで3Dメッシュ生成を大規模言語モデルに統合し、LLM内でテキスト条件付きのメッシュ生成を可能にする。
+  thumbnail: assets/thumbnails/llama-mesh-ca3a9f.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2411.09595'
+  repo: nv-tlabs/llama-mesh
+- id: meshanything-8a7539
+  title: MeshAnything
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2406.10163
+    github: https://github.com/buaacyw/MeshAnything
+    project: https://buaacyw.github.io/mesh-anything/
+  year: 2024
+  tags:
+  - autoregressive
+  - mesh
+  - transformer
+  summary: Converts shapes from various 3D representations into artist-created meshes using an autoregressive transformer, producing meshes with far fewer faces.
+  summary_ja: 自己回帰トランスフォーマーを用いて様々な3D表現の形状をアーティスト作成風のメッシュに変換し、面数の大幅に少ないメッシュを生成する。
+  thumbnail: assets/thumbnails/meshanything-8a7539.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2406.10163'
+  repo: buaacyw/meshanything
+- id: meshanything-v2-10ded2
+  title: MeshAnything V2
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2408.02555
+    github: https://github.com/buaacyw/MeshAnythingV2
+    project: https://buaacyw.github.io/meshanything-v2/
+  year: 2024
+  tags:
+  - autoregressive
+  - mesh
+  - tokenization
+  summary: Improves artist-created mesh generation with an adjacent mesh tokenization scheme that increases efficiency and the number of faces that can be represented.
+  summary_ja: 隣接メッシュトークン化方式により、表現可能な面数を増やしつつ効率を高め、アーティスト作成風のメッシュ生成を改善する。
+  thumbnail: assets/thumbnails/meshanything-v2-10ded2.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2408.02555'
+  repo: buaacyw/meshanythingv2
+- id: meshart-0e07b5
+  title: MeshArt
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2412.11596
+    github: https://github.com/DaoyiG/MeshArt
+  year: 2024
+  tags:
+  - articulated
+  - mesh
+  - transformer
+  summary: Generates articulated meshes using structure-guided transformers that model object parts and their articulation jointly.
+  summary_ja: オブジェクトのパーツとその関節構造を同時にモデル化する構造ガイド型トランスフォーマーを用いて、関節のあるメッシュを生成する。
+  thumbnail: assets/thumbnails/meshart-0e07b5.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2412.11596'
+  repo: daoyig/meshart
+- id: meshxl-252dcd
+  title: MeshXL
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2405.20853
+    github: https://github.com/OpenMeshLab/MeshXL
+  year: 2024
+  tags:
+  - autoregressive
+  - foundation-model
+  - mesh
+  summary: A generative 3D foundation model that uses a neural coordinate field to represent and autoregressively generate meshes at scale.
+  summary_ja: ニューラル座標フィールドを用いてメッシュを表現し、大規模に自己回帰生成する生成的3D基盤モデル。
+  thumbnail: assets/thumbnails/meshxl-252dcd.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2405.20853'
+  repo: openmeshlab/meshxl
+- id: pivotmesh-2752b8
+  title: PivotMesh
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2405.16890
+    github: https://github.com/whaohan/pivotmesh
+    project: https://whaohan.github.io/pivotmesh/
+  year: 2024
+  tags:
+  - autoregressive
+  - mesh
+  - transformer
+  summary: Generates generic 3D meshes by first predicting pivot vertices that guide the subsequent autoregressive generation of the full mesh.
+  summary_ja: まず後続のメッシュ全体の自己回帰生成を導くピボット頂点を予測することで、汎用的な3Dメッシュを生成する。
+  thumbnail: assets/thumbnails/pivotmesh-2752b8.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2405.16890'
+  repo: whaohan/pivotmesh
 - id: 3d-gaussian-splatting-for-real-time-radiance-field-rendering-d592ad
   title: 3D Gaussian Splatting for Real-Time Radiance Field Rendering
   area: gen-3d
@@ -188,6 +1004,127 @@ entries:
   source: seed
   arxiv_id: '2308.04079'
   repo: graphdeco-inria/gaussian-splatting
+- id: 3dshape2vecset-5c0535
+  title: 3DShape2VecSet
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2301.11445
+    github: https://github.com/1zb/3DShape2VecSet
+  year: 2023
+  tags:
+  - diffusion
+  - implicit
+  - latent-set
+  summary: A shape representation encoding 3D geometry as a set of latent vectors, designed for diffusion-based generative modeling of neural fields.
+  summary_ja: 3D形状を潜在ベクトルの集合として符号化する形状表現で、ニューラルフィールドの拡散ベース生成モデリング向けに設計されている。
+  thumbnail: assets/thumbnails/3dshape2vecset-5c0535.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2301.11445'
+  repo: 1zb/3dshape2vecset
+- id: functional-diffusion-ce369e
+  title: Functional Diffusion
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2311.15435
+    github: https://github.com/1zb/functional-diffusion
+    project: https://1zb.github.io/functional-diffusion/
+  year: 2023
+  tags:
+  - diffusion
+  - function-space
+  - implicit
+  summary: A generative diffusion framework operating directly on continuous functions, applied to generating implicit 3D shape representations.
+  summary_ja: 連続関数上で直接動作する生成的拡散フレームワークで、暗黙的な3D形状表現の生成に適用される。
+  thumbnail: assets/thumbnails/functional-diffusion-ce369e.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2311.15435'
+  repo: 1zb/functional-diffusion
+- id: meshdiffusion-1565b7
+  title: MeshDiffusion
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2303.08133
+    github: https://github.com/lzzcd001/MeshDiffusion
+  year: 2023
+  tags:
+  - deformable-tetrahedra
+  - diffusion
+  - mesh
+  summary: Generates 3D meshes with a diffusion model operating on a deformable tetrahedral grid parameterization of geometry.
+  summary_ja: 形状の変形可能な四面体グリッドのパラメータ化上で動作する拡散モデルにより、3Dメッシュを生成する。
+  thumbnail: assets/thumbnails/meshdiffusion-1565b7.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2303.08133'
+  repo: lzzcd001/meshdiffusion
+- id: meshgpt-28ea84
+  title: MeshGPT
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2311.15475
+    github: https://github.com/lucidrains/meshgpt-pytorch
+  year: 2023
+  tags:
+  - autoregressive
+  - mesh
+  - transformer
+  summary: Generates triangle meshes directly as sequences of tokens using a decoder-only transformer over a learned mesh vocabulary, producing compact artist-like topology.
+  summary_ja: 学習されたメッシュ語彙上のデコーダのみのトランスフォーマーを用い、三角形メッシュをトークン列として直接生成し、コンパクトでアーティスト風のトポロジーを作り出す。
+  thumbnail: assets/thumbnails/meshgpt-28ea84.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2311.15475'
+  repo: lucidrains/meshgpt-pytorch
+- id: neural-wavelet-domain-diffusion-c51331
+  title: Neural Wavelet-domain Diffusion
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2302.00190
+    github: https://github.com/edward1997104/Wavelet-Generation
+  year: 2023
+  tags:
+  - diffusion
+  - sdf
+  - wavelet
+  summary: Generates 3D shapes by running a diffusion model in the wavelet domain of a truncated signed distance field for efficient high-quality synthesis.
+  summary_ja: 切り詰めた符号付き距離場のウェーブレット領域で拡散モデルを実行し、効率的に高品質な3D形状を合成する。
+  thumbnail: assets/thumbnails/neural-wavelet-domain-diffusion-c51331.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2302.00190'
+  repo: edward1997104/wavelet-generation
+- id: xcube-b16594
+  title: XCube
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2312.03806
+    github: https://github.com/nv-tlabs/XCube
+  year: 2023
+  tags:
+  - diffusion
+  - sparse
+  - voxel
+  summary: Generates high-resolution sparse voxel hierarchies with a cascaded latent diffusion model for large-scale 3D object and scene generation.
+  summary_ja: カスケード潜在拡散モデルにより高解像度の疎ボクセル階層を生成し、大規模な3D物体およびシーンの生成を行う。
+  thumbnail: assets/thumbnails/xcube-b16594.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2312.03806'
+  repo: nv-tlabs/xcube
 - id: get3d-a782fd
   title: GET3D
   area: gen-3d
@@ -226,6 +1163,309 @@ entries:
   source: seed
   arxiv_id: '2201.05989'
   repo: nvlabs/instant-ngp
+- id: sdf-stylegan-eab7b2
+  title: SDF-StyleGAN
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2206.12055
+    github: https://github.com/Zhengxinyang/SDF-StyleGAN
+  year: 2022
+  tags:
+  - gan
+  - sdf
+  - shape-generation
+  summary: Adapts a StyleGAN-style generator to signed distance fields for high-quality 3D shape generation with global and local discriminators.
+  summary_ja: StyleGAN形式の生成器を符号付き距離場に適合させ、大域的・局所的識別器を用いて高品質な3D形状生成を行う。
+  thumbnail: assets/thumbnails/sdf-stylegan-eab7b2.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2206.12055'
+  repo: zhengxinyang/sdf-stylegan
+- id: sdfusion-d0997e
+  title: SDFusion
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    github: https://github.com/yccyenchicheng/SDFusion
+    project: https://yccyenchicheng.github.io/SDFusion/
+  year: 2022
+  tags:
+  - diffusion
+  - multimodal
+  - sdf
+  summary: A latent diffusion framework over truncated signed distance fields that supports multimodal 3D shape generation and completion conditioned on images or text.
+  summary_ja: 切り詰めた符号付き距離場上の潜在拡散フレームワークで、画像やテキストを条件としたマルチモーダルな3D形状生成と補完をサポートする。
+  thumbnail: assets/thumbnails/sdfusion-d0997e.png
+  date_added: '2026-06-13'
+  source: seed
+  repo: yccyenchicheng/sdfusion
+- id: neural-marching-cubes-c34955
+  title: Neural Marching Cubes
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2106.11272
+    github: https://github.com/czq142857/NMC
+  year: 2021
+  tags:
+  - implicit
+  - isosurface
+  - mesh
+  summary: A data-driven approach to mesh extraction from implicit fields that learns to reconstruct sharp features and correct local topology.
+  summary_ja: 暗黙的フィールドからのメッシュ抽出のためのデータ駆動型手法で、鋭い特徴を復元し局所的なトポロジーを正しく扱うことを学習する。
+  thumbnail: assets/thumbnails/neural-marching-cubes-c34955.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2106.11272'
+  repo: czq142857/nmc
+- id: point-voxel-diffusion-pvd-661915
+  title: Point-Voxel Diffusion (PVD)
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2104.03670
+    github: https://github.com/alexzhou907/PVD
+  year: 2021
+  tags:
+  - completion
+  - diffusion
+  - point-cloud
+  summary: A probabilistic diffusion model on point-voxel representations that performs both unconditional 3D shape generation and shape completion from partial inputs.
+  summary_ja: 点ボクセル表現上の確率的拡散モデルで、無条件の3D形状生成と部分入力からの形状補完の両方を行う。
+  thumbnail: assets/thumbnails/point-voxel-diffusion-pvd-661915.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2104.03670'
+  repo: alexzhou907/pvd
+- id: convolutional-occupancy-networks-887883
+  title: Convolutional Occupancy Networks
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2003.04618
+    github: https://github.com/autonomousvision/convolutional_occupancy_networks
+  year: 2020
+  tags:
+  - implicit
+  - occupancy
+  - reconstruction
+  summary: Combines convolutional features with occupancy prediction to represent detailed 3D geometry and reconstruct objects and scenes at scale.
+  summary_ja: 畳み込み特徴と占有予測を組み合わせて詳細な3D形状を表現し、物体やシーンを大規模に復元する。
+  thumbnail: assets/thumbnails/convolutional-occupancy-networks-887883.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2003.04618'
+  repo: autonomousvision/convolutional_occupancy_networks
+- id: polygen-9d3342
+  title: PolyGen
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2002.10880
+    github: https://github.com/google-deepmind/deepmind-research/tree/master/polygen
+  year: 2020
+  tags:
+  - autoregressive
+  - mesh
+  - transformer
+  summary: An autoregressive generative model of 3D meshes that sequentially predicts mesh vertices and then faces using transformer-based pointer networks.
+  summary_ja: トランスフォーマーベースのポインタネットワークを用い、メッシュの頂点を予測してから面を順次予測する3Dメッシュの自己回帰生成モデル。
+  thumbnail: assets/thumbnails/polygen-9d3342.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2002.10880'
+  repo: google-deepmind/deepmind-research
+- id: siren-b981a6
+  title: SIREN
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2006.09661
+    github: https://github.com/vsitzmann/siren
+  year: 2020
+  tags:
+  - implicit
+  - neural-field
+  - representation
+  summary: Implicit neural representations using periodic sine activation functions that capture fine detail and derivatives, applied to signals including 3D shapes.
+  summary_ja: 周期的なサイン活性化関数を用いる暗黙的ニューラル表現で、細部や微分を捉え、3D形状を含む信号に適用される。
+  thumbnail: assets/thumbnails/siren-b981a6.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2006.09661'
+  repo: vsitzmann/siren
+- id: deepsdf-365149
+  title: DeepSDF
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1901.05103
+    github: https://github.com/facebookresearch/DeepSDF
+  year: 2019
+  tags:
+  - implicit
+  - sdf
+  - shape-representation
+  summary: Learns a continuous signed distance function conditioned on a latent code to represent a class of shapes, enabling shape representation, interpolation, and completion.
+  summary_ja: 潜在コードを条件とする連続的な符号付き距離関数を学習して形状クラスを表現し、形状の表現・補間・補完を可能にする。
+  thumbnail: assets/thumbnails/deepsdf-365149.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1901.05103'
+  repo: facebookresearch/deepsdf
+- id: pq-net-662757
+  title: PQ-NET
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1911.10949
+    github: https://github.com/ChrisWu1997/PQ-NET
+  year: 2019
+  tags:
+  - part-based
+  - sequential
+  - shape-generation
+  summary: Represents and generates 3D shapes as sequences of parts using a sequence-to-sequence autoencoder for assembly-based shape synthesis.
+  summary_ja: シーケンス間オートエンコーダを用いて3D形状をパーツの列として表現・生成し、組み立てベースの形状合成を行う。
+  thumbnail: assets/thumbnails/pq-net-662757.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1911.10949'
+  repo: chriswu1997/pq-net
+- id: structurenet-300867
+  title: StructureNet
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1908.00575
+    github: https://github.com/daerduoCarey/structurenet
+    project: https://cs.stanford.edu/~kaichun/structurenet/
+  year: 2019
+  tags:
+  - graph
+  - hierarchical
+  - part-based
+  summary: A hierarchical graph network that generates 3D shapes as structured arrangements of parts, encoding both geometry and part relationships.
+  summary_ja: 3D形状をパーツの構造化された配置として生成する階層的グラフネットワークで、形状とパーツ間の関係の両方を符号化する。
+  thumbnail: assets/thumbnails/structurenet-300867.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1908.00575'
+  repo: daerduocarey/structurenet
+- id: im-net-40c70b
+  title: IM-Net
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1812.02822
+    github: https://github.com/czq142857/implicit-decoder
+  year: 2018
+  tags:
+  - decoder
+  - implicit
+  - shape-representation
+  summary: An implicit field decoder that predicts inside/outside for query points to learn generative models of 3D shapes with smooth surfaces.
+  summary_ja: クエリ点の内外を予測する暗黙的フィールドデコーダで、滑らかな表面を持つ3D形状の生成モデルを学習する。
+  thumbnail: assets/thumbnails/im-net-40c70b.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1812.02822'
+  repo: czq142857/implicit-decoder
+- id: meshcnn-c8d58f
+  title: MeshCNN
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1809.05910
+    github: https://github.com/ranahanocka/MeshCNN
+  year: 2018
+  tags:
+  - convolution
+  - mesh
+  - representation
+  summary: A convolutional neural network that operates directly on mesh edges with learned pooling, providing a foundation for mesh-based geometric learning.
+  summary_ja: 学習されたプーリングを用いてメッシュのエッジ上で直接動作する畳み込みニューラルネットワークで、メッシュベースの幾何学習の基盤を提供する。
+  thumbnail: assets/thumbnails/meshcnn-c8d58f.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1809.05910'
+  repo: ranahanocka/meshcnn
+- id: 3d-gan-9bcda0
+  title: 3D-GAN
+  area: gen-3d
+  task: mesh-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/1610.07584
+    github: https://github.com/zck119/3dgan-release
+    project: http://3dgan.csail.mit.edu/
+  year: 2016
+  tags:
+  - gan
+  - shape-generation
+  - voxel
+  summary: An early generative adversarial network that synthesizes 3D objects as voxel grids from a probabilistic latent space.
+  summary_ja: 確率的潜在空間からボクセルグリッドとして3D物体を合成する初期の敵対的生成ネットワーク。
+  thumbnail: assets/thumbnails/3d-gan-9bcda0.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '1610.07584'
+  repo: zck119/3dgan-release
+- id: worldgrow-376a34
+  title: WorldGrow
+  area: gen-3d
+  task: scene-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2510.21682
+    github: https://github.com/world-grow/WorldGrow
+    project: https://world-grow.github.io/
+  year: 2025
+  tags:
+  - 3d-scene
+  - diffusion
+  - scene-generation
+  summary: Generates large, coherent 3D scenes by progressively growing and extending generated geometry beyond the initially observed region.
+  summary_ja: 生成された形状を最初に観測された領域を超えて段階的に拡張・成長させることで、大規模で一貫した3Dシーンを生成する。
+  thumbnail: assets/thumbnails/worldgrow-376a34.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2510.21682'
+  repo: world-grow/worldgrow
+- id: prolificdreamer-45e0c2
+  title: ProlificDreamer
+  area: gen-3d
+  task: text-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2305.16213
+    github: https://github.com/thu-ml/prolificdreamer
+    project: https://ml.cs.tsinghua.edu.cn/prolificdreamer/
+  year: 2023
+  tags:
+  - diffusion
+  - nerf
+  - text-to-3d
+  summary: Introduces Variational Score Distillation, a particle-based variational framework that improves text-to-3D generation fidelity and diversity over score distillation sampling.
+  summary_ja: 粒子ベースの変分フレームワークである変分スコア蒸留(VSD)を提案し、スコア蒸留サンプリングと比べてテキストから3D生成の忠実度と多様性を向上させる。
+  thumbnail: assets/thumbnails/prolificdreamer-45e0c2.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2305.16213'
+  repo: thu-ml/prolificdreamer
 - id: dreamfusion-text-to-3d-using-2d-diffusion-f298c7
   title: 'DreamFusion: Text-to-3D using 2D Diffusion'
   area: gen-3d
@@ -244,6 +1484,45 @@ entries:
   date_added: '2026-06-13'
   source: seed
   arxiv_id: '2209.14988'
+- id: magic3d-2b4caf
+  title: Magic3D
+  area: gen-3d
+  task: text-to-3d
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2211.10440
+    project: https://research.nvidia.com/labs/dir/magic3d/
+  year: 2022
+  tags:
+  - diffusion
+  - mesh
+  - text-to-3d
+  summary: A coarse-to-fine text-to-3D approach that first produces a low-resolution neural field and then optimizes a textured mesh for higher-resolution content creation.
+  summary_ja: 粗から精への手法によるテキストから3D生成。まず低解像度のニューラルフィールドを生成し、その後テクスチャ付きメッシュを最適化して高解像度のコンテンツを作成する。
+  thumbnail: assets/thumbnails/magic3d-2b4caf.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2211.10440'
+- id: 3dtopia-xl-382d4c
+  title: 3DTopia-XL
+  area: gen-3d
+  task: texture-pbr
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2409.12957
+    github: https://github.com/3DTopia/3DTopia-XL
+  year: 2024
+  tags:
+  - diffusion
+  - pbr
+  - primitive
+  summary: Generates high-quality 3D assets with PBR materials from text or images using a primitive-based latent diffusion representation.
+  summary_ja: プリミティブベースの潜在拡散表現を用いて、テキストや画像からPBRマテリアル付きの高品質な3Dアセットを生成する。
+  thumbnail: assets/thumbnails/3dtopia-xl-382d4c.png
+  date_added: '2026-06-13'
+  source: seed
+  arxiv_id: '2409.12957'
+  repo: 3dtopia/3dtopia-xl
 - id: controlnet-f9ea86
   title: ControlNet
   area: image-2d

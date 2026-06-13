@@ -31,12 +31,14 @@ areas:
       - { id: text-to-3d,         name: "Text-to-3D",                          name_ja: "テキスト→3D", keywords: [dreamfusion, score-distillation] }
       - { id: image-to-3d,        name: "Image-to-3D",                         name_ja: "画像→3D", keywords: [single-view, multi-view, reconstruction] }
       - { id: mesh-generation,    name: "Mesh Generation",                     name_ja: "メッシュ生成", keywords: [mesh, gaussian-splatting, nerf] }
+      - { id: cad,                name: "CAD Generation",                      name_ja: "CAD生成", keywords: [cad, brep, parametric, sketch-extrude] }
       - { id: texture-pbr,        name: "Texture / PBR / Material Generation", name_ja: "テクスチャ・PBR・マテリアル生成", keywords: [pbr, texture, material] }
       - { id: normal-depth-maps,  name: "Normal & Depth Map Generation",       name_ja: "法線・深度マップ生成", keywords: [normal-map, depth, midas] }
       - { id: uv-retopology,      name: "UV Unwrap & Retopology",              name_ja: "UV展開・リトポロジー", keywords: [uv, retopology, lod] }
       - { id: scene-generation,   name: "3D Scene / Environment Generation",   name_ja: "3Dシーン・環境生成", keywords: [scene, environment] }
       - { id: terrain-world,      name: "Terrain / World Generation",          name_ja: "地形・ワールド生成", keywords: [terrain, world, procedural] }
       - { id: skybox-panorama,    name: "360° Skybox / Panorama",              name_ja: "360°スカイボックス・パノラマ", keywords: [skybox, panorama, 360] }
+      - { id: 3d-editing,         name: "3D Editing",                          name_ja: "3D編集", keywords: [editing, instruct-nerf2nerf, mesh-editing, scene-editing] }
 
   - id: characters
     name: "Characters & Avatars"

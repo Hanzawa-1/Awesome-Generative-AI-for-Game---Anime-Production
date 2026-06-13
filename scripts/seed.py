@@ -9,6 +9,7 @@ files. Re-running regenerates the seed set. The weekly agent grows the catalog f
 from __future__ import annotations
 
 import datetime as dt
+import json
 import sys
 from pathlib import Path
 
@@ -18,6 +19,8 @@ from agent.schema import Entry  # noqa: E402
 from pipeline import db  # noqa: E402
 
 SEED_DATE = dt.date(2026, 6, 13)
+# Importable JSON seed files (e.g. entries carried over from other awesome-lists).
+SEED_DATA_DIR = Path(__file__).resolve().parent / "seed_data"
 
 # (title, area, task, kind, links, year, tags, summary)
 SEEDS: list[dict] = [
@@ -277,14 +280,48 @@ SUMMARIES_JA: dict[str, str] = {
 }
 
 
+def _load_json_seeds() -> list[dict]:
+    records: list[dict] = []
+    if SEED_DATA_DIR.exists():
+        for jf in sorted(SEED_DATA_DIR.glob("*.json")):
+            data = json.loads(jf.read_text(encoding="utf-8"))
+            records.extend(data.get("entries", data) if isinstance(data, dict) else data)
+    return records
+
+
 def build() -> list[Entry]:
-    out = []
+    out: list[Entry] = []
+    seen: set[str] = set()
+    skipped = 0
+
+    def add(data: dict) -> None:
+        nonlocal skipped
+        data = dict(data)
+        data.setdefault("source", "seed")
+        data.setdefault("date_added", SEED_DATE)
+        try:
+            e = Entry(**data)
+        except Exception as ex:  # noqa: BLE001 - skip malformed imported records
+            print(f"  skip seed '{data.get('title')}': {ex}")
+            skipped += 1
+            return
+        if e.key in seen:  # inline seeds take precedence over imports
+            return
+        seen.add(e.key)
+        out.append(e)
+
     for s in SEEDS:
         data = dict(s)
         ja = SUMMARIES_JA.get(data["title"])
         if ja:
             data["summary_ja"] = ja
-        out.append(Entry(source="seed", date_added=SEED_DATE, **data))
+        add(data)
+
+    for r in _load_json_seeds():
+        add(r)
+
+    if skipped:
+        print(f"  ({skipped} imported records skipped as invalid)")
     return out
 
 
