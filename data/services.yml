@@ -1106,6 +1106,23 @@ entries:
   thumbnail: assets/thumbnails/inworld-ai-c4e760.png
   date_added: '2026-06-13'
   source: seed
+- id: viggle-ai-9d62ae
+  title: Viggle AI
+  area: video
+  task: image-to-video
+  kind: proprietary
+  links:
+    website: https://viggle.ai/
+  year: 2024
+  tags:
+  - character-animation
+  - image-to-video
+  - motion-transfer
+  summary: A popular proprietary AI animation platform that specializes in character motion transfer, allowing users to animate static character images using motion templates or custom video clips.
+  summary_ja: キャラクターのモーション転送に特化した人気の商用AIアニメーションプラットフォーム。モーションテンプレートやカスタム動画クリップを使用して、静止したキャラクター画像をアニメーション化できる。
+  thumbnail: assets/thumbnails/viggle-ai-9d62ae.png
+  date_added: '2026-06-14'
+  source: agent
 - id: mocha-pro-4b4000
   title: Mocha Pro
   area: video
@@ -1160,6 +1177,23 @@ entries:
   thumbnail: assets/thumbnails/slapshot-ai-78d9df.png
   date_added: '2026-06-13'
   source: agent
+- id: google-veo-201d84
+  title: Google Veo
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://ai.google.dev/gemini-api/docs/video
+  year: 2024
+  tags:
+  - proprietary
+  - text-to-video
+  - video-generation
+  summary: Google's state-of-the-art proprietary video generation model capable of producing high-fidelity, cinematic-quality videos with realistic physics, fluid motion, and natively generated audio.
+  summary_ja: リアルな物理挙動、滑らかな動き、およびネイティブに生成されたオーディオを備えた、高品質で映画のような動画を生成できるGoogleの最先端の商用動画生成モデル。
+  thumbnail: assets/thumbnails/google-veo-201d84.png
+  date_added: '2026-06-14'
+  source: agent
 - id: kling-ai-534089
   title: Kling AI
   area: video
@@ -1195,6 +1229,40 @@ entries:
   summary_ja: テキストの指示や画像から、高速な生成速度と一貫した物理法則を備えた高品質でリアルなシネマティックショットを作成する、Luma AIによる商用の次世代動画生成モデル。
   thumbnail: assets/thumbnails/luma-dream-machine-eddc5b.png
   date_added: '2026-06-13'
+  source: agent
+- id: minimax-ai-video-generator-2fce03
+  title: MiniMax AI Video Generator
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://platform.minimax.io/docs/guides/video-generation
+  year: 2024
+  tags:
+  - proprietary
+  - text-to-video
+  - video-generation
+  summary: A powerful proprietary video generation model developed by MiniMax (also known as Hailuo AI) that excels at producing high-resolution videos with exceptional clarity and realistic motion.
+  summary_ja: MiniMax社（海螺AIとしても知られる）によって開発された強力な商用動画生成モデル。優れた鮮明度とリアルな動きを備えた高解像度動画の生成に秀でている。
+  thumbnail: assets/thumbnails/minimax-ai-video-generator-2fce03.png
+  date_added: '2026-06-14'
+  source: agent
+- id: vidu-50486a
+  title: Vidu
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://www.vidu.com/
+  year: 2024
+  tags:
+  - proprietary
+  - text-to-video
+  - video-generation
+  summary: A professional AI video generation platform developed by ShengShu Technology that supports text-to-video and image-to-video generation with high visual consistency and smooth motion.
+  summary_ja: 生数科技（ShengShu Technology）によって開発されたプロフェッショナルなAI動画生成プラットフォーム。高い視覚的一貫性と滑らかな動きを備えたテキストからの動画生成および画像からの動画生成をサポートする。
+  thumbnail: assets/thumbnails/vidu-50486a.png
+  date_added: '2026-06-14'
   source: agent
 - id: pika-b588f4
   title: Pika
@@ -1243,4 +1311,22 @@ entries:
   summary_ja: Descriptは、文字起こしされたテキストを編集することで動画や音声を編集できる、AI搭載の協調型オーディオ・ビデオエディターです。自動文字起こし、AI音声生成、不要なつなぎ言葉の除去、スタジオ品質の音響補正などの機能を備えています。
   thumbnail: assets/thumbnails/descript-2a8e52.png
   date_added: '2026-06-13'
+  source: agent
+- id: goenhance-ai-f90ac6
+  title: GoEnhance AI
+  area: video
+  task: video-style-transfer
+  kind: proprietary
+  links:
+    website: https://www.goenhance.ai/
+  year: 2024
+  tags:
+  - anime
+  - claymation
+  - saas
+  - video-style-transfer
+  summary: A commercial AI video style transfer platform that allows users to transform existing footage into anime, claymation, Pixar-like, and other artistic styles with smooth motion tracking.
+  summary_ja: スムーズなモーショントラッキングにより、既存の映像をアニメ、クレイアニメ、ピクサー風などの芸術的なスタイルに変換できる商用のAIビデオスタイル転送プラットフォーム。
+  thumbnail: assets/thumbnails/goenhance-ai-f90ac6.png
+  date_added: '2026-06-14'
   source: agent
