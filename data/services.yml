@@ -16,6 +16,23 @@ entries:
   thumbnail: assets/thumbnails/hedra-f6ef6f.png
   date_added: '2026-06-13'
   source: agent
+- id: sync-labs-8c71a6
+  title: Sync Labs
+  area: animation
+  task: facial-lipsync
+  kind: proprietary
+  links:
+    website: https://sync.so/
+  tags:
+  - api
+  - dubbing
+  - lip-sync
+  - real-time
+  summary: A commercial API and platform providing real-time, zero-shot video-to-video lip-syncing and visual dubbing, widely used for game localization and video production.
+  summary_ja: ゲームのローカライズや映像制作で広く使用されている、リアルタイムかつゼロショットのビデオ間リップシンクおよびビジュアルダビングを提供する商用API・プラットフォーム。
+  thumbnail: assets/thumbnails/sync-labs-8c71a6.png
+  date_added: '2026-06-15'
+  source: agent
 - id: cascadeur-b525d1
   title: Cascadeur
   area: animation
@@ -32,6 +49,59 @@ entries:
   thumbnail: assets/thumbnails/cascadeur-b525d1.png
   date_added: '2026-06-13'
   source: seed
+- id: viggle-ai-9d62ae
+  title: Viggle AI
+  area: animation
+  task: pose-to-frame
+  kind: proprietary
+  links:
+    website: https://viggle.ai/
+  year: 2024
+  tags:
+  - character-animation
+  - motion-transfer
+  - video-generation
+  summary: A popular AI-powered character animation platform that allows creators to mix and animate static character images using reference motion videos or text prompts.
+  summary_ja: 静止画のキャラクター画像に、参照ビデオの動きやテキストプロンプトを適用してアニメーション化できる、人気のAI搭載キャラクターアニメーションプラットフォーム。
+  thumbnail: assets/thumbnails/viggle-ai-9d62ae.png
+  date_added: '2026-06-15'
+  source: agent
+- id: rokoko-vision-4206df
+  title: Rokoko Vision
+  area: animation
+  task: video-mocap
+  kind: proprietary
+  links:
+    website: https://www.rokoko.com/products/vision
+  year: 2023
+  tags:
+  - browser-based
+  - dual-camera
+  - mocap
+  - pose-estimation
+  summary: A browser-based AI motion capture tool that extracts 3D character animations from webcam feeds or uploaded video files. It supports single-camera and dual-camera setups for enhanced tracking accuracy and integrates with Rokoko Studio for cleanup and retargeting.
+  summary_ja: ウェブカメラの映像やアップロードされた動画ファイルから3Dキャラクターアニメーションを抽出する、ブラウザベースのAIモーションキャプチャツール。精度向上のためのデュアルカメラ設定に対応し、クリーンアップやリターゲットを行うRokoko Studioと連携します。
+  thumbnail: assets/thumbnails/rokoko-vision-4206df.png
+  date_added: '2026-06-15'
+  source: agent
+- id: plask-fcd31c
+  title: Plask
+  area: animation
+  task: video-mocap
+  kind: proprietary
+  links:
+    website: https://plask.ai/
+  year: 2021
+  tags:
+  - animation-tool
+  - mocap
+  - pose-estimation
+  - web-based
+  summary: A web-based AI-powered 3D motion capture and animation platform that converts single-camera video recordings into high-quality 3D animations. It supports importing custom 3D models (including MMD and VRM) and exporting to standard formats like FBX, BVH, and GLB.
+  summary_ja: 単一カメラのビデオ録画を高品質な3Dアニメーションに変換する、ウェブベースのAI搭載3Dモーションキャプチャおよびアニメーションプラットフォーム。カスタム3Dモデル（MMDやVRMを含む）のインポートと、FBX、BVH、GLBなどの標準フォーマットへのエクスポートに対応しています。
+  thumbnail: assets/thumbnails/plask-fcd31c.png
+  date_added: '2026-06-15'
+  source: agent
 - id: deepmotion-animate-3d-bf6f29
   title: DeepMotion (Animate 3D)
   area: animation
