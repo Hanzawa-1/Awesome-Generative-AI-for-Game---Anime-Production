@@ -8490,6 +8490,63 @@ entries:
   date_added: '2026-06-13'
   source: seed
   arxiv_id: '2112.10752'
+- id: image-referenced-sketch-colorization-based-on-animation-crea-256971
+  title: Image Referenced Sketch Colorization Based on Animation Creation Workflow
+  area: manga
+  task: manga-colorization
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2502.19937
+  authors:
+  - Dingkun Yan
+  - Xinrui Wang
+  - Zhuoru Li
+  - Suguru Saito
+  - Yusuke Iwasawa
+  - Yutaka Matsuo
+  - Jiaxian Guo
+  year: 2025
+  tags:
+  - colorization
+  - diffusion
+  - reference-guided
+  - sketch
+  summary: A diffusion-based sketch colorization framework inspired by real-world animation workflows, utilizing a sketch image as spatial reference and an RGB image as color reference to avoid artifacts and manual operations.
+  summary_ja: 実際の動画制作ワークフローに着想を得た拡散モデルベースの線画着色フレームワーク。線画画像を空間的な参照とし、RGB画像を着色の参照とすることで、アーティファクトや手動操作を抑えた高品質な着色を実現する。
+  thumbnail: assets/thumbnails/image-referenced-sketch-colorization-based-on-animation-crea-256971.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2502.19937'
+- id: colorflow-737136
+  title: ColorFlow
+  area: manga
+  task: manga-colorization
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2412.11815
+    github: https://github.com/TencentARC/ColorFlow
+    project: https://zhuang2002.github.io/ColorFlow/
+  authors:
+  - Junhao Zhuang
+  - Xuan Ju
+  - Zhaoyang Zhang
+  - Yong Liu
+  - Shiyi Zhang
+  - Chun Yuan
+  - Ying Shan
+  year: 2024
+  tags:
+  - colorization
+  - comic
+  - diffusion
+  - identity-consistency
+  summary: A three-stage diffusion-based framework designed for automatic black-and-white image sequence colorization, such as cartoon or comic series. It utilizes a retrieval-augmented mechanism to preserve character and object identity consistency across multiple frames.
+  summary_ja: カートゥーンやコミックシリーズなどの白黒画像シーケンスの自動着色のために設計された、3段階の拡散モデルベースのフレームワーク。検索拡張メカニズムを利用して、複数フレームにわたってキャラクターやオブジェクトのアイデンティティの一貫性を維持します。
+  thumbnail: assets/thumbnails/colorflow-737136.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2412.11815'
+  repo: tencentarc/colorflow
 - id: inkn-hue-enhancing-manga-colorization-from-multiple-priors-w-012674
   title: 'inkn''hue: Enhancing Manga Colorization from Multiple Priors with Alignment Multi-Encoder VAE'
   area: manga
@@ -8582,6 +8639,75 @@ entries:
   source: agent
   arxiv_id: '1706.06759'
   repo: dwangomediavillage/comicolorization
+- id: aicomicbuilder-39ce86
+  title: AIComicBuilder
+  area: manga
+  task: manga-generation
+  kind: oss
+  links:
+    github: https://github.com/LingyiChen-AI/AIComicBuilder
+  year: 2026
+  tags:
+  - animation
+  - comic
+  - generation
+  - storyboard
+  summary: An open-source AI-powered animated comic generator that transforms scripts into fully animated videos and comic panels with AI-driven character design, storyboarding, and video synthesis.
+  summary_ja: スクリプトをAI駆動のキャラクターデザイン、ストーリーボード、ビデオ合成によって、アニメーション付きのコミックやコマ画像に変換するオープンソースのAI搭載コミックジェネレーター。
+  thumbnail: assets/thumbnails/aicomicbuilder-39ce86.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: lingyichen-ai/aicomicbuilder
+- id: deep-printfilm-e8b86f
+  title: deep-printfilm
+  area: manga
+  task: manga-generation
+  kind: oss
+  links:
+    github: https://github.com/yuanzhongqiao/deep-printfilm
+  year: 2026
+  tags:
+  - generation
+  - keyframe
+  - motion-comic
+  - storyboard
+  summary: An industrial AI motion comic and video workbench that uses a Script-to-Asset-to-Keyframe workflow to streamline the creation of short dramas, comics, and storyboards.
+  summary_ja: スクリプトからアセット、キーフレームへのワークフローを採用し、短編ドラマ、コミック、ストーリーボードの制作を効率化する産業用AIモーションコミックおよびビデオワークベンチ。
+  thumbnail: assets/thumbnails/deep-printfilm-e8b86f.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: yuanzhongqiao/deep-printfilm
+- id: dreamshot-7a0d63
+  title: DreamShot
+  area: manga
+  task: manga-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2604.17195
+    github: https://github.com/LL3RD/DreamShot-Code
+    project: https://ll3rd.github.io/DreamShot/
+  authors:
+  - Junjia Huang
+  - Binbin Yang
+  - Pengxiang Yan
+  - Jiyang Liu
+  - Bin Xia
+  - Zhao Wang
+  - Yitong Wang
+  - Liang Lin
+  year: 2026
+  tags:
+  - consistency
+  - diffusion
+  - generation
+  - storyboard
+  summary: A video generative model-based storyboard synthesis framework that maintains long-range temporal coherence, consistent character identities, and narrative flow across multiple shots.
+  summary_ja: ビデオ生成モデルをベースにした絵コンテ（ストーリーボード）合成フレームワーク。複数のカットにわたって長期的な時間的一貫性、キャラクターのアイデンティティ、およびナラティブの流れを維持する。
+  thumbnail: assets/thumbnails/dreamshot-7a0d63.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2604.17195'
+  repo: ll3rd/dreamshot-code
 - id: mangaflow-59cfd1
   title: MangaFlow
   area: manga
@@ -8607,6 +8733,30 @@ entries:
   date_added: '2026-06-13'
   source: agent
   arxiv_id: '2605.28173'
+- id: collaborative-comic-generation-2ab8f0
+  title: Collaborative Comic Generation
+  area: manga
+  task: manga-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2409.17263
+    github: https://github.com/RimiChen/Collaborative_Comic_Generation
+    paper: https://arxiv.org/pdf/2409.17263
+  authors:
+  - Yi-Chun Chen
+  - Arnav Jhala
+  year: 2024
+  tags:
+  - comic-generation
+  - diffusion
+  - layout
+  summary: An interactive, theory-inspired visual narrative generative system that integrates comic authoring idioms with language and diffusion models to support human-AI collaborative comic creation.
+  summary_ja: コミック制作の作法（イディオム）を言語モデルや拡散モデルと統合し、人間とAIの協調的なコミック制作を支援する、理論に基づいたインタラクティブな視覚的ナラティブ生成システム。
+  thumbnail: assets/thumbnails/collaborative-comic-generation-2ab8f0.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2409.17263'
+  repo: rimichen/collaborative_comic_generation
 - id: diffsensei-c68f21
   title: DiffSensei
   area: manga
@@ -8664,6 +8814,192 @@ entries:
   source: agent
   arxiv_id: '2412.19303'
   repo: siyuch-fdu/mangadiffusion
+- id: storydiffusion-2bab11
+  title: StoryDiffusion
+  area: manga
+  task: manga-generation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2405.01434
+    github: https://github.com/HVision-NKU/StoryDiffusion
+    project: https://storydiffusion.github.io/
+    paper: https://arxiv.org/pdf/2405.01434
+  authors:
+  - Yingqing He
+  - Menghan Xia
+  - Haoxin Chen
+  - Xiaodong Cun
+  - Yuan Gong
+  - Jinbo Xing
+  - Yong Zhang
+  - Xintao Wang
+  - Chao Weng
+  - Ying Shan
+  - Qifeng Chen
+  year: 2024
+  tags:
+  - consistent-character
+  - diffusion
+  - story-generation
+  summary: A visual story generation framework that utilizes consistent self-attention to maintain character identity, style, and clothing across multiple generated comic panels and video frames.
+  summary_ja: 一貫したセルフアテンション機構を利用することで、生成された複数のコミックのコマやビデオフレーム間で、キャラクターのアイデンティティ、スタイル、服装を一貫して維持するビジュアルストーリー生成フレームワーク。
+  thumbnail: assets/thumbnails/storydiffusion-2bab11.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2405.01434'
+  repo: hvision-nku/storydiffusion
+- id: ai-comic-factory-363794
+  title: AI Comic Factory
+  area: manga
+  task: manga-generation
+  kind: oss
+  links:
+    github: https://github.com/jbilcke-hf/ai-comic-factory
+  year: 2023
+  tags:
+  - comic-generation
+  - sdxl
+  - web-app
+  summary: An open-source web application that generates multi-panel comic pages from text prompts using LLMs for script/layout planning and SDXL for panel rendering.
+  summary_ja: LLMによるスクリプトとレイアウトの計画、およびSDXLによるコマのレンダリングを用いて、テキストプロンプトから複数コマのコミックページを生成するオープンソースのWebアプリケーション。
+  thumbnail: assets/thumbnails/ai-comic-factory-363794.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: jbilcke-hf/ai-comic-factory
+- id: manga109-v2026-956e1b
+  title: Manga109-v2026
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2605.21182
+    paper: https://arxiv.org/pdf/2605.21182
+  authors:
+  - Jeonghun Baek
+  - Atsuyuki Miyai
+  - Shota Onohara
+  - Hikaru Ikuta
+  - Kiyoharu Aizawa
+  year: 2026
+  tags:
+  - dataset
+  - manga-understanding
+  - manga109
+  - ocr
+  summary: An updated version of the foundational Manga109 dataset, providing refined dialogue text annotations and corrections to align with modern OCR and multimodal manga translation/understanding tasks.
+  summary_ja: 現代のOCRやマルチモーダルな漫画翻訳・理解タスクに適合させるため、対話テキストのアノテーションを洗練し修正を加えた、基礎的なManga109データセットのアップデート版。
+  thumbnail: assets/thumbnails/manga109-v2026-956e1b.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2605.21182'
+- id: indonesian-manhwa-translation-pipeline-386ed5
+  title: Indonesian Manhwa Translation Pipeline
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2501.01629
+    github: https://github.com/Sagarika-Singh-99/indonesian_manhwa_translation
+    paper: https://arxiv.org/pdf/2501.01629
+  authors:
+  - Nithyasri Narasimhan
+  - Sagarika Singh
+  year: 2025
+  tags:
+  - manhwa
+  - ocr
+  - pipeline
+  - translation
+  summary: An automated pipeline designed for translating Indonesian manhwa (comics) into English. It integrates a fine-tuned YOLOv5xu model for speech bubble detection, Tesseract for OCR, and a fine-tuned MarianMT model for machine translation.
+  summary_ja: インドネシア語のマンファ（コミック）を英語に翻訳するために設計された自動化パイプライン。吹き出し検出用に微調整されたYOLOv5xuモデル、OCR用にTesseract、機械翻訳用に微調整されたMarianMTモデルを統合しています。
+  thumbnail: assets/thumbnails/indonesian-manhwa-translation-pipeline-386ed5.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2501.01629'
+  repo: sagarika-singh-99/indonesian_manhwa_translation
+- id: mangalmm-mangavqa-af523c
+  title: MangaLMM / MangaVQA
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2505.20298
+    github: https://github.com/manga109/MangaLMM
+    paper: https://arxiv.org/pdf/2505.20298
+  authors:
+  - Jeonghun Baek
+  - Kazuki Egashira
+  - Shota Onohara
+  - Atsuyuki Miyai
+  - Yuki Imajuku
+  - Hikaru Ikuta
+  - Kiyoharu Aizawa
+  year: 2025
+  tags:
+  - manga-understanding
+  - multimodal
+  - ocr
+  - vqa
+  summary: A specialized large multimodal model (LMM) and benchmark designed for multimodal manga understanding, featuring MangaOCR for in-page text recognition and MangaVQA for evaluating contextual narrative comprehension.
+  summary_ja: ページ内テキスト認識のためのMangaOCRと、文脈的な物語理解を評価するためのMangaVQAを備えた、マルチモーダルな漫画理解に特化した大規模マルチモーダルモデル（LMM）およびベンチマーク。
+  thumbnail: assets/thumbnails/mangalmm-mangavqa-af523c.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2505.20298'
+  repo: manga109/mangalmm
+- id: onomatogen-fd847f
+  title: OnomatoGen
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2509.24331
+    paper: https://arxiv.org/pdf/2509.24331
+  authors:
+  - Takara Taniguchi
+  - Wataru Shimoda
+  - Kota Yamaguchi
+  - Hideki Nakayama
+  year: 2025
+  tags:
+  - lettering
+  - manga-generation
+  - onomatopoeia
+  - typography
+  summary: A generative framework that stylizes plain text into visually expressive onomatopoeia for manga, utilizing alpha-channel generation to control shape, size, and placement according to the scene's mood.
+  summary_ja: シーンの雰囲気や感情に合わせて形状、サイズ、配置を制御するアルファチャンネル生成を活用し、プレーンテキストを漫画用の視覚的に表現豊かな擬音語・擬態語（オノマトペ）にスタイル化する生成フレームワーク。
+  thumbnail: assets/thumbnails/onomatogen-fd847f.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2509.24331'
+- id: re-verse-44af0b
+  title: Re:Verse
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2508.08508
+    github: https://github.com/eternal-f1ame/Re-Verse
+    paper: https://arxiv.org/pdf/2508.08508
+  authors:
+  - Aaditya Baranwal
+  - Madhav Kataria
+  - Naitik Agrawal
+  - Yogesh S Rawat
+  - Shruti Vyas
+  year: 2025
+  tags:
+  - benchmark
+  - evaluation
+  - manga-understanding
+  - vlm
+  summary: A comprehensive evaluation framework and dataset designed to test Vision Language Models (VLMs) on sequential visual storytelling, temporal causality, and cross-panel cohesion in manga.
+  summary_ja: 漫画における連続的な視覚的ストーリーテリング、時系列の因果関係、およびコマ間の結束性について、視覚言語モデル（VLM）をテストするために設計された包括的な評価フレームワークおよびデータセット。
+  thumbnail: assets/thumbnails/re-verse-44af0b.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2508.08508'
+  repo: eternal-f1ame/re-verse
 - id: context-informed-machine-translation-of-manga-using-multimod-b878f8
   title: Context-Informed Machine Translation of Manga using Multimodal Large Language Models
   area: manga
@@ -8690,6 +9026,44 @@ entries:
   date_added: '2026-06-13'
   source: agent
   arxiv_id: '2411.02589'
+- id: manga-translator-android-f96c4a
+  title: Manga Translator Android
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    github: https://github.com/jedzqer/manga-translator-android
+  year: 2024
+  tags:
+  - android
+  - llm
+  - manga
+  - translation
+  summary: An Android application for instant automatic manga translation powered by large language models. It performs local speech bubble detection and OCR, translates text using OpenAI-compatible APIs, and overlays draggable translation bubbles on top of the original comic pages.
+  summary_ja: 大規模言語モデルを搭載した、Android向けの即時自動漫画翻訳アプリ。ローカルで吹き出し検出とOCRを実行し、OpenAI互換のAPIを使用してテキストを翻訳、元のコミック画像の上にドラッグ可能な翻訳吹き出しをオーバーレイ表示します。
+  thumbnail: assets/thumbnails/manga-translator-android-f96c4a.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: jedzqer/manga-translator-android
+- id: manga-translator-ui-774489
+  title: Manga Translator UI
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    github: https://github.com/hgmzhn/manga-translator-ui
+  year: 2024
+  tags:
+  - gui
+  - llm
+  - manga
+  - translation
+  summary: A graphical user interface for manga translation built on top of manga-image-translator. It supports automatic translation of Japanese, Korean, and English comics, integrates multiple translation engines like OpenAI and Gemini, and features a visual editor for adjusting text styles.
+  summary_ja: manga-image-translatorをベースに構築された漫画翻訳用のグラフィカルユーザーインターフェース。日・韓・英のコミックの自動翻訳に対応し、OpenAIやGeminiなどの複数の翻訳エンジンを統合、テキストスタイルを調整するためのビジュアルエディタを備えています。
+  thumbnail: assets/thumbnails/manga-translator-ui-774489.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: hgmzhn/manga-translator-ui
 - id: comic-translate-577d27
   title: Comic Translate
   area: manga
@@ -8709,6 +9083,44 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: ogkalu2/comic-translate
+- id: koharu-8e606e
+  title: Koharu
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    github: https://github.com/mayocream/koharu
+  year: 2023
+  tags:
+  - manga
+  - ocr
+  - rust
+  - translation
+  summary: A local-first, machine learning-powered manga translator written in Rust. It provides an automated workflow for text detection, OCR, translation, and rendering directly on the user's local machine.
+  summary_ja: Rustで記述された、ローカルファーストかつ機械学習駆動の漫画翻訳ツール。ユーザーのローカルマシン上でテキスト検出、OCR、翻訳、レンダリングを直接行う自動化されたワークフローを提供します。
+  thumbnail: assets/thumbnails/koharu-8e606e.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: mayocream/koharu
+- id: ballonstranslator-b7bc37
+  title: BallonsTranslator
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    github: https://github.com/dmMaze/BallonsTranslator
+  year: 2022
+  tags:
+  - manga
+  - ocr
+  - translation
+  - typesetting
+  summary: An open-source, computer-aided manga and comic translation tool powered by deep learning. It automates text detection, OCR, inpainting (text erasing), machine translation, and typesetting, while offering a rich visual editor to customize text styles and layouts.
+  summary_ja: ディープラーニングを活用したオープンソースのコンピュータ支援型漫画・コミック翻訳ツール。テキスト検出、OCR、インペインティング（文字消去）、機械翻訳、写植を自動化し、テキストスタイルやレイアウトをカスタマイズできる豊富なビジュアルエディタを提供します。
+  thumbnail: assets/thumbnails/ballonstranslator-b7bc37.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: dmmaze/ballonstranslator
 - id: mokuro-047be2
   title: Mokuro
   area: manga
@@ -8765,6 +9177,25 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: kha-white/manga-ocr
+- id: misakatranslator-6991f8
+  title: MisakaTranslator
+  area: manga
+  task: manga-translation
+  kind: oss
+  links:
+    github: https://github.com/hanmin0822/MisakaTranslator
+  year: 2020
+  tags:
+  - galgame
+  - ocr
+  - real-time
+  - translator
+  summary: A popular open-source real-time machine translation tool for visual novels, Galgames, and manga, integrating OCR, text hooking, multiple translation engines, and text-to-speech.
+  summary_ja: OCR、テキストフック、複数の翻訳エンジン、および音声合成（TTS）を統合した、ビジュアルノベル、美少女ゲーム、および漫画向けのオープンソースのリアルタイム機械翻訳ツール。
+  thumbnail: assets/thumbnails/misakatranslator-6991f8.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: hanmin0822/misakatranslator
 - id: towards-fully-automated-manga-translation-3d76e9
   title: Towards Fully Automated Manga Translation
   area: manga
@@ -8790,6 +9221,27 @@ entries:
   date_added: '2026-06-13'
   source: agent
   arxiv_id: '2012.14271'
+- id: comfyui-panelforge-pixstri-3d9b17
+  title: ComfyUI PanelForge (Pixstri)
+  area: manga
+  task: panel-layout
+  kind: oss
+  links:
+    github: https://github.com/lisaks/comfyui-panelforge
+  authors:
+  - Lisa K. S.
+  year: 2025
+  tags:
+  - comfyui
+  - comic-layout
+  - manga-panel
+  - workflow
+  summary: A ComfyUI extension designed for comic book panel creation. It provides a hierarchical node system (Page, Row, and Frame nodes) that allows users to design, customize, and preview multi-panel comic layouts and sequential art workflows directly within ComfyUI.
+  summary_ja: ComfyUI向けのコミック・マンガのコマ割り作成用拡張機能。ページ、行、フレームの階層的なノードシステムを提供し、ComfyUIワークフロー内でマルチパネルのコマ割りレイアウトやシーケンシャルアートの設計、カスタマイズ、プレビューを容易にします。
+  thumbnail: assets/thumbnails/comfyui-panelforge-pixstri-3d9b17.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: lisaks/comfyui-panelforge
 - id: dreamingcomics-a-story-visualization-pipeline-via-subject-an-461ea3
   title: 'DreamingComics: A Story Visualization Pipeline via Subject and Layout Customized Generation using Video Models'
   area: manga
@@ -8814,6 +9266,27 @@ entries:
   date_added: '2026-06-13'
   source: agent
   arxiv_id: '2512.01686'
+- id: manga-panel-extractor-5c4db5
+  title: Manga Panel Extractor
+  area: manga
+  task: panel-layout
+  kind: oss
+  links:
+    github: https://github.com/adenzu/Manga-Panel-Extractor
+  authors:
+  - Aden Zu
+  year: 2025
+  tags:
+  - image-processing
+  - manga-panel
+  - opencv
+  - panel-extraction
+  summary: A web-based and Python-powered tool that automatically detects, segments, and extracts individual panels from manga pages using OpenCV and image processing techniques.
+  summary_ja: OpenCVと画像処理技術を使用して、マンガのページから個々のコマを自動的に検出、セグメンテーション、および抽出する、WebベースおよびPython駆動のツール。
+  thumbnail: assets/thumbnails/manga-panel-extractor-5c4db5.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: adenzu/manga-panel-extractor
 - id: manga-panel-layoutgan-005c62
   title: Manga-Panel-LayoutGAN
   area: manga
@@ -8879,6 +9352,48 @@ entries:
   source: seed
   arxiv_id: '2401.10224'
   repo: ragavsachdeva/magi
+- id: comfyui-panels-79d1ed
+  title: ComfyUI Panels
+  area: manga
+  task: panel-layout
+  kind: oss
+  links:
+    github: https://github.com/bmad4ever/comfyui_panels
+  year: 2023
+  tags:
+  - comfyui
+  - layout
+  - manga
+  - panel
+  summary: A ComfyUI custom node package for generating and organizing comic and manga-like panel layouts. It supports hierarchical cuts, equally spaced cuts, and nested panels to create complex page compositions.
+  summary_ja: コミックやマンガのようなコマ割りのレイアウトを生成・整理するためのComfyUIカスタムノードパッケージ。階層的なカット、等間隔のカット、および入れ子状のコマをサポートし、複雑なページ構成を作成できます。
+  thumbnail: assets/thumbnails/comfyui-panels-79d1ed.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: bmad4ever/comfyui_panels
+- id: cpst-comprehension-preserving-style-transfer-for-multi-modal-673b15
+  title: 'CPST: Comprehension-Preserving Style Transfer for Multi-Modal Narratives'
+  area: manga
+  task: panel-layout
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2312.08695
+    paper: https://arxiv.org/pdf/2312.08695
+  authors:
+  - Yi-Chun Chen
+  - Arnav Jhala
+  year: 2023
+  tags:
+  - comic-layout
+  - manga-panel
+  - narrative
+  - style-transfer
+  summary: A style transfer framework for multi-modal narratives like comics and manga that preserves narrative comprehension by transferring visual styles across multiple dimensions, including panel layout, size, shape, and color.
+  summary_ja: コミックやマンガなどのマルチモーダルなナラティブ向けのスタイル転送フレームワーク。コマのレイアウト、サイズ、形状、色などの複数の次元にわたってビジュアルスタイルを転送することにより、物語の理解度を維持します。
+  thumbnail: assets/thumbnails/cpst-comprehension-preserving-style-transfer-for-multi-modal-673b15.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2312.08695'
 - id: magicscroll-nontypical-aspect-ratio-image-generation-for-vis-1a7af8
   title: 'MagicScroll: Nontypical Aspect-Ratio Image Generation for Visual Storytelling via Multi-Layered Semantic-Aware Denoising'
   area: manga
@@ -8907,6 +9422,27 @@ entries:
   date_added: '2026-06-13'
   source: agent
   arxiv_id: '2312.10899'
+- id: manga-panel-order-estimator-59c8bc
+  title: Manga Panel Order Estimator
+  area: manga
+  task: panel-layout
+  kind: oss
+  links:
+    github: https://github.com/manga109/panel-order-estimator
+  authors:
+  - Manga109 Team
+  year: 2022
+  tags:
+  - manga-panel
+  - manga109
+  - panel-layout
+  - reading-order
+  summary: An official tool from the Manga109 team that estimates the correct reading order of comic and manga panels by recursively dividing panel bounding boxes into a tree structure.
+  summary_ja: Manga109チームによる公式ツール。コマの境界ボックスを再帰的に分割してツリー構造を作成することにより、コミックやマンガのコマの正しい読書順序を推定します。
+  thumbnail: assets/thumbnails/manga-panel-order-estimator-59c8bc.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: manga109/panel-order-estimator
 - id: sketch2manga-0ca23d
   title: Sketch2Manga
   area: manga
@@ -8934,6 +9470,25 @@ entries:
   source: agent
   arxiv_id: '2403.08266'
   repo: dmmaze/sketch2manga
+- id: sketch2manga-comfyui-node-575126
+  title: Sketch2Manga ComfyUI Node
+  area: manga
+  task: screentone
+  kind: oss
+  links:
+    github: https://github.com/dmMaze/sketch2manga
+  year: 2024
+  tags:
+  - comfyui
+  - diffusion
+  - manga
+  - screentone
+  summary: A ComfyUI custom node implementation of the Sketch2Manga paper, allowing users to apply high-quality shaded screentones to line drawings or colored illustrations using diffusion models.
+  summary_ja: Sketch2Mangaの論文に基づくComfyUIカスタムノード実装。拡散モデルを用いて、線画やカラーイラストに対して高品質なグラデーションやスクリーントーンを自動適用できる。
+  thumbnail: assets/thumbnails/sketch2manga-comfyui-node-575126.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: dmmaze/sketch2manga
 - id: manga-rescreening-with-interpretable-screentone-representati-78a181
   title: Manga Rescreening with Interpretable Screentone Representation
   area: manga
@@ -8957,6 +9512,31 @@ entries:
   date_added: '2026-06-13'
   source: agent
   arxiv_id: '2306.04114'
+- id: screentone-aware-manga-super-resolution-using-deeplearning-7fc040
+  title: Screentone-Aware Manga Super-Resolution Using DeepLearning
+  area: manga
+  task: screentone
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2305.08325
+    paper: https://arxiv.org/pdf/2305.08325
+  authors:
+  - Chih-Yuan Yao
+  - Husan-Ting Chou
+  - Yu-Sheng Lin
+  - Kuo-wei Chen
+  year: 2023
+  tags:
+  - manga
+  - screentone
+  - super-resolution
+  - upscaling
+  summary: A deep learning-based super-resolution method designed specifically for manga images that automatically extracts lines and screentones while preserving the density and semantic meaning of the original screentone patterns.
+  summary_ja: オリジナルのスクリーントーンパターンの密度と意味的な情報を保持しながら、線画とスクリーントーンを自動的に抽出・超解像処理する、マンガ画像に特化したディープラーニングベースの超解像手法。
+  thumbnail: assets/thumbnails/screentone-aware-manga-super-resolution-using-deeplearning-7fc040.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2305.08325'
 - id: screentone-preserved-manga-retargeting-e88966
   title: Screentone-Preserved Manga Retargeting
   area: manga
@@ -9029,6 +9609,29 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: msxie92/screenstyle
+- id: synthesis-of-screentone-patterns-of-manga-characters-ebd132
+  title: Synthesis of Screentone Patterns of Manga Characters
+  area: manga
+  task: screentone
+  kind: oss
+  links:
+    github: https://github.com/kktsubota/manga-character-screentone
+  authors:
+  - Koki Tsubota
+  - Daiki Ikami
+  - Kiyoharu Aizawa
+  year: 2019
+  tags:
+  - character
+  - manga
+  - screentone
+  - synthesis
+  summary: A PyTorch implementation of a screentone synthesis framework that translates line drawings of manga characters into fully screened manga images by selecting and arranging region-wise screentone patterns.
+  summary_ja: マンガキャラクターの線画から、領域ごとのスクリーントーンパターンを選択・配置することで、トーンが貼られたマンガ画像を合成するPyTorch実装のスクリーントーン合成フレームワーク。
+  thumbnail: assets/thumbnails/synthesis-of-screentone-patterns-of-manga-characters-ebd132.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: kktsubota/manga-character-screentone
 - id: rstgametranslation-5617dc
   title: RSTGameTranslation
   area: text-design
@@ -9050,6 +9653,65 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: thanhkeke97/rstgametranslation
+- id: towerinstruct-c756fa
+  title: TowerInstruct
+  area: text-design
+  task: localization
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2402.17733
+    hf: https://huggingface.co/Unbabel/TowerInstruct-7B-v0.1
+  authors:
+  - Duarte M. Alves
+  - José Pombal
+  - Nuno M. Guerreiro
+  - Pedro Henrique Martins
+  - João Alves
+  - Amin Farajian
+  - Ben Peters
+  - Ricardo Rei
+  - Patrick Fernandes
+  - José G. C. de Souza
+  - Marianna Buchicchio
+  - Luísa Coheur
+  - Alon Lavie
+  - André F. T. Martins
+  year: 2024
+  tags:
+  - llm
+  - localization
+  - translation
+  summary: An open multilingual large language model optimized specifically for translation-related tasks, including machine translation, terminology-aware translation, and context-aware translation across multiple languages.
+  summary_ja: 機械翻訳、用語指定翻訳、文脈依存翻訳など、多言語にわたる翻訳関連タスクに特化して最適化されたオープンな多言語大規模言語モデル。
+  thumbnail: assets/thumbnails/towerinstruct-c756fa.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2402.17733'
+- id: alma-2ca3df
+  title: ALMA
+  area: text-design
+  task: localization
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2309.11674
+    github: https://github.com/fe1ixxu/ALMA
+  authors:
+  - Haoran Xu
+  - Young Jin Kim
+  - Amr Sharaf
+  - Hany Hassan Awadalla
+  year: 2023
+  tags:
+  - llm
+  - localization
+  - translation
+  summary: A state-of-the-art LLM-based translation model that utilizes a new training paradigm, starting with monolingual fine-tuning followed by optimization on high-quality parallel data to achieve high translation performance.
+  summary_ja: 単一言語データでのファインチューニングの後に高品質なパラレルデータで最適化を行う新しい学習パラダイムを採用し、高い翻訳性能を実現した最先端のLLMベース翻訳モデル。
+  thumbnail: assets/thumbnails/alma-2ca3df.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2309.11674'
+  repo: fe1ixxu/alma
 - id: faster-whisper-6e9474
   title: faster-whisper
   area: text-design
@@ -9092,6 +9754,24 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: dominostars/playtranslate
+- id: seamlessm4t-cc3882
+  title: SeamlessM4T
+  area: text-design
+  task: localization
+  kind: oss
+  links:
+    github: https://github.com/facebookresearch/seamless_communication
+  year: 2023
+  tags:
+  - localization
+  - multilingual
+  - speech-translation
+  summary: A foundational multilingual and multitask speech translation model by Meta that supports speech-to-speech, speech-to-text, text-to-speech, and text-to-text translation for up to 100 languages.
+  summary_ja: 最大100言語に対応し、音声対音声、音声対テキスト、テキスト対音声、テキスト対テキストの翻訳をサポートする、Meta開発の基盤的多言語・マルチタスク音声翻訳モデル。
+  thumbnail: assets/thumbnails/seamlessm4t-cc3882.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: facebookresearch/seamless_communication
 - id: a-snapshot-into-the-possibility-of-video-game-machine-transl-e3c73b
   title: A Snapshot into the Possibility of Video Game Machine Translation
   area: text-design
@@ -9203,6 +9883,25 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: ggml-org/whisper.cpp
+- id: tolgee-53980c
+  title: Tolgee
+  area: text-design
+  task: localization
+  kind: oss
+  links:
+    github: https://github.com/tolgee/tolgee-platform
+    website: https://tolgee.io/
+  year: 2021
+  tags:
+  - i18n
+  - localization
+  - translation-management
+  summary: An open-source, developer-friendly localization platform featuring in-context translation editing, translation memory, and AI-powered machine translation integrations.
+  summary_ja: インコンテキスト翻訳編集、翻訳メモリ、AIを活用した機械翻訳連携機能を備えた、開発者フレンドリーなオープンソースのローカライズプラットフォーム。
+  thumbnail: assets/thumbnails/tolgee-53980c.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: tolgee/tolgee-platform
 - id: argos-translate-2519bf
   title: Argos Translate
   area: text-design
@@ -9245,6 +9944,110 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: libretranslate/libretranslate
+- id: from-world-gen-to-quest-line-cbadff
+  title: From World-Gen to Quest-Line
+  area: text-design
+  task: narrative-quest
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2604.25482
+    github: https://github.com/anon-researcher-rpg/dependency-driven-prompt-pipeline
+  authors:
+  - Dominik Borawski
+  - Marta Szulc
+  - Robert Chudy
+  - Małgorzata Giedrowicz
+  - Piotr Mironowicz
+  year: 2026
+  tags:
+  - llm
+  - narrative
+  - quest
+  - rpg
+  summary: 'A dependency-aware, multi-stage prompt pipeline for procedural RPG content generation that models narrative dependencies through structured intermediate representations. It decomposes generation into sequential stages: world building, character creation, and quest-line generation.'
+  summary_ja: 構造化された中間表現を通じて物語の依存関係をモデル化する、手続き型RPGコンテンツ生成のための依存関係を考慮した多段階プロンプトパイプライン。生成プロセスをワールド構築、キャラクター作成、クエストライン生成の連続した段階に分解します。
+  thumbnail: assets/thumbnails/from-world-gen-to-quest-line-cbadff.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2604.25482'
+  repo: anon-researcher-rpg/dependency-driven-prompt-pipeline
+- id: bookworld-d86f76
+  title: BookWorld
+  area: text-design
+  task: narrative-quest
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2504.14538
+    github: https://github.com/alienet1109/BookWorld
+  authors:
+  - Yiting Ran
+  - Xintao Wang
+  - Tian Qiu
+  - Jiaqing Liang
+  - Yanghua Xiao
+  - Deqing Yang
+  year: 2025
+  tags:
+  - multi-agent
+  - narrative
+  - simulation
+  - story
+  summary: A comprehensive system for constructing and simulating book-based multi-agent societies to enable creative story and narrative generation.
+  summary_ja: クリエイティブなストーリーやナラティブの生成を可能にする、書籍ベースのマルチエージェント社会を構築・シミュレーションするための包括的なシステム。
+  thumbnail: assets/thumbnails/bookworld-d86f76.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2504.14538'
+  repo: alienet1109/bookworld
+- id: narrative-to-scene-generation-1fd0b4
+  title: Narrative-to-Scene Generation
+  area: text-design
+  task: narrative-quest
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2509.04481
+    github: https://github.com/RimiChen/2025_NarrativeScene
+  authors:
+  - Yi-Chun Chen
+  - Arnav Jhala
+  year: 2025
+  tags:
+  - llm
+  - narrative
+  - pcg
+  - scene
+  summary: A lightweight pipeline that transforms short narrative prompts into a sequence of 2D tile-based game scenes, reflecting the temporal structure of stories.
+  summary_ja: 短いナラティブプロンプトを、ストーリーの時系列構造を反映した2Dタイルベースのゲームシーンのシーケンスに変換する軽量なパイプライン。
+  thumbnail: assets/thumbnails/narrative-to-scene-generation-1fd0b4.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2509.04481'
+  repo: rimichen/2025_narrativescene
+- id: story2game-a99b16
+  title: STORY2GAME
+  area: text-design
+  task: narrative-quest
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2505.03547
+  authors:
+  - Eric Zhou
+  - Shreyas Basavatia
+  - Moontashir Siam
+  - Zexin Chen
+  - Mark O. Riedl
+  year: 2025
+  tags:
+  - game-engine
+  - interactive-fiction
+  - llm
+  - story
+  summary: An approach using Large Language Models to generate text-based interactive fiction games by generating a story, populating the world, and building the code for actions in a game engine.
+  summary_ja: 大規模言語モデル（LLM）を使用して、ストーリーの生成、ワールドの構築、およびゲームエンジン内でのアクションコードの作成を行うことで、テキストベースのインタラクティブフィクションゲームを生成する手法。
+  thumbnail: assets/thumbnails/story2game-a99b16.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2505.03547'
 - id: mistral-7b-c81ddf
   title: Mistral 7B
   area: text-design
@@ -9264,6 +10067,58 @@ entries:
   source: seed
   arxiv_id: '2310.06825'
   repo: mistralai/mistral-src
+- id: environment-aware-npc-dialogue-ad4285
+  title: Environment-Aware NPC Dialogue
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2604.19192
+    github: https://github.com/UL-FRI-LGM/environment-aware-npc-llm
+  authors:
+  - Grega Radež
+  - Ciril Bohak
+  year: 2026
+  tags:
+  - context-aware
+  - dialogue
+  - npc
+  - vision-llm
+  summary: A system that enhances NPC dialogue by combining LLMs with computer vision, using panoramic images and semantic segmentation to give characters spatial and environmental awareness of their surroundings.
+  summary_ja: パノラマ画像とセマンティックセグメンテーションを使用して、キャラクターに周囲の空間的・環境的状況を認識させ、LLMとコンピュータビジョンを組み合わせてNPCの対話を強化するシステム。
+  thumbnail: assets/thumbnails/environment-aware-npc-dialogue-ad4285.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2604.19192'
+  repo: ul-fri-lgm/environment-aware-npc-llm
+- id: deflanderization-for-game-dialogue-balancing-character-authe-b4993c
+  title: 'Deflanderization for Game Dialogue: Balancing Character Authenticity with Task Execution in LLM-based NPCs'
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2510.13586
+    paper: https://arxiv.org/pdf/2510.13586
+  authors:
+  - Pasin Buakhaw
+  - Kun Kerdthaisong
+  - Phuree Phenhiran
+  - Pitikorn Khlaisamniang
+  - Supasate Vorathammathorn
+  - Piyalitt Ittichaiwong
+  - Nutchanon Yongsatianchot
+  year: 2025
+  tags:
+  - dialogue
+  - flanderization
+  - npc
+  - persona
+  summary: This paper addresses the "flanderization" problem in LLM-based NPCs, where characters over-exaggerate their traits and become caricatures. It proposes a method to balance character authenticity and persona consistency with functional task execution in game dialogue.
+  summary_ja: キャラクターの個性が誇張されすぎて風刺画のようになってしまう、LLMベースのNPCにおける「フランダライゼーション（形骸化）」問題に対処する研究。ゲームの対話において、キャラクターの信頼性やペルソナの一貫性と、機能的なタスク実行とのバランスを取る手法を提案しています。
+  thumbnail: assets/thumbnails/deflanderization-for-game-dialogue-balancing-character-authe-b4993c.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2510.13586'
 - id: fixed-persona-slms-with-modular-memory-2425ba
   title: Fixed-Persona SLMs with Modular Memory
   area: text-design
@@ -9286,6 +10141,79 @@ entries:
   date_added: '2026-06-13'
   source: agent
   arxiv_id: '2511.10277'
+- id: interactive-ai-npcs-powered-by-llms-technical-report-for-the-f40ca0
+  title: 'Interactive AI NPCs Powered by LLMs: Technical Report for the CPDC Challenge 2025'
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2511.20200
+    paper: https://arxiv.org/pdf/2511.20200
+  authors:
+  - Yitian Huang
+  - Yuxuan Lei
+  - Jianxun Lian
+  - Hao Liao
+  year: 2025
+  tags:
+  - dialogue
+  - npc
+  - persona
+  - tool-calling
+  summary: A technical report presenting a framework for game NPCs that balances task-oriented tool calling with context-aware, persona-consistent dialogue. It introduces context engineering techniques like dynamic tool pruning and persona clipping to optimize LLM inputs for real-time game environments.
+  summary_ja: タスク指向のツール呼び出しと、文脈に応じたペルソナ一貫性のある対話のバランスを取るゲームNPC向けのフレームワークを提案する技術レポート。リアルタイムのゲーム環境向けにLLM入力を最適化するため、動的なツールプルーニングやペルソナクリッピングなどのコンテキストエンジニアリング手法を導入しています。
+  thumbnail: assets/thumbnails/interactive-ai-npcs-powered-by-llms-technical-report-for-the-f40ca0.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2511.20200'
+- id: a-survey-on-large-language-model-based-game-agents-f70423
+  title: A Survey on Large Language Model-Based Game Agents
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2404.02039
+    paper: https://arxiv.org/pdf/2404.02039
+  authors:
+  - Sihao Hu
+  - Tiansheng Huang
+  - Gaowen Liu
+  - Ramana Rao Kompella
+  - Fatih Ilhan
+  - Selim Furkan Tekin
+  - Yichang Xu
+  - Zachary Yahn
+  year: 2024
+  tags:
+  - dialogue
+  - llm-agent
+  - npc
+  - survey
+  summary: A comprehensive survey reviewing the state-of-the-art in large language model-based game agents (LLMGAs). It covers key aspects such as agent architecture, cognitive capabilities, memory systems, and their application to dynamic NPC dialogue and behavior generation.
+  summary_ja: 大規模言語モデル（LLM）ベースのゲームエージェント（LLMGA）における最先端技術を網羅した包括的なサーベイ論文。エージェントのアーキテクチャ、認知能力、記憶システム、および動的なNPCの対話や行動生成への応用について解説しています。
+  thumbnail: assets/thumbnails/a-survey-on-large-language-model-based-game-agents-f70423.png
+  date_added: '2026-06-13'
+  source: agent
+  arxiv_id: '2404.02039'
+- id: gigax-e03f86
+  title: Gigax
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    github: https://github.com/GigaxGames/gigax
+  year: 2024
+  tags:
+  - dialogue
+  - local-llm
+  - npc
+  - runtime
+  summary: An open-source runtime and set of open-weights models fine-tuned from Llama-3, Phi-3, and Mistral, designed for local, low-latency LLM-powered NPCs that can speak and execute in-game actions.
+  summary_ja: Llama-3、Phi-3、Mistralからファインチューニングされたオープンウェイトモデルとオープンソースのランタイム。ローカル環境で低遅延に動作し、会話やゲーム内アクションを実行できるNPC向けに設計されている。
+  thumbnail: assets/thumbnails/gigax-e03f86.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: gigaxgames/gigax
 - id: llmunity-093010
   title: LLMUnity
   area: text-design
@@ -9324,6 +10252,25 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: prajwalshettydev/unrealgenaisupport
+- id: ai-town-85222a
+  title: AI Town
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    github: https://github.com/a16z-infra/ai-town
+  year: 2023
+  tags:
+  - dialogue
+  - multi-agent
+  - npc
+  - starter-kit
+  summary: An open-source, deployable starter kit for building and customizing virtual towns where AI characters live, chat, and socialize. It provides a framework for managing persistent state, multi-agent interactions, and LLM-driven NPC dialogue.
+  summary_ja: AIキャラクターが生活し、チャットし、交流する仮想の街を構築・カスタマイズするための、デプロイ可能なオープンソースのスターターキット。永続的な状態管理、マルチエージェント間の相互作用、およびLLM駆動のNPC対話を管理するフレームワークを提供します。
+  thumbnail: assets/thumbnails/ai-town-85222a.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: a16z-infra/ai-town
 - id: generative-agents-bd0923
   title: Generative Agents
   area: text-design
@@ -9371,6 +10318,25 @@ entries:
   source: seed
   arxiv_id: '2302.13971'
   repo: meta-llama/llama
+- id: mantella-61fa1f
+  title: Mantella
+  area: text-design
+  task: npc-dialogue
+  kind: oss
+  links:
+    github: https://github.com/art-from-the-machine/Mantella
+  year: 2023
+  tags:
+  - dialogue
+  - mod
+  - npc
+  - skyrim
+  summary: An open-source framework and mod for Skyrim and Fallout 4 that enables players to naturally converse with NPCs using a pipeline of Speech-to-Text, LLMs, and Text-to-Speech.
+  summary_ja: 音声認識、LLM、音声合成のパイプラインを使用して、プレイヤーがNPCと自然に会話できるようにする、SkyrimおよびFallout 4向けのオープンソースフレームワークおよびMod。
+  thumbnail: assets/thumbnails/mantella-61fa1f.png
+  date_added: '2026-06-13'
+  source: agent
+  repo: art-from-the-machine/mantella
 - id: agentic-pcg-1e1627
   title: Agentic PCG
   area: text-design
@@ -9395,6 +10361,88 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: jiangzehua/agenticpcg
+- id: multiverse-language-conditioned-multi-game-level-blending-vi-fd665c
+  title: 'Multiverse: Language-Conditioned Multi-Game Level Blending via Shared Representation'
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2603.26782
+    github: https://github.com/bic4907/Multiverse-multigame-pcg
+  authors:
+  - In-Chang Baek
+  - Jiyun Jung
+  - Geum-Hwan Hwang
+  - Sung-Hyun Kim
+  - Kyung-Joong Kim
+  year: 2026
+  tags:
+  - level-generation
+  - multi-game
+  - pcg
+  - text-to-level
+  summary: A language-conditioned multi-game level generator that enables cross-game level blending and generation from natural language descriptions using CLIP and VQ-VAE.
+  summary_ja: CLIPとVQ-VAEを用いて、自然言語の記述からゲームを横断したレベルのブレンドや生成を可能にする、言語条件付きのマルチゲームレベルジェネレーター。
+  thumbnail: assets/thumbnails/multiverse-language-conditioned-multi-game-level-blending-vi-fd665c.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2603.26782'
+  repo: bic4907/multiverse-multigame-pcg
+- id: ipcgrl-language-instructed-reinforcement-learning-for-proced-4a2289
+  title: 'IPCGRL: Language-Instructed Reinforcement Learning for Procedural Level Generation'
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2503.12358
+    github: https://github.com/bic4907/language-instructed-pcgrl
+  authors:
+  - In-Chang Baek
+  - Sung-Hyun Kim
+  - Seo-Young Lee
+  - Dong-Hyeon Kim
+  - Kyung-Joong Kim
+  year: 2025
+  tags:
+  - language-instructed
+  - pcg
+  - pcgrl
+  - reinforcement-learning
+  summary: An instruction-based procedural content generation framework via reinforcement learning that incorporates natural language instructions to guide level generation.
+  summary_ja: 自然言語の指示を取り入れてレベル生成をガイドする、強化学習による指示ベースのプロシージャルコンテンツ生成（PCG）フレームワーク。
+  thumbnail: assets/thumbnails/ipcgrl-language-instructed-reinforcement-learning-for-proced-4a2289.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2503.12358'
+  repo: bic4907/language-instructed-pcgrl
+- id: the-procedural-content-generation-benchmark-83f593
+  title: The Procedural Content Generation Benchmark
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2503.21474
+    github: https://github.com/amidos2006/pcg_benchmark
+  authors:
+  - Ahmed Khalifa
+  - Roberto Gallotta
+  - Matthew Barthet
+  - Antonios Liapis
+  - Julian Togelius
+  - Georgios N. Yannakakis
+  year: 2025
+  tags:
+  - benchmark
+  - evaluation
+  - level-generation
+  - pcg
+  summary: An open-source benchmark and evaluation framework designed to test and compare procedural content generation (PCG) algorithms across 12 diverse game-related problems, including level generation and rule-set creation.
+  summary_ja: レベル生成やルールセット作成など、12種類の多様なゲーム関連問題にわたってプロシージャルコンテンツ生成（PCG）アルゴリズムをテストおよび比較するために設計された、オープンソースのベンチマークおよび評価フレームワーク。
+  thumbnail: assets/thumbnails/the-procedural-content-generation-benchmark-83f593.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2503.21474'
+  repo: amidos2006/pcg_benchmark
 - id: unrealllm-24a96e
   title: UnrealLLM
   area: text-design
@@ -9424,6 +10472,59 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: xgrids-3d/interactive-3d-scene-creation-via-llm-driven-procedural-generation
+- id: chatpcg-large-language-model-driven-reward-design-for-proced-a4bd87
+  title: 'ChatPCG: Large Language Model-Driven Reward Design for Procedural Content Generation'
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2406.11875
+    github: https://github.com/bic4907/ChatPCG
+  authors:
+  - In-Chang Baek
+  - Tae-Hwa Park
+  - Jin-Ha Noh
+  - Cheong-Mok Bae
+  - Kyung-Joong Kim
+  year: 2024
+  tags:
+  - llm
+  - pcg
+  - pcgrl
+  - reward-design
+  summary: A framework that leverages large language models to automatically design and optimize reward functions for reinforcement learning-based procedural content generation.
+  summary_ja: 強化学習ベースのプロシージャルコンテンツ生成（PCG）向けに、大規模言語モデル（LLM）を活用して報酬関数を自動的に設計および最適化するフレームワーク。
+  thumbnail: assets/thumbnails/chatpcg-large-language-model-driven-reward-design-for-proced-a4bd87.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2406.11875'
+  repo: bic4907/chatpcg
+- id: pcgrl-procedural-content-generation-via-reinforcement-learni-3a3647
+  title: 'PCGRL: Procedural Content Generation via Reinforcement Learning'
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2001.09212
+    github: https://github.com/amidos2006/gym-pcgrl
+  authors:
+  - Ahmed Khalifa
+  - Philip Bontrager
+  - Sam Earle
+  - Julian Togelius
+  year: 2020
+  tags:
+  - gym
+  - pcg
+  - pcgrl
+  - reinforcement-learning
+  summary: A foundational framework and OpenAI Gym environment that frames procedural content generation as a sequential decision-making task solved via reinforcement learning.
+  summary_ja: プロシージャルコンテンツ生成（PCG）を強化学習によって解決する逐次的意思決定タスクとして定式化する、基礎的なフレームワークおよびOpenAI Gym環境。
+  thumbnail: assets/thumbnails/pcgrl-procedural-content-generation-via-reinforcement-learni-3a3647.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2001.09212'
+  repo: amidos2006/gym-pcgrl
 - id: hunyuanvideo-i2v-7f2a3b
   title: HunyuanVideo-I2V
   area: video
@@ -9445,6 +10546,119 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: tencent-hunyuan/hunyuanvideo-i2v
+- id: draganything-96dde1
+  title: DragAnything
+  area: video
+  task: image-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2403.07420
+    github: https://github.com/showlab/DragAnything
+  authors:
+  - Weijia Wu
+  - Zhuang Li
+  - Yuchao Gu
+  - Rui Zhao
+  - Yefei He
+  - David Junhao Zhang
+  - Mike Zheng Shou
+  - Yan Li
+  year: 2024
+  tags:
+  - image-to-video
+  - motion-control
+  - trajectory-control
+  summary: A controllable video generation framework that utilizes entity representations to achieve precise trajectory-based motion control for any object in an image.
+  summary_ja: エンティティ表現を利用して、画像内の任意のオブジェクトに対して軌跡ベースの精密なモーション制御を実現する、制御可能な動画生成フレームワーク。
+  thumbnail: assets/thumbnails/draganything-96dde1.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2403.07420'
+  repo: showlab/draganything
+- id: follow-your-click-add6d4
+  title: Follow-Your-Click
+  area: video
+  task: image-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2403.08268
+    github: https://github.com/mayuelala/FollowYourClick
+  authors:
+  - Yue Ma
+  - Yingqing He
+  - Hongfa Wang
+  - Andong Wang
+  - Chenyang Qi
+  - Chengfei Cai
+  - Xiu Li
+  - Zhifeng Li
+  year: 2024
+  tags:
+  - image-to-video
+  - motion-control
+  - regional-animation
+  summary: An image-to-video generation framework that enables precise regional animation and motion control of specific objects in an image based on user clicks and short text prompts.
+  summary_ja: ユーザーのクリック操作と短いテキストプロンプトに基づいて、画像内の特定のオブジェクトの精密な領域アニメーションとモーション制御を可能にする画像から動画への生成フレームワーク。
+  thumbnail: assets/thumbnails/follow-your-click-add6d4.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2403.08268'
+  repo: mayuelala/followyourclick
+- id: motion-i2v-4fc9ea
+  title: Motion-I2V
+  area: video
+  task: image-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2401.15977
+    github: https://github.com/G-U-N/Motion-I2V
+  authors:
+  - Xiaoyu Shi
+  - Zhaoyang Huang
+  - Fu-Yun Wang
+  - Weikang Bian
+  - Dasong Li
+  - Yi Zhang
+  - Manyuan Zhang
+  - Ka Chun Cheung
+  year: 2024
+  tags:
+  - image-to-video
+  - motion-modeling
+  - temporal-attention
+  summary: A consistent and controllable image-to-video generation framework that factorizes the process into explicit motion field prediction and motion-augmented temporal attention.
+  summary_ja: プロセスを明示的なモーションフィールド予測とモーション拡張テンポラルアテンションの2段階に分割することで、一貫性と制御性の高い画像から動画への生成を実現するフレームワーク。
+  thumbnail: assets/thumbnails/motion-i2v-4fc9ea.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2401.15977'
+  repo: g-u-n/motion-i2v
+- id: pia-02aa32
+  title: PIA
+  area: video
+  task: image-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2312.13964
+    github: https://github.com/open-mmlab/PIA
+  authors:
+  - Yiming Zhang
+  - Zhening Xing
+  - Yanhong Zeng
+  - Youqing Fang
+  - Kai Chen
+  year: 2023
+  tags:
+  - image-to-video
+  - personalized-generation
+  - style-preservation
+  summary: A personalized image animation framework that acts as a plug-and-play module for text-to-image models, allowing users to animate images while preserving high-fidelity details and specific styles.
+  summary_ja: テキストから画像への生成モデル向けのプラグアンドプレイモジュールとして機能し、高忠実度な詳細と特定のスタイルを維持しながら画像をアニメーション化できるパーソナライズされた画像アニメーションフレームワーク。
+  thumbnail: assets/thumbnails/pia-02aa32.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2312.13964'
+  repo: open-mmlab/pia
 - id: stable-video-diffusion-cd898c
   title: Stable Video Diffusion
   area: video
@@ -9464,6 +10678,61 @@ entries:
   source: seed
   arxiv_id: '2311.15127'
   repo: stability-ai/generative-models
+- id: videomama-482767
+  title: VideoMaMa
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2601.14255
+    github: https://github.com/cvlab-kaist/VideoMaMa
+  authors:
+  - Sangbeom Lim
+  - Seoung Wug Oh
+  - Jiahui Huang
+  - Heeji Yoon
+  - Seungryong Kim
+  - Joon-Young Lee
+  year: 2026
+  tags:
+  - diffusion-prior
+  - rotoscoping
+  - segmentation
+  - video-matting
+  summary: VideoMaMa (Video Mask-to-Matte Model) is a mask-guided video matting framework that converts coarse segmentation masks into pixel-accurate alpha mattes by leveraging pretrained video diffusion models as generative priors. It demonstrates strong zero-shot generalization to real-world footage and complex backgrounds.
+  summary_ja: VideoMaMa（Video Mask-to-Matte Model）は、事前学習済みのビデオ拡散モデルを生成的な事前知識として活用することで、大まかなセグメンテーションマスクをピクセル精度のアルファマットに変換するマスク誘導型ビデオマッティングフレームワークです。実世界の映像や複雑な背景に対しても強力なゼロショット汎化性能を示します。
+  thumbnail: assets/thumbnails/videomama-482767.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2601.14255'
+  repo: cvlab-kaist/videomama
+- id: matanyone-1d3d43
+  title: MatAnyone
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2501.14677
+    github: https://github.com/pq-yang/MatAnyone
+  authors:
+  - Peiqing Yang
+  - Shangchen Zhou
+  - Jixin Zhao
+  - Qingyi Tao
+  - Chen Change Loy
+  year: 2025
+  tags:
+  - background-removal
+  - memory-propagation
+  - rotoscoping
+  - video-matting
+  summary: MatAnyone is a target-assigned video matting framework that introduces a consistent memory propagation module with region-adaptive memory fusion to integrate memory from previous frames. This ensures semantic stability in core regions while preserving fine details in complex or ambiguous backgrounds.
+  summary_ja: MatAnyoneは、領域適応型メモリ融合を備えた一貫性のあるメモリ伝播モジュールを導入し、前フレームからのメモリを統合するターゲット指定型ビデオマッティングフレームワークです。これにより、複雑または曖昧な背景においても、微細なディテールを維持しながらコア領域のセマンティックな安定性を確保します。
+  thumbnail: assets/thumbnails/matanyone-1d3d43.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2501.14677'
+  repo: pq-yang/matanyone
 - id: matanyone-2-ce91be
   title: MatAnyone 2
   area: video
@@ -9570,6 +10839,36 @@ entries:
   source: agent
   arxiv_id: '2310.12982'
   repo: hkchengrex/cutie
+- id: hqtrack-b47838
+  title: HQTrack
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2307.13974
+    github: https://github.com/jiawen-zhu/HQTrack
+  authors:
+  - Jiawen Zhu
+  - Zhenyu Chen
+  - Zeqi Hao
+  - Shijie Chang
+  - Lu Zhang
+  - Dong Wang
+  - Huchuan Lu
+  - Bin Luo
+  year: 2023
+  tags:
+  - rotoscoping
+  - sam
+  - segmentation
+  - video-tracking
+  summary: HQTrack (Tracking Anything in High Quality) is a framework for high-performance video object tracking and segmentation. It combines a Video Multi-Object Segmenter (VMOS) with a Mask Refiner (MR) to track multiple target objects simultaneously and output highly accurate object masks.
+  summary_ja: HQTrack（Tracking Anything in High Quality）は、高性能なビデオオブジェクト追跡およびセグメンテーションのためのフレームワークです。Video Multi-Object Segmenter（VMOS）とMask Refiner（MR）を組み合わせることで、複数のターゲットオブジェクトを同時に追跡し、高精度なオブジェクトマスクを出力します。
+  thumbnail: assets/thumbnails/hqtrack-b47838.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2307.13974'
+  repo: jiawen-zhu/hqtrack
 - id: track-anything-507f6a
   title: Track-Anything
   area: video
@@ -9589,6 +10888,34 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: gaomingqi/track-anything
+- id: xmem-0f3fd8
+  title: XMem++
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2307.15958
+    github: https://github.com/mbzuai-metaverse/XMem2
+  authors:
+  - Ilya Bekuzarov
+  - Sharafa Al-Kamil
+  - Aliaksandr Siarohin
+  - Tingting Liao
+  - Sergey Tulyakov
+  - Hao Li
+  year: 2023
+  tags:
+  - memory-network
+  - rotoscoping
+  - semi-supervised
+  - video-segmentation
+  summary: XMem++ (XMem2) is a semi-supervised video object segmentation model that introduces a permanent memory module to effectively handle multiple user-selected frames with varying appearances of the same object. It provides production-level video segmentation from a few annotated frames.
+  summary_ja: XMem++（XMem2）は、同一オブジェクトの異なる外観を持つ複数のユーザー選択フレームを効果的に処理するために、永続メモリマジュールを導入した半教師ありビデオオブジェクトセグメンテーションモデルです。少数のアノテーション付きフレームからプロダクションレベルのビデオセグメンテーションを提供します。
+  thumbnail: assets/thumbnails/xmem-0f3fd8.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2307.15958'
+  repo: mbzuai-metaverse/xmem2
 - id: xmem-23f217
   title: XMem
   area: video
@@ -9641,6 +10968,30 @@ entries:
   source: agent
   arxiv_id: '2108.11515'
   repo: peterl1n/robustvideomatting
+- id: hunyuanvideo-1-5-f68632
+  title: HunyuanVideo 1.5
+  area: video
+  task: text-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2511.18870
+    github: https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5
+    hf: https://huggingface.co/tencent/HunyuanVideo-1.5
+  authors:
+  - Tencent Hunyuan Team
+  year: 2025
+  tags:
+  - dit
+  - open-source
+  - text-to-video
+  - video-generation
+  summary: An 8.3-billion parameter open-source video generation model featuring a Diffusion Transformer (DiT) architecture with selective and sliding window attention, designed to run efficiently on consumer-grade GPUs while maintaining high visual quality and motion coherence.
+  summary_ja: 83億パラメータのオープンソース動画生成モデル。選択的およびスライディングウィンドウアテンションを備えたDiffusion Transformer（DiT）アーキテクチャを採用し、高い視覚的品質と動きの一貫性を維持しながら、コンシューマー向けGPUで効率的に動作するように設計されている。
+  thumbnail: assets/thumbnails/hunyuanvideo-1-5-f68632.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2511.18870'
+  repo: tencent-hunyuan/hunyuanvideo-1.5
 - id: wan2-1-bc34c3
   title: Wan2.1
   area: video
@@ -9816,6 +11167,35 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: pku-yuangroup/open-sora-plan
+- id: pyramid-flow-9242ed
+  title: Pyramid Flow
+  area: video
+  task: text-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2410.05954
+    github: https://github.com/jy0205/Pyramid-Flow
+  authors:
+  - Yang Jin
+  - Zhicheng Sun
+  - Ningyuan Li
+  - Kun Xu
+  - Hao Jiang
+  - Nan Zhuang
+  - Quzhe Huang
+  year: 2024
+  tags:
+  - flow-matching
+  - open-source
+  - text-to-video
+  - video-generation
+  summary: An open-source video generation model based on pyramidal flow matching, which enables efficient training and inference of high-resolution videos by progressively downsampling and upsampling latent representations.
+  summary_ja: ピラミッド型フロー・マッチングに基づくオープンソースの動画生成モデル。潜在表現を段階的にダウンサンプリングおよびアップサンプリングすることにより、高解像度動画の効率的な学習と推論を可能にする。
+  thumbnail: assets/thumbnails/pyramid-flow-9242ed.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2410.05954'
+  repo: jy0205/pyramid-flow
 - id: animatediff-52bb64
   title: AnimateDiff
   area: video
@@ -9835,6 +11215,147 @@ entries:
   source: seed
   arxiv_id: '2307.04725'
   repo: guoyww/animatediff
+- id: loomvideo-92ee14
+  title: LoomVideo
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2606.06042
+    github: https://github.com/MSALab-PKU/LoomVideo
+    website: https://msalab-pku.github.io/projects/LoomVideo/index.html
+  authors:
+  - Jianzong Wu
+  - Hao Lian
+  - Jiongfan Yang
+  - Dachao Hao
+  - Ye Tian
+  - Yunhai Tong
+  - Jingyuan Zhu
+  - Biaolong Chen
+  year: 2026
+  tags:
+  - multimodal
+  - video-editing
+  - video-generation
+  summary: A unified video generation and editing model that integrates multimodal large language models to interpret interleaved text-image inputs and perform zero-overhead video editing.
+  summary_ja: マルチモーダル大規模言語モデルを統合し、テキストと画像が混在する入力を解釈して、追加の計算オーバーヘッドなしで動画生成および編集を実行できる統合フレームワーク。
+  thumbnail: assets/thumbnails/loomvideo-92ee14.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2606.06042'
+  repo: msalab-pku/loomvideo
+- id: sana-streaming-dfb263
+  title: SANA-Streaming
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2605.30409
+    github: https://github.com/NVlabs/Sana
+    website: https://nvlabs.github.io/Sana/Streaming/
+  authors:
+  - Yuyang Zhao
+  - Yicheng Pan
+  - Qiyuan He
+  - Jincheng Yu
+  - Junsong Chen
+  - Tian Ye
+  - Haozhe Liu
+  - Enze Xie
+  year: 2026
+  tags:
+  - diffusion-transformer
+  - real-time
+  - video-editing
+  summary: A system-algorithm co-designed framework by NVIDIA for high-resolution, real-time streaming video-to-video editing on consumer GPUs using a hybrid diffusion transformer.
+  summary_ja: ハイブリッド拡散トランスフォーマーを採用し、コンシューマ向けGPU上で高解像度かつリアルタイムなストリーミング動画編集（V2V）を実現する、NVIDIAによるシステム・アルゴリズム共同設計フレームワーク。
+  thumbnail: assets/thumbnails/sana-streaming-dfb263.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2605.30409'
+  repo: nvlabs/sana
+- id: diffueraser-8ca341
+  title: DiffuEraser
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2501.10018
+    github: https://github.com/lixiaowen-xw/DiffuEraser
+  authors:
+  - Xiaowen Li
+  - Haolan Xue
+  - Peiran Ren
+  - Liefeng Bo
+  year: 2025
+  tags:
+  - diffusion-model
+  - object-removal
+  - video-inpainting
+  summary: A diffusion-based video inpainting model designed to achieve high content completeness and temporal consistency for large-mask object removal and video completion.
+  summary_ja: 大きなマスク領域のオブジェクト除去や動画補完において、高いコンテンツの完全性と時間的一貫性を両立させるために設計された、拡散モデルベースの動画インペインティング手法。
+  thumbnail: assets/thumbnails/diffueraser-8ca341.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2501.10018'
+  repo: lixiaowen-xw/diffueraser
+- id: vace-7ad2e1
+  title: VACE
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2503.07598
+    github: https://github.com/ali-vilab/VACE
+    project: https://ali-vilab.github.io/VACE-Page/
+  authors:
+  - Zeyinzi Jiang
+  - Zhen Han
+  - Chaojie Mao
+  - Jingfeng Zhang
+  - Yulin Pan
+  - Yu Liu
+  year: 2025
+  tags:
+  - diffusion-transformer
+  - video-editing
+  - video-generation
+  summary: A unified video creation and editing model that supports reference-to-video generation, video-to-video editing, masked video-to-video editing, and free composition of these tasks.
+  summary_ja: 参照画像からの動画生成、動画間編集、マスク指定による動画編集、およびこれらのタスクの自由な組み合わせを単一のモデルで実現する、統合型の動画生成・編集フレームワーク。
+  thumbnail: assets/thumbnails/vace-7ad2e1.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2503.07598'
+  repo: ali-vilab/vace
+- id: videopainter-24ed20
+  title: VideoPainter
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2503.05639
+    github: https://github.com/TencentARC/VideoPainter
+  authors:
+  - Yuxuan Bian
+  - Zhaoyang Zhang
+  - Xuan Ju
+  - Mingdeng Cao
+  - Liangbin Xie
+  - Ying Shan
+  - Qiang Xu
+  year: 2025
+  tags:
+  - context-control
+  - video-editing
+  - video-inpainting
+  summary: A video inpainting and editing framework that introduces plug-and-play context control to handle arbitrary-length videos while balancing background preservation and foreground generation.
+  summary_ja: 背景の保存と前景の生成を両立させながら、プラグアンドプレイのコンテキスト制御を導入することで、任意の長さの動画のインペインティングと編集を可能にするフレームワーク。
+  thumbnail: assets/thumbnails/videopainter-24ed20.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2503.05639'
+  repo: tencentarc/videopainter
 - id: anyv2v-78d1cc
   title: AnyV2V
   area: video
@@ -9937,6 +11458,25 @@ entries:
   source: agent
   arxiv_id: '2204.02663'
   repo: mcg-nku/e2fgvi
+- id: ps-sr-pseudo-single-step-video-super-resolution-via-speculat-91bc33
+  title: 'PS-SR: Pseudo-Single-Step Video Super-Resolution via Speculative Diffusion'
+  area: video
+  task: video-sr-restoration
+  kind: oss
+  links:
+    github: https://github.com/HiDream-ai/PS-SR
+  year: 2026
+  tags:
+  - diffusion
+  - restoration
+  - speculative
+  - vsr
+  summary: A video super-resolution framework that accelerates diffusion-based VSR through speculative diffusion, using a powerful base model to guide a fast draft model for high-quality, single-step inference.
+  summary_ja: 投機的拡散（Speculative Diffusion）を介して拡散ベースのVSRを高速化するビデオ超解像フレームワーク。強力なベースモデルを用いて高速なドラフトモデルをガイドし、高品質な1ステップ推論を実現します。
+  thumbnail: assets/thumbnails/ps-sr-pseudo-single-step-video-super-resolution-via-speculat-91bc33.png
+  date_added: '2026-06-14'
+  source: agent
+  repo: hidream-ai/ps-sr
 - id: dove-fa611e
   title: DOVE
   area: video
@@ -10136,6 +11676,25 @@ entries:
   source: agent
   arxiv_id: '2104.13371'
   repo: ckkelvinchan/basicvsr_plusplus
+- id: waifu2x-extension-gui-9717f8
+  title: Waifu2x-Extension-GUI
+  area: video
+  task: video-sr-restoration
+  kind: oss
+  links:
+    github: https://github.com/AaronFeng753/Waifu2x-Extension-GUI
+  year: 2020
+  tags:
+  - gui
+  - restoration
+  - upscaling
+  - waifu2x
+  summary: A powerful, user-friendly GUI application for upscaling and interpolating videos, images, and GIFs, integrating multiple state-of-the-art algorithms such as Waifu2x, Real-ESRGAN, Real-CUGAN, and RTX Video Super Resolution.
+  summary_ja: Waifu2x、Real-ESRGAN、Real-CUGAN、RTX Video Super Resolutionなどの複数の最先端アルゴリズムを統合した、ビデオ、画像、GIFのアップスケーリングおよびフレーム補間のための強力で使いやすいGUIアプリケーション。
+  thumbnail: assets/thumbnails/waifu2x-extension-gui-9717f8.png
+  date_added: '2026-06-14'
+  source: agent
+  repo: aaronfeng753/waifu2x-extension-gui
 - id: video2x-b0b3af
   title: Video2X
   area: video
@@ -10154,6 +11713,59 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: k4yt3x/video2x
+- id: vista-triplet-supervised-video-style-transfer-with-diffusion-3c3dc4
+  title: 'VISTA: Triplet-Supervised Video Style Transfer with Diffusion Transformers'
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2605.17312
+    github: https://github.com/showlab/VISTA
+    paper: https://arxiv.org/abs/2605.17312
+  authors:
+  - Yiren Song
+  - Wangzi Yao
+  - Haofan Wang
+  - Mike Zheng Shou
+  year: 2026
+  tags:
+  - diffusion-transformer
+  - temporal-consistency
+  - video-style-transfer
+  summary: A video style transfer framework built on Diffusion Transformers that uses triplet supervision to achieve high temporal consistency and style faithfulness without relying on brittle propagation heuristics.
+  summary_ja: 脆弱な伝播ヒューリスティクスに依存することなく、高い時間的一貫性とスタイルへの忠実性を実現するために、トリプレット監視を使用するDiffusion Transformerベースのビデオスタイル転送フレームワーク。
+  thumbnail: assets/thumbnails/vista-triplet-supervised-video-style-transfer-with-diffusion-3c3dc4.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2605.17312'
+  repo: showlab/vista
+- id: fresco-spatial-temporal-correspondence-for-zero-shot-video-t-b9028c
+  title: 'FRESCO: Spatial-Temporal Correspondence for Zero-Shot Video Translation'
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2403.12962
+    github: https://github.com/williamyang1991/FRESCO
+    project: https://www.mmlab-ntu.com/project/fresco/
+    paper: https://arxiv.org/abs/2403.12962
+  authors:
+  - Shuai Yang
+  - Yifan Zhou
+  - Ziwei Liu
+  - Chen Change Loy
+  year: 2024
+  tags:
+  - diffusion
+  - temporal-consistency
+  - video-style-transfer
+  summary: A zero-shot video translation framework that enforces spatial-temporal correspondence (both intra-frame and inter-frame) to ensure temporal coherence and prevent flickering in video style transfer.
+  summary_ja: フレーム内およびフレーム間の時空間対応関係を強制することで、ビデオのスタイル転送における時間的一貫性を確保し、ちらつきを防止するゼロショットビデオ翻訳フレームワーク。
+  thumbnail: assets/thumbnails/fresco-spatial-temporal-correspondence-for-zero-shot-video-t-b9028c.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2403.12962'
+  repo: williamyang1991/fresco
 - id: streamv2v-1faaa4
   title: StreamV2V
   area: video
@@ -10210,6 +11822,36 @@ entries:
   source: agent
   arxiv_id: '2308.07926'
   repo: ant-research/codef
+- id: flowvid-taming-imperfect-optical-flows-for-consistent-video-0451e3
+  title: 'FlowVid: Taming Imperfect Optical Flows for Consistent Video-to-Video Synthesis'
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2312.17681
+    github: https://github.com/Jeff-LiangF/FlowVid
+    paper: https://arxiv.org/abs/2312.17681
+  authors:
+  - Feng Liang
+  - Bichen Wu
+  - Jialiang Wang
+  - Licheng Yu
+  - Kunpeng Li
+  - Yinan Zhao
+  - Ishan Misra
+  - Jia-Bin Huang
+  year: 2023
+  tags:
+  - optical-flow
+  - temporal-consistency
+  - video-style-transfer
+  summary: A video-to-video synthesis framework that leverages spatial conditions and optical flow clues to maintain temporal consistency in video style transfer.
+  summary_ja: 空間的条件とオプティカルフローの手がかりを共同で活用し、ビデオスタイル転送における時間的一貫性を維持するビデオ・ツー・ビデオ合成フレームワーク。
+  thumbnail: assets/thumbnails/flowvid-taming-imperfect-optical-flows-for-consistent-video-0451e3.png
+  date_added: '2026-06-14'
+  source: agent
+  arxiv_id: '2312.17681'
+  repo: jeff-liangf/flowvid
 - id: rerender-a-video-90aeb5
   title: Rerender A Video
   area: video
@@ -10260,3 +11902,22 @@ entries:
   source: agent
   arxiv_id: '2209.11224'
   repo: williamyang1991/vtoonify
+- id: ebsynth-84dc79
+  title: EbSynth
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    github: https://github.com/jamriska/ebsynth
+    website: https://ebsynth.com/
+  year: 2019
+  tags:
+  - keyframe-propagation
+  - style-transfer
+  - vfx
+  summary: A classic, highly efficient example-based image synthesis and style transfer tool that propagates hand-painted keyframe styles across video sequences.
+  summary_ja: 手描きされたキーフレームのスタイルをビデオシーケンス全体に伝播させる、古典的かつ非常に効率的な例示ベースの画像合成およびスタイル転送ツール。
+  thumbnail: assets/thumbnails/ebsynth-84dc79.png
+  date_added: '2026-06-14'
+  source: agent
+  repo: jamriska/ebsynth
