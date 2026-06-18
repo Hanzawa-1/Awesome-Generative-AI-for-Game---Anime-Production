@@ -782,6 +782,40 @@ entries:
   thumbnail: assets/thumbnails/skybox-ai-ce17a3.png
   date_added: '2026-06-13'
   source: agent
+- id: world-machine-c6edc2
+  title: World Machine
+  area: gen-3d
+  task: terrain-world
+  kind: proprietary
+  links:
+    website: https://www.world-machine.com/
+  year: 2026
+  tags:
+  - procedural
+  - software
+  - terrain
+  summary: A classic, node-based procedural terrain generation software widely used in the game industry to create highly detailed heightmaps, meshes, and textures.
+  summary_ja: 高精細なハイトマップ、メッシュ、テクスチャを作成するためにゲーム業界で広く使用されている、ノードベースの古典的な手続き型地形生成ソフトウェア。
+  thumbnail: assets/thumbnails/world-machine-c6edc2.png
+  date_added: '2026-06-18'
+  source: agent
+- id: quadspinner-gaea-6a5a13
+  title: QuadSpinner Gaea
+  area: gen-3d
+  task: terrain-world
+  kind: proprietary
+  links:
+    website: https://quadspinner.com/
+  year: 2024
+  tags:
+  - procedural
+  - software
+  - terrain
+  summary: A modern, next-generation terrain design tool featuring advanced erosion algorithms and procedural workflows for games, VFX, and virtual production.
+  summary_ja: ゲーム、VFX、バーチャルプロダクション向けに、高度な侵食アルゴリズムと手続き型ワークフローを備えた次世代のモダンな地形デザインツール。
+  thumbnail: assets/thumbnails/quadspinner-gaea-6a5a13.png
+  date_added: '2026-06-18'
+  source: agent
 - id: rodin-hyper3d-37bed0
   title: Rodin (Hyper3D)
   area: gen-3d
@@ -813,6 +847,58 @@ entries:
   thumbnail: assets/thumbnails/tripo-a95a86.png
   date_added: '2026-06-13'
   source: seed
+- id: quad-remesher-e35c8b
+  title: Quad Remesher
+  area: gen-3d
+  task: uv-retopology
+  kind: proprietary
+  links:
+    website: https://exoside.com/
+  year: 2019
+  tags:
+  - quad-mesh
+  - remeshing
+  - retopology
+  summary: An automatic quad remeshing plugin for major 3D DCC applications that produces clean, animation-ready quad topologies from complex or scanned meshes.
+  summary_ja: 主要な3D DCCツール（Blender、Maya、3ds Max、Houdiniなど）に対応した自動クアッドリトポロジープラグイン。複雑なメッシュやスキャンデータから、アニメーションに適したクリーンな四角形トポロジーを生成します。
+  thumbnail: assets/thumbnails/quad-remesher-e35c8b.png
+  date_added: '2026-06-18'
+  source: agent
+- id: rizomuv-11f4de
+  title: RizomUV
+  area: gen-3d
+  task: uv-retopology
+  kind: proprietary
+  links:
+    website: https://www.rizomuv.com/
+  year: 2018
+  tags:
+  - packing
+  - unwrapping
+  - uv
+  summary: A professional, industry-standard UV mapping and unwrapping software known for its speed, advanced packing algorithms, and ability to handle complex 3D geometries with minimal distortion.
+  summary_ja: 業界標準のプロフェッショナル向けUV展開・マッピングソフトウェア。高速な処理、高度なパッキングアルゴリズム、歪みを最小限に抑えた複雑な3D形状の処理能力で知られています。
+  thumbnail: assets/thumbnails/rizomuv-11f4de.png
+  date_added: '2026-06-18'
+  source: agent
+- id: pixai-80f3ec
+  title: PixAI
+  area: image-2d
+  task: anime-character-design
+  kind: proprietary
+  links:
+    website: https://pixai.art/
+  year: 2023
+  tags:
+  - anime-generator
+  - character-design
+  - lora
+  - web-app
+  summary: PixAI is a popular web-based AI anime art generator and community platform that specializes in character design. It features text-to-image generation, image-to-image editing, custom LoRA training, and a model marketplace for precise character and style control.
+  summary_ja: PixAIは、キャラクターデザインに特化した人気のあるウェブベースのAIアニメアート生成およびコミュニティプラットフォームです。テキストからの画像生成、画像間編集、カスタムLoRAトレーニング、および正確なキャラクターとスタイルの制御のためのモデルマーケットプレイスを備えています。
+  thumbnail: assets/thumbnails/pixai-80f3ec.png
+  date_added: '2026-06-18'
+  source: agent
 - id: novelai-image-generation-e5a52e
   title: NovelAI Image Generation
   area: image-2d
@@ -831,6 +917,59 @@ entries:
   thumbnail: assets/thumbnails/novelai-image-generation-e5a52e.png
   date_added: '2026-06-13'
   source: seed
+- id: crypko-4e57bb
+  title: Crypko
+  area: image-2d
+  task: anime-character-design
+  kind: proprietary
+  links:
+    website: https://crypko.ai/
+  year: 2020
+  tags:
+  - character-design
+  - gan
+  - interactive-editing
+  summary: Crypko is a GAN-based anime character generation and editing platform that allows users to generate high-quality anime illustrations. It provides interactive tools to customize character features such as hair, clothing, facial expressions, and poses, along with smooth interpolation for animations.
+  summary_ja: Crypkoは、高品質なアニメイラストを生成できるGANベースのアニメキャラクター生成・編集プラットフォームです。髪型、服装、表情、ポーズなどのキャラクターの特徴をカスタマイズするインタラクティブなツールや、アニメーション用のスムーズな補間機能を提供します。
+  thumbnail: assets/thumbnails/crypko-4e57bb.png
+  date_added: '2026-06-18'
+  source: agent
+- id: waifu-labs-560044
+  title: Waifu Labs
+  area: image-2d
+  task: anime-character-design
+  kind: proprietary
+  links:
+    website: https://waifulabs.com/
+  year: 2019
+  tags:
+  - anime-portrait
+  - character-design
+  - generative-ai
+  summary: Waifu Labs is an AI-powered custom anime portrait generator that utilizes machine learning to create unique character illustrations. It guides users through an intuitive step-by-step process to refine and customize character designs based on individual preferences.
+  summary_ja: Waifu Labsは、機械学習を利用してユニークなキャラクターイラストを作成する、AI駆動のカスタムアニメポートレートジェネレーターです。直感的なステップバイステップのプロセスを通じて、個人の好みに基づいてキャラクターデザインを洗練およびカスタマイズできます。
+  thumbnail: assets/thumbnails/waifu-labs-560044.png
+  date_added: '2026-06-18'
+  source: agent
+- id: psoft-pencil-4-d760d5
+  title: PSOFT Pencil+ 4
+  area: image-2d
+  task: cel-shading
+  kind: proprietary
+  links:
+    website: https://www.psoft.co.jp/en/product/pencil/
+  year: 2024
+  tags:
+  - 3dsmax
+  - blender
+  - maya
+  - npr
+  - plugin
+  summary: An industry-standard commercial non-photorealistic rendering plugin for 3ds Max, Maya, Unity, and Blender. It is widely used in major Japanese anime productions to achieve high-quality cel shading and beautiful line drawings.
+  summary_ja: 3ds Max、Maya、Unity、Blenderに対応した、業界標準の商業用非実写（NPR）レンダリングプラグイン。日本の主要なアニメ制作現場で、高品質なセルシェーディングや美しい線画表現を実現するために広く採用されています。
+  thumbnail: assets/thumbnails/psoft-pencil-4-d760d5.png
+  date_added: '2026-06-18'
+  source: agent
 - id: adobe-firefly-api-aa004e
   title: Adobe Firefly API
   area: image-2d
