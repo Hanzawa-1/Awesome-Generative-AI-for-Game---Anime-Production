@@ -16,6 +16,23 @@ entries:
   thumbnail: assets/thumbnails/hedra-f6ef6f.png
   date_added: '2026-06-13'
   source: agent
+- id: sync-labs-8c71a6
+  title: Sync Labs
+  area: animation
+  task: facial-lipsync
+  kind: proprietary
+  links:
+    website: https://sync.so/
+  tags:
+  - api
+  - dubbing
+  - lip-sync
+  - real-time
+  summary: A commercial API and platform providing real-time, zero-shot video-to-video lip-syncing and visual dubbing, widely used for game localization and video production.
+  summary_ja: ゲームのローカライズや映像制作で広く使用されている、リアルタイムかつゼロショットのビデオ間リップシンクおよびビジュアルダビングを提供する商用API・プラットフォーム。
+  thumbnail: assets/thumbnails/sync-labs-8c71a6.png
+  date_added: '2026-06-15'
+  source: agent
 - id: cascadeur-b525d1
   title: Cascadeur
   area: animation
@@ -32,6 +49,59 @@ entries:
   thumbnail: assets/thumbnails/cascadeur-b525d1.png
   date_added: '2026-06-13'
   source: seed
+- id: viggle-ai-9d62ae
+  title: Viggle AI
+  area: animation
+  task: pose-to-frame
+  kind: proprietary
+  links:
+    website: https://viggle.ai/
+  year: 2024
+  tags:
+  - character-animation
+  - motion-transfer
+  - video-generation
+  summary: A popular AI-powered character animation platform that allows creators to mix and animate static character images using reference motion videos or text prompts.
+  summary_ja: 静止画のキャラクター画像に、参照ビデオの動きやテキストプロンプトを適用してアニメーション化できる、人気のAI搭載キャラクターアニメーションプラットフォーム。
+  thumbnail: assets/thumbnails/viggle-ai-9d62ae.png
+  date_added: '2026-06-15'
+  source: agent
+- id: rokoko-vision-4206df
+  title: Rokoko Vision
+  area: animation
+  task: video-mocap
+  kind: proprietary
+  links:
+    website: https://www.rokoko.com/products/vision
+  year: 2023
+  tags:
+  - browser-based
+  - dual-camera
+  - mocap
+  - pose-estimation
+  summary: A browser-based AI motion capture tool that extracts 3D character animations from webcam feeds or uploaded video files. It supports single-camera and dual-camera setups for enhanced tracking accuracy and integrates with Rokoko Studio for cleanup and retargeting.
+  summary_ja: ウェブカメラの映像やアップロードされた動画ファイルから3Dキャラクターアニメーションを抽出する、ブラウザベースのAIモーションキャプチャツール。精度向上のためのデュアルカメラ設定に対応し、クリーンアップやリターゲットを行うRokoko Studioと連携します。
+  thumbnail: assets/thumbnails/rokoko-vision-4206df.png
+  date_added: '2026-06-15'
+  source: agent
+- id: plask-fcd31c
+  title: Plask
+  area: animation
+  task: video-mocap
+  kind: proprietary
+  links:
+    website: https://plask.ai/
+  year: 2021
+  tags:
+  - animation-tool
+  - mocap
+  - pose-estimation
+  - web-based
+  summary: A web-based AI-powered 3D motion capture and animation platform that converts single-camera video recordings into high-quality 3D animations. It supports importing custom 3D models (including MMD and VRM) and exporting to standard formats like FBX, BVH, and GLB.
+  summary_ja: 単一カメラのビデオ録画を高品質な3Dアニメーションに変換する、ウェブベースのAI搭載3Dモーションキャプチャおよびアニメーションプラットフォーム。カスタム3Dモデル（MMDやVRMを含む）のインポートと、FBX、BVH、GLBなどの標準フォーマットへのエクスポートに対応しています。
+  thumbnail: assets/thumbnails/plask-fcd31c.png
+  date_added: '2026-06-15'
+  source: agent
 - id: deepmotion-animate-3d-bf6f29
   title: DeepMotion (Animate 3D)
   area: animation
@@ -64,6 +134,23 @@ entries:
   thumbnail: assets/thumbnails/move-ai-39c1e3.png
   date_added: '2026-06-13'
   source: seed
+- id: udio-5165b7
+  title: Udio
+  area: audio
+  task: music-bgm
+  kind: proprietary
+  links:
+    website: https://www.udio.com/
+  year: 2024
+  tags:
+  - bgm
+  - music-generation
+  - soundtrack
+  summary: A state-of-the-art generative AI music platform that creates high-fidelity, full-length songs with vocals and instrumentation from text prompts.
+  summary_ja: テキストプロンプトからボーカルや楽器演奏を含む高品質なフルレングスの楽曲を生成できる、最先端のジェネレーティブAI音楽プラットフォーム。
+  thumbnail: assets/thumbnails/udio-5165b7.png
+  date_added: '2026-06-16'
+  source: agent
 - id: mubert-08f9c6
   title: Mubert
   area: audio
@@ -166,6 +253,40 @@ entries:
   thumbnail: assets/thumbnails/gamesynth-e5abf2.png
   date_added: '2026-06-13'
   source: agent
+- id: audiokinetic-wwise-ec2f05
+  title: Audiokinetic Wwise
+  area: audio
+  task: procedural-audio
+  kind: proprietary
+  links:
+    website: https://www.audiokinetic.com/en/wwise/
+  tags:
+  - audio-middleware
+  - game-audio
+  - interactive-audio
+  - sound-design
+  summary: A leading cross-platform interactive audio middleware solution for video games. It features a comprehensive suite of design tools, real-time synthesis plugins, and a powerful audio engine for creating complex, adaptive soundscapes.
+  summary_ja: ビデオゲーム向けの業界標準のクロスプラットフォーム対応インタラクティブオーディオミドルウェア。包括的なデザインツール、リアルタイム音響合成プラグイン、および複雑で適応的な音響空間を構築するための強力なオーディオエンジンを備えています。
+  thumbnail: assets/thumbnails/audiokinetic-wwise-ec2f05.png
+  date_added: '2026-06-16'
+  source: agent
+- id: metasounds-ad4116
+  title: MetaSounds
+  area: audio
+  task: procedural-audio
+  kind: proprietary
+  links:
+    website: https://dev.epicgames.com/documentation/en-us/unreal-engine/metasounds-in-unreal-engine
+  tags:
+  - dsp-graph
+  - game-audio
+  - interactive-audio
+  - unreal-engine
+  summary: Unreal Engine 5's high-performance procedural audio system that provides sound designers with complete control over Digital Signal Processing (DSP) graphs. It enables sample-accurate timing, dynamic sound generation, and deep integration with game parameters.
+  summary_ja: Unreal Engine 5に搭載された高性能なプロシージャルオーディオシステム。サウンドデザイナーがDSP（デジタル信号処理）グラフを完全に制御でき、サンプル精度でのタイミング制御や、ゲームパラメータと深く連動した動的な音響生成を可能にします。
+  thumbnail: assets/thumbnails/metasounds-ad4116.png
+  date_added: '2026-06-16'
+  source: agent
 - id: ace-studio-e0c53b
   title: ACE Studio
   area: audio
@@ -216,6 +337,40 @@ entries:
   summary_ja: ディープラーニング技術を用いて、人間の歌声や話し声を感情豊かにリアルに再現する次世代の音声・歌声合成プラットフォーム。
   thumbnail: assets/thumbnails/cevio-ai-55b690.png
   date_added: '2026-06-13'
+  source: agent
+- id: neutrino-098a3c
+  title: NEUTRINO
+  area: audio
+  task: singing-voice
+  kind: proprietary
+  links:
+    website: https://studio-neutrino.com/
+  year: 2020
+  tags:
+  - freeware
+  - japanese
+  - neural-synthesizer
+  summary: A popular Japanese neural network-based singing voice synthesizer that runs as freeware. It generates highly realistic singing voices from MusicXML scores, widely used by creators in the anime and vocal synthesis communities.
+  summary_ja: 日本国内で広く利用されている、ニューラルネットワークベースのフリーウェア歌声合成エンジン。MusicXML形式の楽譜から極めてリアルな歌声を生成し、アニメやボカロなどのクリエイターコミュニティで多用されています。
+  thumbnail: assets/thumbnails/neutrino-098a3c.png
+  date_added: '2026-06-16'
+  source: agent
+- id: emvoice-af80c5
+  title: Emvoice
+  area: audio
+  task: singing-voice
+  kind: proprietary
+  links:
+    website: https://emvoiceapp.com/
+  year: 2019
+  tags:
+  - daw-integration
+  - vocal-plugin
+  - vst
+  summary: A next-generation vocal synthesis plugin (VST/AU/AAX) that allows music producers to create realistic singing voices by inputting lyrics and melody notes directly within their DAW.
+  summary_ja: 歌詞とメロディの音符をDAW内で直接入力することで、リアルな歌声を生成できる次世代のボーカル合成プラグイン（VST/AU/AAX）。
+  thumbnail: assets/thumbnails/emvoice-af80c5.png
+  date_added: '2026-06-16'
   source: agent
 - id: vocaloid-ecff3c
   title: VOCALOID
@@ -334,6 +489,42 @@ entries:
   thumbnail: assets/thumbnails/lovo-ai-457041.png
   date_added: '2026-06-13'
   source: agent
+- id: accurig-e7075e
+  title: AccuRig
+  area: characters
+  task: auto-rigging
+  kind: proprietary
+  links:
+    website: https://www.reallusion.com/auto-rig/accurig/
+  year: 2022
+  tags:
+  - reallusion
+  - rigging
+  - skeleton
+  - skinning
+  summary: AccuRig is a free, professional auto-rigging tool by Reallusion designed to quickly generate skeletal rigs and skin weights for 3D character models. It supports multi-point marker placement for humanoid characters, automatic finger rigging, and seamless export to major game engines and 3D software.
+  summary_ja: AccuRigは、Reallusion社が提供する無料のプロフェッショナル向け自動リギングツールであり、3Dキャラクターモデルの骨格リグとスキンウェイトを迅速に生成します。人型キャラクターのマルチポイントマーカー配置や自動指リギングに対応し、主要なゲームエンジンや3Dソフトウェアへのシームレスなエクスポートをサポートしています。
+  thumbnail: assets/thumbnails/accurig-e7075e.png
+  date_added: '2026-06-16'
+  source: agent
+- id: auto-rig-pro-6cdda0
+  title: Auto-Rig Pro
+  area: characters
+  task: auto-rigging
+  kind: proprietary
+  links:
+    website: https://blendermarket.com/products/auto-rig-pro/
+  year: 2016
+  tags:
+  - addon
+  - blender
+  - rigging
+  - skeleton
+  summary: Auto-Rig Pro is a widely used commercial Blender addon for automatic character rigging, animation retargeting, and game engine export. It features a 'Smart' marker-based placement system to quickly generate bipedal and quadrupedal rigs with full IK/FK controls, optimized for Unity, Unreal Engine, and Godot.
+  summary_ja: Auto-Rig Proは、自動キャラクターリギング、アニメーションのリターゲット、ゲームエンジンへのエクスポートに対応した、広く使用されているBlender用の商用アドオンです。「Smart」マーカーベースの配置システムを備え、Unity、Unreal Engine、Godot向けに最適化された、完全なIK/FKコントロールを持つ二足歩行および四足歩行のリグを迅速に生成します。
+  thumbnail: assets/thumbnails/auto-rig-pro-6cdda0.png
+  date_added: '2026-06-16'
+  source: agent
 - id: mixamo-9a4b49
   title: Mixamo
   area: characters
@@ -350,6 +541,24 @@ entries:
   thumbnail: assets/thumbnails/mixamo-9a4b49.png
   date_added: '2026-06-13'
   source: seed
+- id: meshcapade-me-dca249
+  title: Meshcapade Me
+  area: characters
+  task: avatar-generation
+  kind: proprietary
+  links:
+    website: https://me.meshcapade.com/
+  year: 2021
+  tags:
+  - 3d-avatar
+  - body-measurement
+  - digital-human
+  - smpl
+  summary: An AI-powered platform built on the SMPL body model that generates highly accurate, industry-standard 3D human avatars from photos, videos, or body measurements.
+  summary_ja: SMPLボディモデルをベースに構築されたAI搭載プラットフォームで、写真、ビデオ、または身体測定値から、高精度で業界標準の3D人間アバターを生成します。
+  thumbnail: assets/thumbnails/meshcapade-me-dca249.png
+  date_added: '2026-06-16'
+  source: agent
 - id: metahuman-creator-4597b5
   title: MetaHuman Creator
   area: characters
@@ -366,6 +575,95 @@ entries:
   thumbnail: assets/thumbnails/metahuman-creator-4597b5.png
   date_added: '2026-06-13'
   source: seed
+- id: character-creator-cc4-ebc16d
+  title: Character Creator (CC4)
+  area: characters
+  task: character-generation
+  kind: proprietary
+  links:
+    website: https://www.reallusion.com/character-creator/
+  year: 2022
+  tags:
+  - 3d-character
+  - realistic
+  - rigging
+  - stylized
+  summary: A premier 3D character creation and customization software widely used in game development and animation. It allows artists to generate, morph, and dress realistic or stylized 3D characters, complete with full-body and facial rigs compatible with Unreal Engine, Unity, Blender, and Maya.
+  summary_ja: ゲーム開発やアニメーション制作で広く使用されている、業界標準の3Dキャラクター作成・カスタマイズソフトウェア。リアルまたはデフォルメされた3Dキャラクターを生成、モーフ、着せ替えでき、Unreal Engine、Unity、Blender、Mayaと互換性のある全身およびフェイシャルリグを備えています。
+  thumbnail: assets/thumbnails/character-creator-cc4-ebc16d.png
+  date_added: '2026-06-17'
+  source: agent
+- id: vroid-studio-a40bc2
+  title: VRoid Studio
+  area: characters
+  task: character-generation
+  kind: proprietary
+  links:
+    website: https://vroid.com/en/studio
+  year: 2021
+  tags:
+  - 3d-avatar
+  - anime-character
+  - pixiv
+  - vrm
+  summary: A free 3D character modeling software developed by Pixiv that allows users to create anime-style humanoid avatars. It features intuitive drawing-like tools for hair design, texture painting, and facial customization, exporting models in the standard VRM format.
+  summary_ja: pixivが開発した、直感的な操作でアニメ調の3Dキャラクター（アバター）を作成できる無料の3Dモデリングソフトウェア。絵を描くような感覚で髪型をデザインしたり、テクスチャをペイントしたり、表情をカスタマイズでき、標準的なVRM形式で出力可能です。
+  thumbnail: assets/thumbnails/vroid-studio-a40bc2.png
+  date_added: '2026-06-17'
+  source: agent
+- id: spline-ai-89a525
+  title: Spline AI
+  area: gen-3d
+  task: 3d-editing
+  kind: proprietary
+  links:
+    website: https://spline.design/
+  year: 2023
+  tags:
+  - 3d-editing
+  - browser-tool
+  - collaborative
+  summary: A collaborative, browser-based 3D design and editing tool that integrates generative AI features to generate and modify 3D objects, textures, and animations via natural language.
+  summary_ja: 自然言語プロンプトを介して3Dオブジェクト、テクスチャ、アニメーションの生成や編集を行える、ブラウザベースの協調型3Dデザイン・編集ツール。
+  thumbnail: assets/thumbnails/spline-ai-89a525.png
+  date_added: '2026-06-17'
+  source: agent
+- id: ragnar-cad-c079df
+  title: Ragnar CAD
+  area: gen-3d
+  task: cad
+  kind: proprietary
+  links:
+    website: https://ragnar.build/
+  year: 2025
+  tags:
+  - brep
+  - cad
+  - sketch-to-cad
+  - text-to-cad
+  summary: An AI-powered CAD platform that converts text descriptions and hand-drawn sketches into precise, editable 3D CAD models (B-Rep geometry) with STEP and STL export.
+  summary_ja: テキストの記述や手書きのスケッチを、STEPやSTL形式でエクスポート可能な高精度で編集可能な3D CADモデル（B-Repジオメトリ）に変換するAI搭載CADプラットフォーム。
+  thumbnail: assets/thumbnails/ragnar-cad-c079df.png
+  date_added: '2026-06-17'
+  source: agent
+- id: zoo-text-to-cad-ad65da
+  title: Zoo Text-to-CAD
+  area: gen-3d
+  task: cad
+  kind: proprietary
+  links:
+    website: https://zoo.dev/zookeeper
+  year: 2024
+  tags:
+  - api
+  - brep
+  - cad
+  - text-to-cad
+  summary: A conversational CAD agent and API (Zookeeper) that generates production-ready, editable B-Rep CAD files and meshes from natural language prompts, bypassing traditional mesh-only 3D generation.
+  summary_ja: 自然言語のプロンプトから、編集可能なB-Rep（境界表現）CADファイルやメッシュを生成する対話型CADエージェントおよびAPI（Zookeeper）。従来のメッシュのみの3D生成とは異なり、製造に適したCADデータを直接出力できる。
+  thumbnail: assets/thumbnails/zoo-text-to-cad-ad65da.png
+  date_added: '2026-06-17'
+  source: agent
 - id: meshy-c6012a
   title: Meshy
   area: gen-3d
@@ -383,6 +681,23 @@ entries:
   thumbnail: assets/thumbnails/meshy-c6012a.png
   date_added: '2026-06-13'
   source: seed
+- id: kaedim-2dc2c1
+  title: Kaedim
+  area: gen-3d
+  task: mesh-generation
+  kind: proprietary
+  links:
+    website: https://www.kaedim3d.com/
+  year: 2020
+  tags:
+  - game-assets
+  - image-to-3d
+  - mesh
+  summary: A professional AI-powered 3D asset creation platform that transforms 2D images, sketches, and reference packs into production-ready 3D meshes. It is widely used by game studios to accelerate asset pipelines while maintaining creative control.
+  summary_ja: 2D画像、スケッチ、リファレンスパックをプロダクション品質の3Dメッシュに変換する、プロフェッショナル向けのAI搭載3Dアセット作成プラットフォーム。ゲームスタジオでアセット制作パイプラインの高速化に広く使用されている。
+  thumbnail: assets/thumbnails/kaedim-2dc2c1.png
+  date_added: '2026-06-17'
+  source: agent
 - id: genie-google-deepmind-6f3f03
   title: Genie (Google DeepMind)
   area: gen-3d
@@ -467,6 +782,40 @@ entries:
   thumbnail: assets/thumbnails/skybox-ai-ce17a3.png
   date_added: '2026-06-13'
   source: agent
+- id: world-machine-c6edc2
+  title: World Machine
+  area: gen-3d
+  task: terrain-world
+  kind: proprietary
+  links:
+    website: https://www.world-machine.com/
+  year: 2026
+  tags:
+  - procedural
+  - software
+  - terrain
+  summary: A classic, node-based procedural terrain generation software widely used in the game industry to create highly detailed heightmaps, meshes, and textures.
+  summary_ja: 高精細なハイトマップ、メッシュ、テクスチャを作成するためにゲーム業界で広く使用されている、ノードベースの古典的な手続き型地形生成ソフトウェア。
+  thumbnail: assets/thumbnails/world-machine-c6edc2.png
+  date_added: '2026-06-18'
+  source: agent
+- id: quadspinner-gaea-6a5a13
+  title: QuadSpinner Gaea
+  area: gen-3d
+  task: terrain-world
+  kind: proprietary
+  links:
+    website: https://quadspinner.com/
+  year: 2024
+  tags:
+  - procedural
+  - software
+  - terrain
+  summary: A modern, next-generation terrain design tool featuring advanced erosion algorithms and procedural workflows for games, VFX, and virtual production.
+  summary_ja: ゲーム、VFX、バーチャルプロダクション向けに、高度な侵食アルゴリズムと手続き型ワークフローを備えた次世代のモダンな地形デザインツール。
+  thumbnail: assets/thumbnails/quadspinner-gaea-6a5a13.png
+  date_added: '2026-06-18'
+  source: agent
 - id: rodin-hyper3d-37bed0
   title: Rodin (Hyper3D)
   area: gen-3d
@@ -498,6 +847,58 @@ entries:
   thumbnail: assets/thumbnails/tripo-a95a86.png
   date_added: '2026-06-13'
   source: seed
+- id: quad-remesher-e35c8b
+  title: Quad Remesher
+  area: gen-3d
+  task: uv-retopology
+  kind: proprietary
+  links:
+    website: https://exoside.com/
+  year: 2019
+  tags:
+  - quad-mesh
+  - remeshing
+  - retopology
+  summary: An automatic quad remeshing plugin for major 3D DCC applications that produces clean, animation-ready quad topologies from complex or scanned meshes.
+  summary_ja: 主要な3D DCCツール（Blender、Maya、3ds Max、Houdiniなど）に対応した自動クアッドリトポロジープラグイン。複雑なメッシュやスキャンデータから、アニメーションに適したクリーンな四角形トポロジーを生成します。
+  thumbnail: assets/thumbnails/quad-remesher-e35c8b.png
+  date_added: '2026-06-18'
+  source: agent
+- id: rizomuv-11f4de
+  title: RizomUV
+  area: gen-3d
+  task: uv-retopology
+  kind: proprietary
+  links:
+    website: https://www.rizomuv.com/
+  year: 2018
+  tags:
+  - packing
+  - unwrapping
+  - uv
+  summary: A professional, industry-standard UV mapping and unwrapping software known for its speed, advanced packing algorithms, and ability to handle complex 3D geometries with minimal distortion.
+  summary_ja: 業界標準のプロフェッショナル向けUV展開・マッピングソフトウェア。高速な処理、高度なパッキングアルゴリズム、歪みを最小限に抑えた複雑な3D形状の処理能力で知られています。
+  thumbnail: assets/thumbnails/rizomuv-11f4de.png
+  date_added: '2026-06-18'
+  source: agent
+- id: pixai-80f3ec
+  title: PixAI
+  area: image-2d
+  task: anime-character-design
+  kind: proprietary
+  links:
+    website: https://pixai.art/
+  year: 2023
+  tags:
+  - anime-generator
+  - character-design
+  - lora
+  - web-app
+  summary: PixAI is a popular web-based AI anime art generator and community platform that specializes in character design. It features text-to-image generation, image-to-image editing, custom LoRA training, and a model marketplace for precise character and style control.
+  summary_ja: PixAIは、キャラクターデザインに特化した人気のあるウェブベースのAIアニメアート生成およびコミュニティプラットフォームです。テキストからの画像生成、画像間編集、カスタムLoRAトレーニング、および正確なキャラクターとスタイルの制御のためのモデルマーケットプレイスを備えています。
+  thumbnail: assets/thumbnails/pixai-80f3ec.png
+  date_added: '2026-06-18'
+  source: agent
 - id: novelai-image-generation-e5a52e
   title: NovelAI Image Generation
   area: image-2d
@@ -516,6 +917,113 @@ entries:
   thumbnail: assets/thumbnails/novelai-image-generation-e5a52e.png
   date_added: '2026-06-13'
   source: seed
+- id: crypko-4e57bb
+  title: Crypko
+  area: image-2d
+  task: anime-character-design
+  kind: proprietary
+  links:
+    website: https://crypko.ai/
+  year: 2020
+  tags:
+  - character-design
+  - gan
+  - interactive-editing
+  summary: Crypko is a GAN-based anime character generation and editing platform that allows users to generate high-quality anime illustrations. It provides interactive tools to customize character features such as hair, clothing, facial expressions, and poses, along with smooth interpolation for animations.
+  summary_ja: Crypkoは、高品質なアニメイラストを生成できるGANベースのアニメキャラクター生成・編集プラットフォームです。髪型、服装、表情、ポーズなどのキャラクターの特徴をカスタマイズするインタラクティブなツールや、アニメーション用のスムーズな補間機能を提供します。
+  thumbnail: assets/thumbnails/crypko-4e57bb.png
+  date_added: '2026-06-18'
+  source: agent
+- id: waifu-labs-560044
+  title: Waifu Labs
+  area: image-2d
+  task: anime-character-design
+  kind: proprietary
+  links:
+    website: https://waifulabs.com/
+  year: 2019
+  tags:
+  - anime-portrait
+  - character-design
+  - generative-ai
+  summary: Waifu Labs is an AI-powered custom anime portrait generator that utilizes machine learning to create unique character illustrations. It guides users through an intuitive step-by-step process to refine and customize character designs based on individual preferences.
+  summary_ja: Waifu Labsは、機械学習を利用してユニークなキャラクターイラストを作成する、AI駆動のカスタムアニメポートレートジェネレーターです。直感的なステップバイステップのプロセスを通じて、個人の好みに基づいてキャラクターデザインを洗練およびカスタマイズできます。
+  thumbnail: assets/thumbnails/waifu-labs-560044.png
+  date_added: '2026-06-18'
+  source: agent
+- id: psoft-pencil-4-d760d5
+  title: PSOFT Pencil+ 4
+  area: image-2d
+  task: cel-shading
+  kind: proprietary
+  links:
+    website: https://www.psoft.co.jp/en/product/pencil/
+  year: 2024
+  tags:
+  - 3dsmax
+  - blender
+  - maya
+  - npr
+  - plugin
+  summary: An industry-standard commercial non-photorealistic rendering plugin for 3ds Max, Maya, Unity, and Blender. It is widely used in major Japanese anime productions to achieve high-quality cel shading and beautiful line drawings.
+  summary_ja: 3ds Max、Maya、Unity、Blenderに対応した、業界標準の商業用非実写（NPR）レンダリングプラグイン。日本の主要なアニメ制作現場で、高品質なセルシェーディングや美しい線画表現を実現するために広く採用されています。
+  thumbnail: assets/thumbnails/psoft-pencil-4-d760d5.png
+  date_added: '2026-06-18'
+  source: agent
+- id: clipdrop-f01b6a
+  title: Clipdrop
+  area: image-2d
+  task: image-editing
+  kind: proprietary
+  links:
+    website: https://clipdrop.co/
+  year: 2020
+  tags:
+  - cleanup
+  - image-editing
+  - inpainting
+  - outpainting
+  summary: An AI-powered visual editing suite by Stability AI/Jasper that offers advanced tools for object removal (Cleanup), image outpainting (Uncrop), relighting, and background replacement.
+  summary_ja: オブジェクト削除（Cleanup）、画像アウトペインティング（Uncrop）、リライティング、背景置換などの高度なツールを提供する、Stability AI/JasperによるAI搭載ビジュアル編集スイート。
+  thumbnail: assets/thumbnails/clipdrop-f01b6a.png
+  date_added: '2026-06-19'
+  source: agent
+- id: freepik-pikaso-4b244d
+  title: Freepik Pikaso
+  area: image-2d
+  task: sketch-to-image
+  kind: proprietary
+  links:
+    website: https://www.freepik.com/pikaso
+  year: 2023
+  tags:
+  - browser-based
+  - proprietary
+  - real-time
+  - sketch-to-image
+  summary: A free, browser-based real-time sketch-to-image generator that transforms rough drawings, shapes, and icons into detailed visual artwork instantly.
+  summary_ja: 大まかな描画、図形、アイコンを詳細なビジュアルアートワークに即座に変換する、無料のブラウザベースのリアルタイムスケッチ画像生成ツール。
+  thumbnail: assets/thumbnails/freepik-pikaso-4b244d.png
+  date_added: '2026-06-19'
+  source: agent
+- id: krea-ai-8a10e7
+  title: Krea AI
+  area: image-2d
+  task: sketch-to-image
+  kind: proprietary
+  links:
+    website: https://www.krea.ai/
+  year: 2023
+  tags:
+  - canvas
+  - proprietary
+  - real-time
+  - sketch-to-image
+  summary: A real-time AI creative suite featuring a live canvas workflow that instantly converts rough sketches and drawings into polished, high-quality images as the user draws.
+  summary_ja: ユーザーが描画するのと同時に、大まかなスケッチや図画を洗練された高品質な画像に即座に変換する、ライブキャンバスワークフローを備えたリアルタイムAIクリエイティブスイート。
+  thumbnail: assets/thumbnails/krea-ai-8a10e7.png
+  date_added: '2026-06-19'
+  source: agent
 - id: adobe-firefly-api-aa004e
   title: Adobe Firefly API
   area: image-2d
