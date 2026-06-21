@@ -1495,6 +1495,41 @@ entries:
   thumbnail: assets/thumbnails/inworld-ai-c4e760.png
   date_added: '2026-06-13'
   source: seed
+- id: haiper-ai-9980e0
+  title: Haiper AI
+  area: video
+  task: image-to-video
+  kind: proprietary
+  links:
+    website: https://haiper.ai/
+  year: 2024
+  tags:
+  - commercial
+  - image-to-video
+  - saas
+  summary: A commercial AI video generation platform that allows users to create high-quality, realistic, or stylized videos from text prompts and static images.
+  summary_ja: テキストプロンプトや静止画像から、高品質でリアルな、または様式化された動画を作成できる商用のAI動画生成プラットフォーム。
+  thumbnail: assets/thumbnails/haiper-ai-9980e0.png
+  date_added: '2026-06-21'
+  source: agent
+- id: silhouette-e90359
+  title: Silhouette
+  area: video
+  task: rotoscoping
+  kind: proprietary
+  links:
+    website: https://borisfx.com/products/silhouette/
+  year: 2026
+  tags:
+  - compositing
+  - paint
+  - rotoscoping
+  - vfx
+  summary: An Academy and Emmy Award-winning visual effects software widely recognized as the industry standard for professional rotoscoping, paint, and compositing. It features advanced node-based workflows, integrated Mocha tracking, and AI-assisted masking tools to streamline complex VFX pipelines.
+  summary_ja: プロフェッショナルなロトスコープ、ペイント、コンポジットの業界標準として広く認知されている、アカデミー賞およびエミー賞受賞のビジュアルエフェクトソフトウェア。高度なノードベースのワークフロー、統合されたMochaトラッキング、AI支援によるマスキングツールを備え、複雑なVFXパイプラインを効率化します。
+  thumbnail: assets/thumbnails/silhouette-e90359.png
+  date_added: '2026-06-21'
+  source: agent
 - id: mocha-pro-4b4000
   title: Mocha Pro
   area: video
@@ -1549,6 +1584,25 @@ entries:
   thumbnail: assets/thumbnails/slapshot-ai-78d9df.png
   date_added: '2026-06-13'
   source: agent
+- id: hailuo-ai-40512d
+  title: Hailuo AI
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://hailuoai.com/doc/landing-page.html
+  authors:
+  - MiniMax
+  year: 2024
+  tags:
+  - proprietary
+  - text-to-video
+  - video-generation
+  summary: A state-of-the-art proprietary video generation platform powered by MiniMax's advanced video models, capable of producing high-definition cinematic clips with smooth motion.
+  summary_ja: MiniMaxの先進的な動画モデルを搭載し、滑らかな動きを伴う高精細なシネマティック動画を生成できる最先端の商用動画生成プラットフォーム。
+  thumbnail: assets/thumbnails/hailuo-ai-40512d.png
+  date_added: '2026-06-21'
+  source: agent
 - id: kling-ai-534089
   title: Kling AI
   area: video
@@ -1584,6 +1638,45 @@ entries:
   summary_ja: テキストの指示や画像から、高速な生成速度と一貫した物理法則を備えた高品質でリアルなシネマティックショットを作成する、Luma AIによる商用の次世代動画生成モデル。
   thumbnail: assets/thumbnails/luma-dream-machine-eddc5b.png
   date_added: '2026-06-13'
+  source: agent
+- id: sora-7579e0
+  title: Sora
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://openai.com/index/sora/
+  authors:
+  - OpenAI
+  year: 2024
+  tags:
+  - proprietary
+  - text-to-video
+  - video-generation
+  summary: OpenAI's advanced video generation platform that simulates the physical world in motion, generating highly realistic and physically consistent videos from text and image prompts.
+  summary_ja: テキストや画像のプロンプトから、物理的に一貫した極めてリアルな動画を生成する、OpenAIの先進的な動画生成プラットフォーム。
+  thumbnail: assets/thumbnails/sora-7579e0.png
+  date_added: '2026-06-21'
+  source: agent
+- id: vidu-50486a
+  title: Vidu
+  area: video
+  task: text-to-video
+  kind: proprietary
+  links:
+    website: https://www.vidu.com/ai-video-generator
+  authors:
+  - Shengshu Technology
+  - Tsinghua University
+  year: 2024
+  tags:
+  - proprietary
+  - text-to-video
+  - video-generation
+  summary: A high-performance proprietary AI video generator developed by Shengshu Technology and Tsinghua University, supporting text-to-video, image-to-video, and multi-subject consistency.
+  summary_ja: 生数科技と清華大学が開発した高性能な商用AI動画生成ツール。テキストからの動画生成、画像からの動画生成、および複数キャラクターの一貫性維持に対応しています。
+  thumbnail: assets/thumbnails/vidu-50486a.png
+  date_added: '2026-06-21'
   source: agent
 - id: pika-b588f4
   title: Pika
@@ -1632,4 +1725,38 @@ entries:
   summary_ja: Descriptは、文字起こしされたテキストを編集することで動画や音声を編集できる、AI搭載の協調型オーディオ・ビデオエディターです。自動文字起こし、AI音声生成、不要なつなぎ言葉の除去、スタジオ品質の音響補正などの機能を備えています。
   thumbnail: assets/thumbnails/descript-2a8e52.png
   date_added: '2026-06-13'
+  source: agent
+- id: topaz-video-ai-e3a43d
+  title: Topaz Video AI
+  area: video
+  task: video-sr-restoration
+  kind: proprietary
+  links:
+    website: https://www.topazlabs.com/topaz-video
+  year: 2024
+  tags:
+  - proprietary-tool
+  - video-enhancement
+  - video-upscaling
+  summary: A professional-grade desktop software utilizing temporally aware AI models to perform video upscaling, enhancement, stabilization, and motion smoothing.
+  summary_ja: 時間情報を考慮したAIモデルを利用して、ビデオのアップスケーリング、高画質化、手ブレ補正、およびモーションのスムーズ化を行うプロフェッショナル向けのデスクトップソフトウェア。
+  thumbnail: assets/thumbnails/topaz-video-ai-e3a43d.png
+  date_added: '2026-06-21'
+  source: agent
+- id: kaiber-02b3ba
+  title: Kaiber
+  area: video
+  task: video-style-transfer
+  kind: proprietary
+  links:
+    website: https://kaiber.ai/
+  year: 2023
+  tags:
+  - audio-reactive
+  - style-transfer
+  - video-to-video
+  summary: A popular AI creative platform that offers video-to-video style transfer, audio-reactive animation, and text-to-video generation, widely used by musicians and creators for stylized video production.
+  summary_ja: ビデオ間スタイル転送、オーディオ連動アニメーション、テキストからビデオへの生成機能を提供する人気のAIクリエイティブプラットフォーム。ミュージシャンやクリエイターによるスタイライズされたビデオ制作に広く使用されている。
+  thumbnail: assets/thumbnails/kaiber-02b3ba.png
+  date_added: '2026-06-21'
   source: agent

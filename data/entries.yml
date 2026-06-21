@@ -13253,6 +13253,34 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: jiangzehua/agenticpcg
+- id: autoue-87629b
+  title: AutoUE
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2603.07106
+    github: https://github.com/Pluto156/AutoUE
+  authors:
+  - Lei Yin
+  - Wentao Cheng
+  - Zhida Qin
+  - Tianyu Huang
+  - Yidong Li
+  - Gangyi Ding
+  year: 2026
+  tags:
+  - game-generation
+  - multi-agent
+  - pcg
+  - unreal-engine
+  summary: An end-to-end multi-agent system that automatically generates complete, playable 3D games in Unreal Engine from natural language descriptions. It coordinates specialized agents for asset creation, scene construction, gameplay code synthesis, and automated play-testing while addressing LLM hallucinations through retrieval-augmented generation.
+  summary_ja: 自然言語の記述からUnreal Engine内で完全かつプレイ可能な3Dゲームを自動生成するエンドツーエンドのマルチエージェントシステム。アセット作成、シーン構築、ゲームプレイコードの合成、自動プレイテストを行う専門エージェントを連携させ、RAG（検索拡張生成）によってLLMのハルシネーションを抑制する。
+  thumbnail: assets/thumbnails/autoue-87629b.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2603.07106'
+  repo: pluto156/autoue
 - id: unrealllm-24a96e
   title: UnrealLLM
   area: text-design
@@ -13282,6 +13310,93 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: xgrids-3d/interactive-3d-scene-creation-via-llm-driven-procedural-generation
+- id: zero-shot-3d-map-generation-with-llm-agents-e0bb7a
+  title: Zero-shot 3D Map Generation with LLM Agents
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2512.10501
+    github: https://github.com/HaD0Yun/zero-shot-3d-map-generation-with-llm-agents
+  authors:
+  - Lim Chien Her
+  - Ming Yan
+  - Yunshu Bai
+  - Ruihao Li
+  - Hao Zhang
+  year: 2025
+  tags:
+  - 3d-map
+  - llm-agents
+  - parameter-tuning
+  - pcg
+  summary: A training-free dual-agent architecture that leverages LLM agents for zero-shot PCG parameter configuration. It uses an Orchestrator, an Actor (creative generator), and a Critic (quality evaluator) to bridge the semantic gap between abstract user instructions and complex, opaque PCG parameters.
+  summary_ja: 抽象的なユーザー指示と複雑で不透明なPCGパラメータの間のセマンティックギャップを埋めるために、Orchestrator、Actor（創造的生成器）、Critic（品質評価器）を使用する、LLMエージェントを活用したゼロショットPCGパラメータ構成のためのトレーニングフリーなデュアルエージェントアーキテクチャ。
+  thumbnail: assets/thumbnails/zero-shot-3d-map-generation-with-llm-agents-e0bb7a.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2512.10501'
+  repo: had0yun/zero-shot-3d-map-generation-with-llm-agents
+- id: procedural-content-generation-in-games-a-survey-with-insight-3c3b4a
+  title: 'Procedural Content Generation in Games: A Survey with Insights on Emerging LLM Integration'
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2410.15644
+  authors:
+  - Mahdi Farrokhi Maleki
+  - Richard Zhao
+  year: 2024
+  tags:
+  - deep-learning
+  - llm
+  - pcg
+  - survey
+  summary: A comprehensive survey of procedural content generation (PCG) in games, focusing on recent deep learning advances and the integration of Large Language Models (LLMs). It analyzes how LLMs are disrupting traditional PCG pipelines and enabling more sophisticated, controllable, and interactive game content creation.
+  summary_ja: ゲームにおけるプロシージャルコンテンツ生成（PCG）の包括的なサーベイ論文。近年のディープラーニングの進歩と大規模言語モデル（LLM）の統合に焦点を当て、LLMが従来のPCGパイプラインをどのように変革し、より洗練され、制御可能でインタラクティブなゲームコンテンツ作成を可能にしているかを分析する。
+  thumbnail: assets/thumbnails/procedural-content-generation-in-games-a-survey-with-insight-3c3b4a.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2410.15644'
+- id: godot-4-procedural-generation-d2c143
+  title: Godot 4 Procedural Generation
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    github: https://github.com/gdquest-demos/godot-4-procedural-generation
+  year: 2023
+  tags:
+  - algorithms
+  - godot
+  - level-generation
+  - pcg
+  summary: A collection of procedural content generation (PCG) algorithms and interactive demos implemented for the Godot 4 game engine. It includes implementations of popular techniques like Random Walker (as seen in Spelunky), cellular automata, and shader-based world map generation with biomes and rivers.
+  summary_ja: Godot 4ゲームエンジン向けに実装された、プロシージャルコンテンツ生成（PCG）アルゴリズムとインタラクティブデモのコレクション。『Spelunky』で採用されているランダムウォーカー、セルオートマトン、シェーダーベースのバイオームや河川を含むワールドマップ生成などの手法を収録。
+  thumbnail: assets/thumbnails/godot-4-procedural-generation-d2c143.png
+  date_added: '2026-06-21'
+  source: agent
+  repo: gdquest-demos/godot-4-procedural-generation
+- id: edgar-unity-2e4a2f
+  title: Edgar-Unity
+  area: text-design
+  task: pcg
+  kind: oss
+  links:
+    github: https://github.com/OndrejNepozitek/Edgar-Unity
+  year: 2020
+  tags:
+  - dungeon-generator
+  - level-generation
+  - pcg
+  - unity
+  summary: A graph-based procedural level generator for Unity that allows developers to generate 2D dungeons and levels with complete control over the layout. It uses a constraint-based approach to place hand-designed room templates according to a specified level graph.
+  summary_ja: レイアウトを完全に制御しながら2Dダンジョンやレベルを生成できる、Unity向けのグラフベースのプロシージャルレベルジェネレーター。制約ベースのアプローチを使用して、指定されたレベルグラフに従って手動設計された部屋テンプレートを配置する。
+  thumbnail: assets/thumbnails/edgar-unity-2e4a2f.png
+  date_added: '2026-06-21'
+  source: agent
+  repo: ondrejnepozitek/edgar-unity
 - id: hunyuanvideo-i2v-7f2a3b
   title: HunyuanVideo-I2V
   area: video
@@ -13303,6 +13418,64 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: tencent-hunyuan/hunyuanvideo-i2v
+- id: dynamicrafter-514337
+  title: DynamiCrafter
+  area: video
+  task: image-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2310.12190
+    github: https://github.com/Doubiiu/DynamiCrafter
+  authors:
+  - Jinbo Xing
+  - Menghan Xia
+  - Yong Zhang
+  - Haoxin Chen
+  - Wangbo Yu
+  - Hanyuan Liu
+  - Xintao Wang
+  - Tien-Tsin Wong
+  year: 2023
+  tags:
+  - animation
+  - diffusion
+  - image-to-video
+  summary: An open-source framework designed to animate open-domain static images by leveraging video diffusion priors to produce temporally coherent and visually realistic motion.
+  summary_ja: 動画拡散モデルの事前知識を活用して、静止画像から時間的一貫性と視覚的リアリズムを備えたアニメーション動画を生成するオープンソースのフレームワーク。
+  thumbnail: assets/thumbnails/dynamicrafter-514337.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2310.12190'
+  repo: doubiiu/dynamicrafter
+- id: i2vgen-xl-b080a5
+  title: I2VGen-XL
+  area: video
+  task: image-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2311.04145
+    github: https://github.com/ali-vilab/VGen
+  authors:
+  - Shiwei Zhang
+  - Jiayu Wang
+  - Yingya Zhang
+  - Kang Zhao
+  - Hangjie Yuan
+  - Zhiwu Qin
+  - Xiang Wang
+  - Deli Zhao
+  year: 2023
+  tags:
+  - cascaded
+  - diffusion
+  - image-to-video
+  summary: A cascaded image-to-video synthesis approach developed by Alibaba, designed to enhance semantic accuracy, detail continuity, and clarity in generated videos.
+  summary_ja: アリババが開発したカスケード型画像・動画合成アプローチ。生成された動画のセマンティックな正確性、詳細の一貫性、および鮮明度を向上させます。
+  thumbnail: assets/thumbnails/i2vgen-xl-b080a5.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2311.04145'
+  repo: ali-vilab/vgen
 - id: stable-video-diffusion-cd898c
   title: Stable Video Diffusion
   area: video
@@ -13322,6 +13495,60 @@ entries:
   source: seed
   arxiv_id: '2311.15127'
   repo: stability-ai/generative-models
+- id: videomama-482767
+  title: VideoMaMa
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2601.14255
+    github: https://github.com/cvlab-kaist/VideoMaMa
+    project: https://cvlab-kaist.github.io/VideoMaMa/
+  authors:
+  - Sangbeom Lim
+  - Seoung Wug Oh
+  - Jiahui Huang
+  - Heeji Yoon
+  - Seungryong Kim
+  - Joon-Young Lee
+  year: 2026
+  tags:
+  - diffusion
+  - matting
+  - rotoscoping
+  - segmentation
+  summary: A mask-guided video matting framework that leverages pretrained video diffusion models to convert coarse segmentation masks into pixel-accurate alpha mattes. It demonstrates strong zero-shot generalization to real-world footage and enables scalable high-quality matting annotation.
+  summary_ja: 事前学習済みのビデオ拡散モデルを活用し、大まかなセグメンテーションマスクをピクセル精度のアルファマットに変換するマスクガイド付きビデオマッティングフレームワーク。実世界の映像に対して強力なゼロショット汎化性能を示し、高品質なマッティングアノテーションのスケーラブルな作成を可能にします。
+  thumbnail: assets/thumbnails/videomama-482767.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2601.14255'
+  repo: cvlab-kaist/videomama
+- id: matanyone-1d3d43
+  title: MatAnyone
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2501.14677
+    github: https://github.com/pq-yang/MatAnyone
+    project: https://pq-yang.github.io/projects/MatAnyone/
+  authors:
+  - Peiqing Yang
+  - Shengfeng He
+  year: 2025
+  tags:
+  - matting
+  - memory
+  - rotoscoping
+  - segmentation
+  summary: A robust human video matting framework designed for target-assigned video matting using a memory-based paradigm. It features a consistent memory propagation module with region-adaptive memory fusion to deliver stable semantics and fine-grained boundary details in complex backgrounds.
+  summary_ja: メモリベースのパラダイムを使用し、ターゲット指定型のビデオマッティング向けに設計された堅牢な人物ビデオマッティングフレームワーク。領域適応型メモリフュージョンを備えた一貫性のあるメモリ伝播モジュールを特徴とし、複雑な背景においても安定したセマンティクスと微細な境界ディテールを提供します。
+  thumbnail: assets/thumbnails/matanyone-1d3d43.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2501.14677'
+  repo: pq-yang/matanyone
 - id: matanyone-2-ce91be
   title: MatAnyone 2
   area: video
@@ -13380,6 +13607,35 @@ entries:
   source: agent
   arxiv_id: '2511.16719'
   repo: facebookresearch/sam3
+- id: birefnet-2f15be
+  title: BiRefNet
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2401.03407
+    github: https://github.com/ZhengPeng7/BiRefNet
+  authors:
+  - Peng Zheng
+  - Dehong Gao
+  - Deng-Ping Fan
+  - Li Liu
+  - Jorma Laaksonen
+  - Wanli Ouyang
+  - Nicu Sebe
+  year: 2024
+  tags:
+  - background-removal
+  - high-resolution
+  - rotoscoping
+  - segmentation
+  summary: A bilateral reference framework for high-resolution dichotomous image and video segmentation. It utilizes a localization module for global semantic positioning and a reconstruction module with bilateral reference to produce highly detailed and clean background removal masks.
+  summary_ja: 高解像度な二値画像・ビデオセグメンテーションのためのバイラテラル（両側）リファレンスフレームワーク。グローバルなセマンティックポジショニングのための位置特定モジュールと、バイラテラルリファレンスを備えた再構成モジュールを利用して、非常に詳細でクリーンな背景削除マスクを生成します。
+  thumbnail: assets/thumbnails/birefnet-2f15be.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2401.03407'
+  repo: zhengpeng7/birefnet
 - id: segment-anything-model-2-sam-2-0869a9
   title: Segment Anything Model 2 (SAM 2)
   area: video
@@ -13428,6 +13684,33 @@ entries:
   source: agent
   arxiv_id: '2310.12982'
   repo: hkchengrex/cutie
+- id: deva-4fec3a
+  title: DEVA
+  area: video
+  task: rotoscoping
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2309.03903
+    github: https://github.com/hkchengrex/Tracking-Anything-with-DEVA
+  authors:
+  - Ho Kei Cheng
+  - Seoung Wug Oh
+  - Brian Price
+  - Alexander Schwing
+  - Joon-Young Lee
+  year: 2023
+  tags:
+  - open-world
+  - rotoscoping
+  - segmentation
+  - tracking
+  summary: A decoupled video segmentation approach (DEVA) that combines task-specific image-level segmentation with class-agnostic bi-directional temporal propagation. It enables open-world video tracking and segmentation of any target object without requiring video-specific training.
+  summary_ja: タスク固有の画像レベルのセグメンテーションと、クラスに依存しない双方向の時間的伝播を組み合わせた、分離型ビデオセグメンテーション手法（DEVA）。ビデオ固有のトレーニングを必要とせずに、あらゆるターゲットオブジェクトのオープンワールドなビデオ追跡とセグメンテーションを可能にします。
+  thumbnail: assets/thumbnails/deva-4fec3a.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2309.03903'
+  repo: hkchengrex/tracking-anything-with-deva
 - id: track-anything-507f6a
   title: Track-Anything
   area: video
@@ -13499,6 +13782,29 @@ entries:
   source: agent
   arxiv_id: '2108.11515'
   repo: peterl1n/robustvideomatting
+- id: hunyuanvideo-1-5-f68632
+  title: HunyuanVideo 1.5
+  area: video
+  task: text-to-video
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2511.18870
+    github: https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5
+  authors:
+  - Bing Wu
+  - Tencent Hunyuan Team
+  year: 2025
+  tags:
+  - diffusion-transformer
+  - text-to-video
+  - video-generation
+  summary: A lightweight yet powerful open-source video generation model with 8.3 billion parameters that delivers state-of-the-art visual quality and motion coherence on consumer-grade GPUs.
+  summary_ja: 消費者向けGPUでの効率的な推論を可能にする、83億パラメータの軽量かつ強力なオープンソース動画生成モデル。最先端の視覚的品質と一貫した動きを実現します。
+  thumbnail: assets/thumbnails/hunyuanvideo-1-5-f68632.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2511.18870'
+  repo: tencent-hunyuan/hunyuanvideo-1.5
 - id: wan2-1-bc34c3
   title: Wan2.1
   area: video
@@ -13529,6 +13835,26 @@ entries:
   source: agent
   arxiv_id: '2503.20314'
   repo: wan-video/wan2.1
+- id: wan2-2-3ce725
+  title: Wan2.2
+  area: video
+  task: text-to-video
+  kind: oss
+  links:
+    github: https://github.com/Wan-Video/Wan2.2
+  authors:
+  - Wan-Video Team
+  year: 2025
+  tags:
+  - moe
+  - text-to-video
+  - video-generation
+  summary: An advanced open-source video generative model featuring a Mixture-of-Experts (MoE) architecture that scales model capacity while maintaining low computational costs.
+  summary_ja: 計算コストを抑えつつモデル容量を拡大するMixture-of-Experts（MoE）アーキテクチャを採用した、先進的なオープンソース動画生成モデル。
+  thumbnail: assets/thumbnails/wan2-2-3ce725.png
+  date_added: '2026-06-21'
+  source: agent
+  repo: wan-video/wan2.2
 - id: cogvideox-e101e9
   title: CogVideoX
   area: video
@@ -13693,6 +14019,62 @@ entries:
   source: seed
   arxiv_id: '2307.04725'
   repo: guoyww/animatediff
+- id: mtv-inpaint-819040
+  title: MTV-Inpaint
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2503.11412
+    github: https://github.com/ysy31415/MTV-Inpaint
+  authors:
+  - Shiyuan Yang
+  - Zheng Gu
+  - Liang Hou
+  - Xin Tao
+  - Pengfei Wan
+  - Xiaodong Chen
+  - Jing Liao
+  year: 2025
+  tags:
+  - diffusion
+  - video-editing
+  - video-inpainting
+  summary: A unified multi-task video inpainting framework that supports both traditional scene completion and text/image-guided object insertion in long videos.
+  summary_ja: 従来のシーン補完と、テキストまたは画像ガイドによるオブジェクト挿入の両方をサポートする、長尺動画対応の統合マルチタスクビデオインペインティングフレームワーク。
+  thumbnail: assets/thumbnails/mtv-inpaint-819040.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2503.11412'
+  repo: ysy31415/mtv-inpaint
+- id: videopainter-24ed20
+  title: VideoPainter
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2503.05639
+    github: https://github.com/TencentARC/VideoPainter
+  authors:
+  - Yuxuan Bian
+  - Zhaoyang Zhang
+  - Xuan Ju
+  - Mingdeng Cao
+  - Liangbin Xie
+  - Ying Shan
+  - Qiang Xu
+  year: 2025
+  tags:
+  - diffusion
+  - video-editing
+  - video-inpainting
+  summary: An any-length video inpainting and editing framework that introduces plug-and-play context control to balance background context preservation and foreground generation.
+  summary_ja: 背景コンテキストの保存と前景の生成をバランスよく行うプラグアンドプレイのコンテキスト制御を導入した、任意の長さのビデオインペインティングおよび編集フレームワーク。
+  thumbnail: assets/thumbnails/videopainter-24ed20.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2503.05639'
+  repo: tencentarc/videopainter
 - id: anyv2v-78d1cc
   title: AnyV2V
   area: video
@@ -13719,6 +14101,46 @@ entries:
   source: agent
   arxiv_id: '2403.14468'
   repo: tiger-ai-lab/anyv2v
+- id: cococo-5f2ad6
+  title: COCOCO
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    github: https://github.com/zibojia/COCOCO
+  year: 2024
+  tags:
+  - sam2
+  - video-editing
+  - video-inpainting
+  summary: A video inpainting framework that improves text-guided video inpainting consistency, controllability, and compatibility using Segment Anything 2 (SAM 2).
+  summary_ja: Segment Anything 2 (SAM 2) を使用して、テキストガイド付きビデオインペインティングの一貫性、制御性、および互換性を向上させるビデオインペインティングフレームワーク。
+  thumbnail: assets/thumbnails/cococo-5f2ad6.png
+  date_added: '2026-06-21'
+  source: agent
+  repo: zibojia/cococo
+- id: floed-c9212d
+  title: FloED
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2412.00857
+    github: https://github.com/NevSNev/FloED
+  authors:
+  - NevSNev
+  year: 2024
+  tags:
+  - optical-flow
+  - video-editing
+  - video-inpainting
+  summary: An advanced video inpainting framework that incorporates optical flow guidance into diffusion models to enhance temporal coherence and computational efficiency.
+  summary_ja: 拡散モデルにオプティカルフローのガイダンスを組み込むことで、時間的一貫性と計算効率を向上させた高度なビデオインペインティングフレームワーク。
+  thumbnail: assets/thumbnails/floed-c9212d.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2412.00857'
+  repo: nevsnev/floed
 - id: propainter-f5f671
   title: ProPainter
   area: video
@@ -13769,6 +14191,32 @@ entries:
   source: agent
   arxiv_id: '2307.10373'
   repo: omerbt/tokenflow
+- id: video-p2p-53d6b6
+  title: Video-P2P
+  area: video
+  task: video-editing
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2303.04761
+    github: https://github.com/JIA-Lab-research/Video-P2P
+  authors:
+  - Shaoteng Liu
+  - Yuechen Zhang
+  - Wenbo Li
+  - Zhe Lin
+  - Jiaya Jia
+  year: 2023
+  tags:
+  - cross-attention
+  - diffusion
+  - video-editing
+  summary: A framework for real-world video editing with cross-attention control, adapting pre-trained image diffusion models to video tasks while preserving original poses and scenes.
+  summary_ja: クロスアテンション制御を用いた実世界のビデオ編集フレームワークであり、元のポーズやシーンを維持しながら、事前学習済みの画像拡散モデルをビデオタスクに適応させる。
+  thumbnail: assets/thumbnails/video-p2p-53d6b6.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2303.04761'
+  repo: jia-lab-research/video-p2p
 - id: e2fgvi-3a8d76
   title: E2FGVI
   area: video
@@ -13851,6 +14299,35 @@ entries:
   source: agent
   arxiv_id: '2510.12747'
   repo: openimaginglab/flashvsr
+- id: seedvr-381f96
+  title: SeedVR
+  area: video
+  task: video-sr-restoration
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2501.01320
+    github: https://github.com/ByteDance-Seed/SeedVR
+  authors:
+  - Jianyi Wang
+  - Zhijie Lin
+  - Meng Wei
+  - Yang Zhao
+  - Ceyuan Yang
+  - Fei Xiao
+  - Chen Change Loy
+  - Lu Jiang
+  year: 2025
+  tags:
+  - diffusion-transformer
+  - video-restoration
+  - video-super-resolution
+  summary: A diffusion transformer framework designed for generic video restoration of arbitrary length and resolution, utilizing shifted window attention to maintain temporal consistency and high fidelity.
+  summary_ja: シフトウィンドウアテンションを利用して時間的一貫性と高い忠実度を維持し、任意の長さと解像度の一般的なビデオ復元に対応する拡散トランスフォーマーフレームワーク。
+  thumbnail: assets/thumbnails/seedvr-381f96.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2501.01320'
+  repo: bytedance-seed/seedvr
 - id: seedvr2-593efb
   title: SeedVR2
   area: video
@@ -13881,6 +14358,60 @@ entries:
   source: agent
   arxiv_id: '2506.05301'
   repo: bytedance-seed/seedvr
+- id: evtexture-7f1136
+  title: EvTexture
+  area: video
+  task: video-sr-restoration
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2406.13457
+    github: https://github.com/DachunKai/EvTexture
+  authors:
+  - Dachun Kai
+  - Jiayao Lu
+  - Yueyi Zhang
+  - Xiaoyan Sun
+  year: 2024
+  tags:
+  - event-camera
+  - texture-enhancement
+  - video-super-resolution
+  summary: An event-driven framework for video super-resolution that leverages high-frequency details from event signals to enhance texture regions and recover fine details.
+  summary_ja: イベント信号からの高周波詳細を活用してテクスチャ領域を強化し、微細な詳細を復元する、イベント駆動型のビデオ超解像フレームワーク。
+  thumbnail: assets/thumbnails/evtexture-7f1136.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2406.13457'
+  repo: dachunkai/evtexture
+- id: venhancer-a2443c
+  title: VEnhancer
+  area: video
+  task: video-sr-restoration
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2407.07667
+    github: https://github.com/Vchitect/VEnhancer
+  authors:
+  - Jingwen He
+  - Tianfan Xue
+  - Dongyang Liu
+  - Xinqi Lin
+  - Peng Gao
+  - Dahua Lin
+  - Yu Qiao
+  - Wanli Ouyang
+  year: 2024
+  tags:
+  - diffusion-model
+  - video-enhancement
+  - video-super-resolution
+  summary: A generative space-time enhancement framework that improves video generation results by simultaneously increasing spatial and temporal resolution through a unified video diffusion model.
+  summary_ja: 統一されたビデオ拡散モデルを通じて、空間解像度と時間解像度を同時に向上させ、ビデオ生成結果の品質を高める生成型時空間エンハンスメントフレームワーク。
+  thumbnail: assets/thumbnails/venhancer-a2443c.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2407.07667'
+  repo: vchitect/venhancer
 - id: upscale-a-video-a0c73c
   title: Upscale-A-Video
   area: video
@@ -13994,6 +14525,29 @@ entries:
   source: agent
   arxiv_id: '2104.13371'
   repo: ckkelvinchan/basicvsr_plusplus
+- id: realbasicvsr-5c105a
+  title: RealBasicVSR
+  area: video
+  task: video-sr-restoration
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2111.12704
+  authors:
+  - Kelvin C. K. Chan
+  - Shangchen Zhou
+  - Xiangyu Xu
+  - Chen Change Loy
+  year: 2021
+  tags:
+  - real-world-vsr
+  - video-restoration
+  - video-super-resolution
+  summary: A real-world video super-resolution framework that balances the tradeoff between detail synthesis and artifact suppression using an image pre-cleaning stage and a recurrent propagation structure.
+  summary_ja: 画像の事前クリーニングステージと再帰的伝播構造を使用し、詳細の合成とノイズ・アーティファクトの抑制のトレードオフをバランスよく調整する実世界ビデオ超解像フレームワーク。
+  thumbnail: assets/thumbnails/realbasicvsr-5c105a.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2111.12704'
 - id: video2x-b0b3af
   title: Video2X
   area: video
@@ -14012,6 +14566,58 @@ entries:
   date_added: '2026-06-13'
   source: agent
   repo: k4yt3x/video2x
+- id: vista-3c3dc4
+  title: VISTA
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2605.17312
+    github: https://github.com/showlab/VISTA
+  authors:
+  - Yiren Song
+  - Wangzi Yao
+  - Haofan Wang
+  - Mike Zheng Shou
+  year: 2026
+  tags:
+  - diffusion-transformer
+  - style-transfer
+  - temporal-consistency
+  summary: A video style transfer framework that uses triplet-supervised training with Diffusion Transformers (DiTs) to achieve high temporal consistency and visual quality without relying on brittle optical flow or heuristic propagation.
+  summary_ja: Diffusion Transformer (DiT)を用いたトリプレット監視学習により、オプティカルフローやヒューリスティックな伝播に依存せず、高い時間的一貫性と視覚的品質を実現するビデオスタイル転送フレームワーク。
+  thumbnail: assets/thumbnails/vista-3c3dc4.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2605.17312'
+  repo: showlab/vista
+- id: pickstyle-b434c6
+  title: PickStyle
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2510.07546
+    github: https://github.com/PickfordAI/pickstyle
+    project: https://pickstyle.pickford.ai/
+  authors:
+  - Soroush Mehraban
+  - Vida Adeli
+  - Jacob Rommann
+  - Babak Taati
+  - Kyryl Truskovskyi
+  year: 2025
+  tags:
+  - adapter
+  - diffusion-model
+  - style-transfer
+  summary: A video-to-video style transfer framework that augments pretrained video diffusion backbones with context-style adapters, enabling precise style application while preserving the original video's motion and context.
+  summary_ja: 事前学習済みのビデオ拡散バックボーンにコンテキストスタイルアダプターを追加することで、元のビデオの動きや文脈を維持しながら、正確なスタイル適用を可能にするビデオ間スタイル転送フレームワーク。
+  thumbnail: assets/thumbnails/pickstyle-b434c6.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2510.07546'
+  repo: pickfordai/pickstyle
 - id: streamv2v-1faaa4
   title: StreamV2V
   area: video
@@ -14039,6 +14645,33 @@ entries:
   source: agent
   arxiv_id: '2405.15757'
   repo: jeff-liangf/streamv2v
+- id: univst-87a577
+  title: UniVST
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    arxiv: https://arxiv.org/abs/2410.20084
+    github: https://github.com/QuanjianSong/UniVST
+  authors:
+  - Quanjian Song
+  - Mingbao Lin
+  - Wengyi Zhan
+  - Shuicheng Yan
+  - Liujuan Cao
+  - Rongrong Ji
+  year: 2024
+  tags:
+  - localized-transfer
+  - style-transfer
+  - training-free
+  summary: A training-free localized video style transfer framework based on diffusion models, featuring a point-matching mask propagation strategy and a style injection module to apply styles to specific regions while maintaining temporal coherence.
+  summary_ja: 拡散モデルに基づくトレーニング不要の局所的ビデオスタイル転送フレームワーク。ポイントマッチングマスク伝播戦略とスタイル注入モジュールを備え、時間的一貫性を維持しながら特定領域にスタイルを適用する。
+  thumbnail: assets/thumbnails/univst-87a577.png
+  date_added: '2026-06-21'
+  source: agent
+  arxiv_id: '2410.20084'
+  repo: quanjiansong/univst
 - id: codef-956a37
   title: CoDeF
   area: video
@@ -14118,3 +14751,22 @@ entries:
   source: agent
   arxiv_id: '2209.11224'
   repo: williamyang1991/vtoonify
+- id: ebsynth-84dc79
+  title: EbSynth
+  area: video
+  task: video-style-transfer
+  kind: oss
+  links:
+    github: https://github.com/jamriska/ebsynth
+    website: https://ebsynth.com/
+  year: 2019
+  tags:
+  - hand-drawn
+  - keyframe-propagation
+  - style-transfer
+  summary: A classic and widely used example-based image and video synthesis tool that propagates painted keyframes across a video sequence, preserving hand-drawn details and motion.
+  summary_ja: ペイントされたキーフレームをビデオシーケンス全体に伝播させ、手書きのディテールや動きを維持する、古典的かつ広く使用されているサンプルベースの画像・ビデオ合成ツール。
+  thumbnail: assets/thumbnails/ebsynth-84dc79.png
+  date_added: '2026-06-21'
+  source: agent
+  repo: jamriska/ebsynth
