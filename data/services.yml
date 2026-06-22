@@ -16,6 +16,78 @@ entries:
   thumbnail: assets/thumbnails/hedra-f6ef6f.png
   date_added: '2026-06-13'
   source: agent
+- id: sync-labs-8c71a6
+  title: Sync Labs
+  area: animation
+  task: facial-lipsync
+  kind: proprietary
+  links:
+    website: https://www.synclabs.studio/
+  year: 2023
+  tags:
+  - api
+  - dubbing
+  - lip-sync
+  - real-time
+  summary: A commercial platform and API providing real-time, studio-grade AI lip-syncing and video dubbing. It allows users to animate people speaking any language in any video, including movies, games, and animations.
+  summary_ja: リアルタイムでスタジオ品質のAIリップシンクおよびビデオ吹き替えを提供する商用プラットフォームおよびAPI。映画、ゲーム、アニメーションなど、あらゆるビデオ内の人物を任意の言語で話すようにアニメーション化できます。
+  thumbnail: assets/thumbnails/sync-labs-8c71a6.png
+  date_added: '2026-06-22'
+  source: agent
+- id: d-id-4168a0
+  title: D-ID
+  area: animation
+  task: facial-lipsync
+  kind: proprietary
+  links:
+    website: https://www.d-id.com/
+  year: 2017
+  tags:
+  - api
+  - avatar
+  - lip-sync
+  - talking-head
+  summary: A leading commercial platform and API that animates face images into talking-head videos from text or audio input. It generates realistic lip-sync, facial expressions, and natural head movements for virtual presenters and localization.
+  summary_ja: テキストまたは音声入力から顔画像をトーキングヘッド動画にアニメーション化する、主要な商用プラットフォームおよびAPI。バーチャルプレゼンターやローカライズ向けに、リアルなリップシンク、表情、自然な頭部の動きを生成します。
+  thumbnail: assets/thumbnails/d-id-4168a0.png
+  date_added: '2026-06-22'
+  source: agent
+- id: autodesk-motionbuilder-1b3117
+  title: Autodesk MotionBuilder
+  area: animation
+  task: motion-retargeting
+  kind: proprietary
+  links:
+    website: https://www.autodesk.com/products/motionbuilder/overview
+  year: 2026
+  tags:
+  - animation-software
+  - industry-standard
+  - mocap
+  - retargeting
+  summary: An industry-standard 3D character animation software used for virtual cinematography, motion capture editing, and real-time motion retargeting onto complex character rigs.
+  summary_ja: バーチャルシネマトグラフィ、モーションキャプチャ編集、および複雑なキャラクターリグへのリアルタイムモーションリターゲットに使用される、業界標準の3Dキャラクターアニメーションソフトウェア。
+  thumbnail: assets/thumbnails/autodesk-motionbuilder-1b3117.png
+  date_added: '2026-06-22'
+  source: agent
+- id: plask-fcd31c
+  title: Plask
+  area: animation
+  task: motion-retargeting
+  kind: proprietary
+  links:
+    website: https://plask.ai/
+  year: 2024
+  tags:
+  - ai-animation
+  - browser-based
+  - mocap
+  - retargeting
+  summary: A browser-based AI-powered motion capture and animation platform that allows users to extract 3D motion from video and retarget it to custom characters.
+  summary_ja: ビデオから3Dモーションを抽出し、カスタムキャラクターにリターゲットできる、ブラウザベースのAI搭載モーションキャプチャおよびアニメーションプラットフォーム。
+  thumbnail: assets/thumbnails/plask-fcd31c.png
+  date_added: '2026-06-22'
+  source: agent
 - id: cascadeur-b525d1
   title: Cascadeur
   area: animation
@@ -32,6 +104,24 @@ entries:
   thumbnail: assets/thumbnails/cascadeur-b525d1.png
   date_added: '2026-06-13'
   source: seed
+- id: unity-muse-animate-daf4b5
+  title: Unity Muse Animate
+  area: animation
+  task: text-to-motion
+  kind: proprietary
+  links:
+    website: https://unity.com/products/muse
+  year: 2024
+  tags:
+  - commercial
+  - motion-generation
+  - text-to-motion
+  - unity
+  summary: Unity's official AI-powered animation tool that allows developers to generate and edit natural-looking character animations directly inside the Unity Editor using text prompts and ML-assisted posing.
+  summary_ja: テキストプロンプトと機械学習支援ポージングを使用して、Unityエディタ内で直接、自然なキャラクターアニメーションを生成および編集できる、Unity公式のAI搭載アニメーションツール。
+  thumbnail: assets/thumbnails/unity-muse-animate-daf4b5.png
+  date_added: '2026-06-22'
+  source: agent
 - id: deepmotion-animate-3d-bf6f29
   title: DeepMotion (Animate 3D)
   area: animation
