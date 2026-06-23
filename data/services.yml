@@ -154,6 +154,23 @@ entries:
   thumbnail: assets/thumbnails/move-ai-39c1e3.png
   date_added: '2026-06-13'
   source: seed
+- id: aiva-9ff156
+  title: AIVA
+  area: audio
+  task: music-bgm
+  kind: proprietary
+  links:
+    website: https://www.aiva.ai/
+  tags:
+  - bgm
+  - cinematic
+  - music-generation
+  - proprietary
+  summary: An AI music generation assistant specializing in classical, symphonic, and cinematic music composition. It allows users to generate original soundtracks in over 250 styles, upload MIDI/audio influences, and export tracks in MIDI and audio formats for games, videos, and podcasts.
+  summary_ja: クラシック、交響曲、シネマティック音楽の作曲に特化したAI音楽生成アシスタント。250以上の異なるスタイルでオリジナル楽曲を生成でき、MIDIやオーディオファイルのアップロード、ゲームや映像向けのMIDI/オーディオ形式でのエクスポートに対応しています。
+  thumbnail: assets/thumbnails/aiva-9ff156.png
+  date_added: '2026-06-23'
+  source: agent
 - id: mubert-08f9c6
   title: Mubert
   area: audio
@@ -220,6 +237,23 @@ entries:
   thumbnail: assets/thumbnails/suno-719c52.png
   date_added: '2026-06-13'
   source: seed
+- id: udio-5165b7
+  title: Udio
+  area: audio
+  task: music-bgm
+  kind: proprietary
+  links:
+    website: https://www.udio.com/
+  tags:
+  - bgm
+  - music-generation
+  - proprietary
+  - text-to-music
+  summary: A state-of-the-art proprietary AI music generation platform that allows users to generate high-quality full-length songs, instrumentals, and vocals from text prompts. It supports advanced features like audio inpainting, track extension, and style remixing.
+  summary_ja: テキストプロンプトから高品質なフル楽曲、インストゥルメンタル、ボーカルを生成できる、最先端の商用AI音楽生成プラットフォーム。オーディオのインペインティング、楽曲の延長、スタイルのリミックスなどの高度な機能をサポートしています。
+  thumbnail: assets/thumbnails/udio-5165b7.png
+  date_added: '2026-06-23'
+  source: agent
 - id: nemisindo-3fa057
   title: Nemisindo
   area: audio
@@ -255,6 +289,42 @@ entries:
   summary_ja: Tsugi社による主要な商用プロシージャルサウンドデザインツール。衝撃音、風切り音、足音、エンジン音、天候エフェクトなどの特化型合成モデルを提供し、ゲームエンジンとの高度な連携が可能です。
   thumbnail: assets/thumbnails/gamesynth-e5abf2.png
   date_added: '2026-06-13'
+  source: agent
+- id: fmod-studio-df1cb5
+  title: FMOD Studio
+  area: audio
+  task: procedural-audio
+  kind: proprietary
+  links:
+    website: https://www.fmod.com/
+  year: 2013
+  tags:
+  - dsp
+  - game-audio
+  - interactive
+  - middleware
+  summary: A leading proprietary audio middleware and sound engine used in game development to design, author, and play back adaptive, interactive, and procedural audio.
+  summary_ja: ゲーム開発で広く使用されている、適応型・インタラクティブ・プロシージャルオーディオの設計、オーサリング、再生を行うための業界標準のプロプライエタリなオーディオミドルウェアおよびサウンドエンジン。
+  thumbnail: assets/thumbnails/fmod-studio-df1cb5.png
+  date_added: '2026-06-23'
+  source: agent
+- id: audiokinetic-wwise-ec2f05
+  title: Audiokinetic Wwise
+  area: audio
+  task: procedural-audio
+  kind: proprietary
+  links:
+    website: https://www.audiokinetic.com/en/wwise/
+  year: 2006
+  tags:
+  - game-audio
+  - interactive
+  - middleware
+  - sound-engine
+  summary: A comprehensive proprietary interactive audio solution and middleware featuring an advanced authoring tool and cross-platform sound engine for games.
+  summary_ja: 高度なオーサリングツールとクロスプラットフォームのサウンドエンジンを備え、ゲームにおけるインタラクティブな音響表現を実現する業界標準のプロプライエタリなオーディオミドルウェア。
+  thumbnail: assets/thumbnails/audiokinetic-wwise-ec2f05.png
+  date_added: '2026-06-23'
   source: agent
 - id: ace-studio-e0c53b
   title: ACE Studio
@@ -440,6 +510,24 @@ entries:
   thumbnail: assets/thumbnails/mixamo-9a4b49.png
   date_added: '2026-06-13'
   source: seed
+- id: avaturn-d2c667
+  title: Avaturn
+  area: characters
+  task: avatar-generation
+  kind: proprietary
+  links:
+    website: https://avaturn.me/
+  year: 2023
+  tags:
+  - 3d
+  - avatar
+  - game-ready
+  - rigged
+  summary: An AI-powered 3D avatar creator that generates realistic, fully rigged, and customizable game-ready avatars from a single selfie.
+  summary_ja: 1枚の自撮り写真から、リアルで完全にリギングされたカスタマイズ可能なゲーム向け3Dアバターを生成するAI搭載アバター作成ツール。
+  thumbnail: assets/thumbnails/avaturn-d2c667.png
+  date_added: '2026-06-23'
+  source: agent
 - id: metahuman-creator-4597b5
   title: MetaHuman Creator
   area: characters
