@@ -613,6 +613,40 @@ entries:
   thumbnail: assets/thumbnails/meshy-c6012a.png
   date_added: '2026-06-13'
   source: seed
+- id: atlas-ai-studio-48f967
+  title: Atlas AI Studio
+  area: gen-3d
+  task: scene-generation
+  kind: proprietary
+  links:
+    website: https://atlas.design/
+  year: 2023
+  tags:
+  - 3d-assets
+  - concept-to-3d
+  - worldbuilding
+  summary: A generative AI platform designed for game developers to accelerate virtual worldbuilding by transforming 2D concept art, mood boards, and text prompts into structured 3D assets and environments.
+  summary_ja: 2Dコンセプトアート、ムードボード、テキストプロンプトを構造化された3Dアセットや環境に変換することで、ゲーム開発者のバーチャルワールド構築を加速するジェネレーティブAIプラットフォーム。
+  thumbnail: assets/thumbnails/atlas-ai-studio-48f967.png
+  date_added: '2026-06-25'
+  source: agent
+- id: promethean-ai-6700eb
+  title: Promethean AI
+  area: gen-3d
+  task: scene-generation
+  kind: proprietary
+  links:
+    website: https://www.prometheanai.com/
+  year: 2019
+  tags:
+  - set-dressing
+  - unreal-engine
+  - world-building
+  summary: An AI-driven suite for virtual world building and set dressing that assists artists by automatically placing assets, suggesting layouts, and generating 3D environments within popular game engines.
+  summary_ja: アーティストのアセット配置、レイアウト提案、主要ゲームエンジン内での3D環境生成を自動で支援する、バーチャルワールド構築およびセットドレス用のAI駆動型スイート。
+  thumbnail: assets/thumbnails/promethean-ai-6700eb.png
+  date_added: '2026-06-25'
+  source: agent
 - id: genie-google-deepmind-6f3f03
   title: Genie (Google DeepMind)
   area: gen-3d
@@ -679,6 +713,24 @@ entries:
   thumbnail: assets/thumbnails/spaitial-42ffaa.png
   date_added: '2026-06-13'
   source: seed
+- id: 360-hextile-c86d89
+  title: 360 Hextile
+  area: gen-3d
+  task: skybox-panorama
+  kind: proprietary
+  links:
+    website: https://360hextile.com/
+  year: 2024
+  tags:
+  - '360'
+  - desktop-app
+  - panorama
+  - skybox
+  summary: A local desktop application for generating and transforming 360-degree panoramic art using AI-powered hexagonal tile processing and custom Stable Diffusion models on local GPUs.
+  summary_ja: ローカルGPU上でカスタムのStable DiffusionモデルとAI駆動のヘキサゴナルタイル処理を使用し、360度パノラマアートを生成・変換するためのローカルデスクトップアプリケーション。
+  thumbnail: assets/thumbnails/360-hextile-c86d89.png
+  date_added: '2026-06-25'
+  source: agent
 - id: skybox-ai-ce17a3
   title: Skybox AI
   area: gen-3d
@@ -696,6 +748,42 @@ entries:
   summary_ja: テキストプロンプトやスケッチから、高品質でシームレスな360度スカイボックスや環境を生成するWebベースのジェネレーティブAIツールおよびAPI。UnityやUnreal Engineなどのゲームエンジンで広く利用されています。
   thumbnail: assets/thumbnails/skybox-ai-ce17a3.png
   date_added: '2026-06-13'
+  source: agent
+- id: quadspinner-gaea-6a5a13
+  title: QuadSpinner Gaea
+  area: gen-3d
+  task: terrain-world
+  kind: proprietary
+  links:
+    website: https://quadspinner.com/
+  year: 2018
+  tags:
+  - erosion
+  - industry-standard
+  - procedural
+  - terrain
+  summary: A premier industry-standard terrain design tool for VFX, games, and virtual production. It features advanced erosion algorithms, a sophisticated node-based workflow, and procedural tools to craft highly realistic 3D landscapes and heightmaps.
+  summary_ja: VFX、ゲーム、バーチャルプロダクション向けの業界標準の地形デザインツール。高度な侵食アルゴリズム、洗練されたノードベースのワークフロー、および手続き型ツールを備え、極めてリアルな3D景観とハイトマップを構築できる。
+  thumbnail: assets/thumbnails/quadspinner-gaea-6a5a13.png
+  date_added: '2026-06-25'
+  source: agent
+- id: world-creator-f12767
+  title: World Creator
+  area: gen-3d
+  task: terrain-world
+  kind: proprietary
+  links:
+    website: https://www.world-creator.com/
+  year: 2017
+  tags:
+  - gpu
+  - procedural
+  - real-time
+  - terrain
+  summary: An advanced, real-time procedural terrain and landscape generator powered entirely on the GPU. It provides rapid erosion simulation, texturing, and direct bridges to major game engines like Unreal Engine and Unity.
+  summary_ja: GPU上で完全に動作する、リアルタイムの手続き型地形・景観ジェネレーター。高速な侵食シミュレーション、テクスチャリング、およびUnreal EngineやUnityなどの主要ゲームエンジンへの直接的なブリッジ機能を提供する。
+  thumbnail: assets/thumbnails/world-creator-f12767.png
+  date_added: '2026-06-25'
   source: agent
 - id: rodin-hyper3d-37bed0
   title: Rodin (Hyper3D)
@@ -728,6 +816,42 @@ entries:
   thumbnail: assets/thumbnails/tripo-a95a86.png
   date_added: '2026-06-13'
   source: seed
+- id: quadremesher-e35c8b
+  title: QuadRemesher
+  area: gen-3d
+  task: uv-retopology
+  kind: proprietary
+  links:
+    website: https://exoside.com/
+  year: 2019
+  tags:
+  - plugin
+  - quad-mesh
+  - remeshing
+  - retopology
+  summary: An industry-standard automatic quad retopology plugin for major 3D DCC applications, including Blender, Maya, 3ds Max, and Houdini, that generates clean, animation-ready quad meshes.
+  summary_ja: Blender、Maya、3ds Max、Houdiniなどの主要な3Dツールに対応した、業界標準の自動四角形（Quad）リトポロジープラグイン。アニメーションに適したクリーンなメッシュを自動生成します。
+  thumbnail: assets/thumbnails/quadremesher-e35c8b.png
+  date_added: '2026-06-25'
+  source: agent
+- id: rizomuv-11f4de
+  title: RizomUV
+  area: gen-3d
+  task: uv-retopology
+  kind: proprietary
+  links:
+    website: https://www.rizomuv.com/
+  year: 2016
+  tags:
+  - industry-standard
+  - packing
+  - unwrapping
+  - uv
+  summary: A professional, industry-standard UV mapping and unwrapping software widely used in game development and VFX for its speed, precision, and advanced packing algorithms.
+  summary_ja: ゲーム開発やVFX業界で広く使用されている、プロフェッショナル向けの業界標準UVマッピング・展開ソフトウェア。高速かつ高精度な展開と高度なパッキングアルゴリズムを特徴とします。
+  thumbnail: assets/thumbnails/rizomuv-11f4de.png
+  date_added: '2026-06-25'
+  source: agent
 - id: novelai-image-generation-e5a52e
   title: NovelAI Image Generation
   area: image-2d
