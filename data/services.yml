@@ -720,6 +720,59 @@ entries:
   thumbnail: assets/thumbnails/keentools-facebuilder-55d9fe.png
   date_added: '2026-06-24'
   source: agent
+- id: reallusion-headshot-20242a
+  title: Reallusion Headshot
+  area: characters
+  task: face-head-3d
+  kind: proprietary
+  links:
+    website: https://www.reallusion.com/character-creator/headshot/
+  year: 2020
+  tags:
+  - character-creator
+  - photo-to-3d
+  - plugin
+  summary: An AI-powered 3D head generator plugin for Character Creator that creates fully rigged, animation-ready 3D heads from a single photo or imported 3D mesh.
+  summary_ja: 1枚の写真またはインポートされた3Dメッシュから、完全にリギングされアニメーション可能な3D頭部モデルを作成する、Character Creator用のAI搭載3D頭部生成プラグイン。
+  thumbnail: assets/thumbnails/reallusion-headshot-20242a.png
+  date_added: '2026-07-01'
+  source: agent
+- id: leo-ai-fd3ab8
+  title: Leo AI
+  area: gen-3d
+  task: cad
+  kind: proprietary
+  links:
+    website: https://www.getleo.ai/
+  year: 2023
+  tags:
+  - assembly
+  - cad
+  - copilot
+  - lmm
+  summary: A patented Large Mechanical Model (LMM) and mechanical engineering copilot that generates full CAD assemblies, parametric models, and engineering specifications from text prompts or sketches.
+  summary_ja: テキストプロンプトやスケッチから、完全なCADアセンブリ、パラメータモデル、およびエンジニアリング仕様を生成する、特許取得済みの大型機械モデル（LMM）および機械工学コパイロット。
+  thumbnail: assets/thumbnails/leo-ai-fd3ab8.png
+  date_added: '2026-07-01'
+  source: agent
+- id: zoo-6a3aa0
+  title: Zoo
+  area: gen-3d
+  task: cad
+  kind: proprietary
+  links:
+    website: https://zoo.dev/
+  year: 2023
+  tags:
+  - api
+  - b-rep
+  - cad
+  - text-to-cad
+  summary: A developer-focused generative CAD platform (formerly KittyCAD) that converts natural language prompts into precise, editable B-Rep CAD models in formats like STEP, STL, and OBJ.
+  summary_ja: 自然言語のプロンプトをSTEP、STL、OBJなどの形式の正確で編集可能なB-Rep CADモデルに変換する、開発者向けのジェネレーティブCADプラットフォーム（旧KittyCAD）。
+  thumbnail: assets/thumbnails/zoo-6a3aa0.png
+  date_added: '2026-07-01'
+  source: agent
 - id: meshy-c6012a
   title: Meshy
   area: gen-3d
@@ -737,6 +790,41 @@ entries:
   thumbnail: assets/thumbnails/meshy-c6012a.png
   date_added: '2026-06-13'
   source: seed
+- id: meshy-ai-1d029a
+  title: Meshy AI
+  area: gen-3d
+  task: mesh-generation
+  kind: proprietary
+  links:
+    website: https://www.meshy.ai/
+  year: 2023
+  tags:
+  - image-to-3d
+  - mesh
+  - pbr
+  - text-to-3d
+  summary: A popular web-based AI 3D generation platform designed for game developers and artists to convert text prompts or 2D images into fully textured, export-ready 3D assets. It features automatic PBR texturing, remeshing, rigging, and animation support.
+  summary_ja: テキストプロンプトや2D画像から、テクスチャ付きでエクスポート可能な3Dアセットを生成できる、ゲーム開発者やアーティスト向けの人気のWebベースAI 3D生成プラットフォーム。自動PBRテクスチャリング、リメッシュ、リギング、アニメーションなどの機能を備えています。
+  thumbnail: assets/thumbnails/meshy-ai-1d029a.png
+  date_added: '2026-07-01'
+  source: agent
+- id: tripo-ai-9f10e4
+  title: Tripo AI
+  area: gen-3d
+  task: mesh-generation
+  kind: proprietary
+  links:
+    website: https://www.tripo3d.ai/
+  year: 2023
+  tags:
+  - image-to-3d
+  - mesh
+  - text-to-3d
+  summary: A fast AI 3D model generator that transforms text, images, or sketches into detailed 3D meshes with clean topology and rich textures in seconds. It supports quad remeshing, parts segmentation, and direct export to major 3D formats.
+  summary_ja: テキスト、画像、またはスケッチから、クリーンなトポロジと豊かなテクスチャを持つ詳細な3Dメッシュを数秒で生成する高速AI 3Dモデルジェネレーター。クアッドリメッシュ、パーツセグメンテーション、および主要な3Dフォーマットへの直接エクスポートをサポートしています。
+  thumbnail: assets/thumbnails/tripo-ai-9f10e4.png
+  date_added: '2026-07-01'
+  source: agent
 - id: atlas-ai-studio-48f967
   title: Atlas AI Studio
   area: gen-3d
